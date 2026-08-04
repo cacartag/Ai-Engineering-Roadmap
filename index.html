@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Engineering Quest & Progress Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent-cyan: #06b6d4;
+      --accent-violet: #8b5cf6;
+      --accent-gold: #f59e0b;
+      --accent-green: #10b981;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    /* Hero Banner */
+    .hero-container {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 28px;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      filter: brightness(0.65) contrast(1.1);
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7, 9, 14, 0.95), transparent 70%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px 32px;
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .action-bar {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: var(--accent-cyan);
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-violet), var(--accent-cyan));
+      border: none;
+      box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
+    }
+
+    /* Grid Layout */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Stats Card Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Level System */
+    .level-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent-gold), #d97706);
+      color: #000;
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .rank-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 4px;
+    }
+
+    .xp-display {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .progress-bar-bg {
+      background: rgba(255, 255, 255, 0.08);
+      height: 12px;
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .progress-bar-fill {
+      background: linear-gradient(90deg, var(--accent-violet), var(--accent-cyan));
+      height: 100%;
+      width: 0%;
+      border-radius: 6px;
+      transition: width 0.5s ease;
+      box-shadow: 0 0 12px var(--accent-cyan);
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Badges Grid */
+    .badges-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .badge-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 12px 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0.35;
+      filter: grayscale(1);
+      transition: var(--transition);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .badge-item.unlocked {
+      opacity: 1;
+      filter: grayscale(0);
+      background: rgba(139, 92, 246, 0.12);
+      border-color: var(--accent-violet);
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+    }
+
+    .badge-icon {
+      font-size: 1.8rem;
+      margin-bottom: 4px;
+    }
+
+    .badge-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-main);
+      line-height: 1.1;
+    }
+
+    /* Rewards Section */
+    .reward-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: var(--transition);
+    }
+
+    .reward-item.unlocked-reward {
+      border-color: var(--accent-gold);
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    .reward-level {
+      background: var(--accent-gold);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+
+    .reward-text {
+      flex: 1;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    .reward-text input {
+      background: transparent;
+      border: none;
+      color: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      width: 100%;
+      border-bottom: 1px dashed rgba(255,255,255,0.2);
+    }
+
+    .reward-text input:focus {
+      outline: none;
+      border-bottom-color: var(--accent-gold);
+    }
+
+    /* Curriculum Accordion / List */
+    .module-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      margin-bottom: 20px;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+
+    .module-header {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+      background: rgba(255, 255, 255, 0.02);
+      transition: var(--transition);
+    }
+
+    .module-header:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .module-title-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .module-icon {
+      font-size: 1.5rem;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .module-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .module-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .module-stats {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .module-badge {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-muted);
+    }
+
+    .module-badge.complete {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--accent-green);
+      border: 1px solid var(--accent-green);
+    }
+
+    .module-content {
+      padding: 0 24px 20px 24px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .task-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .task-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .checkbox {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .task-item.done .checkbox {
+      background: var(--accent-cyan);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+
+    .task-item.done .checkbox::after {
+      content: '✓';
+      color: #000;
+      font-weight: 900;
+      font-size: 0.85rem;
+    }
+
+    .task-item.done .task-title {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .task-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      flex: 1;
+    }
+
+    .task-xp {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      background: rgba(245, 158, 11, 0.15);
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-box {
+      background: #0f172a;
+      border: 1px solid var(--accent-cyan);
+      border-radius: var(--radius-lg);
+      width: 90%;
+      max-width: 600px;
+      padding: 32px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .modal-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      color: var(--accent-cyan);
+      margin-bottom: 12px;
+    }
+
+    .modal-body {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .modal-body code {
+      background: rgba(255,255,255,0.1);
+      color: var(--accent-gold);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: linear-gradient(135deg, var(--accent-violet), var(--accent-cyan));
+      color: #fff;
+      padding: 16px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      font-weight: 700;
+      z-index: 999;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Hero Banner -->
+    <div class="hero-container">
+      <img src="hero.jpg" alt="AI Dashboard Banner" class="hero-img">
+      <div class="hero-overlay">
+        <h1 class="hero-title">AI Engineering Quest & Tracker</h1>
+        <p class="hero-subtitle">Master AI from First Principles to Autonomous Agents</p>
+        <div class="action-bar">
+          <button class="btn btn-primary" onclick="openHostGuide()">🌐 See Everywhere Guide (GitHub Pages)</button>
+          <button class="btn" onclick="exportData()">💾 Export Backup (JSON)</button>
+          <button class="btn" onclick="importData()">📥 Import Backup</button>
+          <button class="btn" onclick="copyMarkdownSummary()">📋 Copy Markdown Status</button>
+          <input type="file" id="file-input" style="display:none" onchange="handleFileSelect(event)">
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-grid">
+      <!-- Sidebar Stats & Rewards -->
+      <div class="sidebar">
+        <!-- Player Level Card -->
+        <div class="card">
+          <div class="card-title">
+            <span>Engineer Stats</span>
+            <span class="level-badge" id="level-badge">LVL 1</span>
+          </div>
+          <div class="rank-name" id="rank-name">Novice Prompt Crafter</div>
+          <div class="xp-display" id="xp-display">0 / 500 XP</div>
+          
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="xp-bar"></div>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <div class="stat-val" id="total-progress-pct">0%</div>
+              <div class="stat-label">Total Completion</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val" id="total-xp-val">0</div>
+              <div class="stat-label">Earned XP</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges Card -->
+        <div class="card">
+          <div class="card-title">
+            <span>Achievements</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);" id="badge-count">0/12</span>
+          </div>
+          <div class="badges-grid" id="badges-grid"></div>
+        </div>
+
+        <!-- Custom Incentives & Rewards -->
+        <div class="card">
+          <div class="card-title">
+            <span>🎁 Milestone Rewards</span>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px;">Set your real-world rewards for unlocking levels!</p>
+          <div id="rewards-list"></div>
+        </div>
+      </div>
+
+      <!-- Main Curriculum Section -->
+      <div class="main-content">
+        <h2 style="font-family: 'Space Grotesk'; font-size: 1.4rem; margin-bottom: 16px; color: var(--text-main);">
+          Curriculum Modules
+        </h2>
+        <div id="curriculum-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Host Guide Modal -->
+  <div class="modal-overlay" id="host-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeHostGuide()">&times;</button>
+      <h3 class="modal-title">🌐 Access Your Dashboard Everywhere</h3>
+      <div class="modal-body">
+        <p>Because this dashboard is built right into your git repository, you can publish it to <strong>GitHub Pages</strong> for free in 2 steps:</p>
+        <br>
+        <ol style="margin-left: 20px; line-height: 1.8;">
+          <li>Push this repository to your GitHub account:
+            <br><code>git add . && git commit -m "Add interactive roadmap dashboard" && git push</code>
+          </li>
+          <li>In your GitHub Repo: Go to <strong>Settings</strong> &rarr; <strong>Pages</strong> &rarr; Set Source to <strong>Deploy from a branch</strong> (Main branch / root).</li>
+        </ol>
+        <br>
+        <p>✨ Once enabled, your progress dashboard will be live at <code>https://&lt;your-username&gt;.github.io/Ai-Engineering-Roadmap/</code> on any phone, tablet, or laptop!</p>
+        <br>
+        <p>💡 <em>Bonus: Use the Export/Import JSON buttons on any device to keep your progress completely in sync!</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Level Up Toast -->
+  <div class="toast" id="toast">🏆 Level Up! You are now Level 2</div>
+
+  <script>
+    // Curriculum Data Structure
+    const CURRICULUM = [
+      {
+        id: 'mod1',
+        title: '01. Programming for AI',
+        icon: '🛠️',
+        duration: '4-6 weeks',
+        tasks: [
+          'Python Basics: Variables, Control Flow & Data Types',
+          'Data Structures & Algorithms in Python',
+          'Object-Oriented Programming (Classes & Inheritance)',
+          'Git & GitHub Version Control Mastery',
+          'Linux Command Line Fundamentals'
+        ]
+      },
+      {
+        id: 'mod2',
+        title: '02. Math for AI Engineering',
+        icon: '📐',
+        duration: '6-8 weeks',
+        tasks: [
+          'Linear Algebra: Vectors, Matrices, Tensors & Multiplication',
+          'Calculus: Derivatives, Integrals & Chain Rule',
+          'Gradient Descent & Loss Optimization',
+          'Probability & Statistics: Distributions, Bayes Theorem & Inference'
+        ]
+      },
+      {
+        id: 'mod3',
+        title: '03. Machine Learning Core',
+        icon: '🤖',
+        duration: '6-8 weeks',
+        tasks: [
+          'Supervised Learning (Regression & Classification)',
+          'Unsupervised Learning (Clustering & Dimensionality Reduction)',
+          'Model Evaluation, Overfitting & Cross-Validation',
+          'Scikit-Learn & ML Pipeline Construction'
+        ]
+      },
+      {
+        id: 'mod4',
+        title: '04. Deep Learning & Neural Networks',
+        icon: '🧠',
+        duration: '4-6 weeks',
+        tasks: [
+          'Neural Network Foundations & Backpropagation',
+          'PyTorch Framework Fundamentals',
+          'Convolutional Neural Networks (CNNs)',
+          'Recurrent Neural Networks (RNNs) & Attention Intro'
+        ]
+      },
+      {
+        id: 'mod5',
+        title: '05. Natural Language Processing',
+        icon: '🗣️',
+        duration: '3-4 weeks',
+        tasks: [
+          'Text Preprocessing, Tokenization & Regex',
+          'Word Embeddings (Word2Vec, GloVe)',
+          'Seq2Seq Models & Attention Mechanisms',
+          'Transformers Architecture & HuggingFace Transformers'
+        ]
+      },
+      {
+        id: 'mod6',
+        title: '06. Computer Vision',
+        icon: '👁️',
+        duration: '3-4 weeks',
+        tasks: [
+          'Image Processing with OpenCV & PIL',
+          'Deep Learning Vision Models (ResNet, EfficientNet)',
+          'Object Detection (YOLO, Faster R-CNN)',
+          'Image Segmentation & Generative Vision'
+        ]
+      },
+      {
+        id: 'mod7',
+        title: '07. Reinforcement Learning',
+        icon: '🧭',
+        duration: '3-5 weeks',
+        tasks: [
+          'Markov Decision Processes (MDPs)',
+          'Q-Learning & Value Iteration',
+          'Deep Q-Networks (DQN)',
+          'Policy Gradient Methods & PPO'
+        ]
+      },
+      {
+        id: 'mod8',
+        title: '08. Large Language Models (LLMs)',
+        icon: '🚀',
+        duration: '2-3 weeks',
+        tasks: [
+          'LLM Architectures & Decoder-Only Transformers',
+          'Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)',
+          'Quantization, GGUF & Running Local Models with Ollama',
+          'LLM Evaluation & Benchmarking'
+        ]
+      },
+      {
+        id: 'mod9',
+        title: '09. Agentic AI & Autonomous Systems',
+        icon: '⚙️',
+        duration: '2-3 weeks',
+        tasks: [
+          'ReAct Pattern & Tool-Use Execution',
+          'Stateful Multi-Agent Frameworks (LangGraph, CrewAI, AutoGen)',
+          'Memory Systems & Long-Term Planning',
+          'Autonomous Agentic Workflow Implementation'
+        ]
+      },
+      {
+        id: 'mod10',
+        title: '10. Retrieval-Augmented Generation (RAG)',
+        icon: '🔄',
+        duration: '1-2 weeks',
+        tasks: [
+          'Vector Databases (Chroma, Pinecone, Qdrant)',
+          'Document Chunking Strategies & Embedding Models',
+          'Hybrid Search (Sparse + Dense Retrieval)',
+          'Advanced RAG: Re-ranking, Query Transformation & GraphRAG'
+        ]
+      },
+      {
+        id: 'mod11',
+        title: '11. Prompt Engineering Mastery',
+        icon: '⚡',
+        duration: '1-2 weeks',
+        tasks: [
+          'Zero-Shot & Few-Shot Prompting Techniques',
+          'Chain-of-Thought & Tree-of-Thought Reasoning',
+          'System Prompt Optimization & Guardrails',
+          'Structured Output Generation (JSON/JSON Schema)'
+        ]
+      },
+      {
+        id: 'mod12',
+        title: '12. AI Tooling & MLOps Infrastructure',
+        icon: '🧰',
+        duration: '1-2 weeks',
+        tasks: [
+          'LangChain & LlamaIndex Framework Integration',
+          'Model Deployment & API Serving (FastAPI, Modal, vLLM)',
+          'Tracing, Observability & Evaluation (LangSmith, Phoenix)',
+          'CI/CD Pipelines for AI Applications'
+        ]
+      },
+      {
+        id: 'mod13',
+        title: '13. Capstone Projects',
+        icon: '🧪',
+        duration: 'Ongoing',
+        tasks: [
+          'Design & Architecture Specification of AI Application',
+          'Full-Stack Implementation (RAG/Agents + Backend + UI)',
+          'Evaluation & Testing Suite Execution',
+          'Public GitHub Release & Live Demo Deployment'
+        ]
+      }
+    ];
+
+    // Levels & Ranks Definition
+    const RANKS = [
+      { level: 1, xpRequired: 0, title: "Novice Prompt Crafter" },
+      { level: 2, xpRequired: 400, title: "Python Apprentice" },
+      { level: 3, xpRequired: 900, title: "Math & Logic Explorer" },
+      { level: 4, xpRequired: 1500, title: "ML Practitioner" },
+      { level: 5, xpRequired: 2200, title: "Neural Net Constructor" },
+      { level: 6, xpRequired: 3000, title: "Specialization Scholar" },
+      { level: 7, xpRequired: 3900, title: "Transformer Strategist" },
+      { level: 8, xpRequired: 4900, title: "RAG & Agentic Architect" },
+      { level: 9, xpRequired: 6000, title: "AI Systems Engineer" },
+      { level: 10, xpRequired: 7200, title: "Autonomous AI Sovereign" }
+    ];
+
+    // Badges Definition
+    const BADGES = [
+      { id: 'b_code', title: 'Code Initiated', icon: '💻', modId: 'mod1' },
+      { id: 'b_math', title: 'Math Alchemist', icon: '📐', modId: 'mod2' },
+      { id: 'b_ml', title: 'ML Pathfinder', icon: '🤖', modId: 'mod3' },
+      { id: 'b_dl', title: 'Deep Thinker', icon: '🧠', modId: 'mod4' },
+      { id: 'b_nlp', title: 'Linguist', icon: '🗣️', modId: 'mod5' },
+      { id: 'b_cv', title: 'Visionary', icon: '👁️', modId: 'mod6' },
+      { id: 'b_rl', title: 'RL Challenger', icon: '🧭', modId: 'mod7' },
+      { id: 'b_llm', title: 'LLM Titan', icon: '🚀', modId: 'mod8' },
+      { id: 'b_agent', title: 'Agent Architect', icon: '⚙️', modId: 'mod9' },
+      { id: 'b_rag', title: 'RAG Master', icon: '🔄', modId: 'mod10' },
+      { id: 'b_prompt', title: 'Prompt General', icon: '⚡', modId: 'mod11' },
+      { id: 'b_hero', title: 'AI Sovereign', icon: '👑', modId: 'mod13' }
+    ];
+
+    // Default Milestone Rewards
+    const DEFAULT_REWARDS = {
+      2: "Treat myself to a specialty espresso or boba",
+      4: "Order favorite takeaway / pizza night",
+      6: "Buy a cool tech gadget or keycaps set",
+      8: "Take a full guilt-free day off gaming / relaxing",
+      10: "Grand Celebration! Weekend getaway / tech gift"
+    };
+
+    // Application State
+    let state = {
+      completedTasks: {},
+      rewards: { ...DEFAULT_REWARDS },
+      claimedRewards: {}
+    };
+
+    // Sound Synthesizer (Web Audio API)
+    function playChime() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(440, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(880, ctx.currentTime + 0.3);
+        gain.gain.setValueAtTime(0.3, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.3);
+      } catch (e) {
+        // Audio fallback silent
+      }
+    }
+
+    // Initialize State from LocalStorage
+    function loadState() {
+      const saved = localStorage.getItem('ai_roadmap_state_v1');
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          state = { ...state, ...parsed };
+        } catch (e) {
+          console.error("Error loading state", e);
+        }
+      }
+    }
+
+    function saveState() {
+      localStorage.setItem('ai_roadmap_state_v1', JSON.stringify(state));
+      renderDashboard();
+    }
+
+    // Calculate XP and Rank
+    function calculateXP() {
+      let totalXP = 0;
+      let totalTasks = 0;
+      let completedTasksCount = 0;
+
+      CURRICULUM.forEach(mod => {
+        let modDone = 0;
+        mod.tasks.forEach((task, idx) => {
+          totalTasks++;
+          const key = `${mod.id}_${idx}`;
+          if (state.completedTasks[key]) {
+            completedTasksCount++;
+            modDone++;
+            totalXP += 100; // 100 XP per subtopic
+          }
+        });
+        if (modDone === mod.tasks.length && mod.tasks.length > 0) {
+          totalXP += 200; // Bonus 200 XP for completing full module
+        }
+      });
+
+      return { totalXP, totalTasks, completedTasksCount };
+    }
+
+    function getRank(xp) {
+      let currentRank = RANKS[0];
+      let nextRank = RANKS[1];
+
+      for (let i = 0; i < RANKS.length; i++) {
+        if (xp >= RANKS[i].xpRequired) {
+          currentRank = RANKS[i];
+          nextRank = RANKS[i + 1] || null;
+        }
+      }
+
+      return { currentRank, nextRank };
+    }
+
+    function toggleTask(modId, taskIdx) {
+      const key = `${modId}_${taskIdx}`;
+      const wasDone = !!state.completedTasks[key];
+      state.completedTasks[key] = !wasDone;
+
+      if (!wasDone) {
+        playChime();
+      }
+
+      saveState();
+    }
+
+    // Render Function
+    function renderDashboard() {
+      const { totalXP, totalTasks, completedTasksCount } = calculateXP();
+      const { currentRank, nextRank } = getRank(totalXP);
+      const overallPct = totalTasks > 0 ? Math.round((completedTasksCount / totalTasks) * 100) : 0;
+
+      // Update Header & Level Stats
+      document.getElementById('level-badge').innerText = `LVL ${currentRank.level}`;
+      document.getElementById('rank-name').innerText = currentRank.title;
+      document.getElementById('total-progress-pct').innerText = `${overallPct}%`;
+      document.getElementById('total-xp-val').innerText = totalXP;
+
+      // XP Progress Bar
+      if (nextRank) {
+        const currentLevelXP = totalXP - currentRank.xpRequired;
+        const levelRange = nextRank.xpRequired - currentRank.xpRequired;
+        const pct = Math.min(100, Math.max(0, Math.round((currentLevelXP / levelRange) * 100)));
+        document.getElementById('xp-display').innerText = `${totalXP} / ${nextRank.xpRequired} XP (${pct}% to Lvl ${nextRank.level})`;
+        document.getElementById('xp-bar').style.width = `${pct}%`;
+      } else {
+        document.getElementById('xp-display').innerText = `${totalXP} XP (MAX RANK ACHIEVED!)`;
+        document.getElementById('xp-bar').style.width = `100%`;
+      }
+
+      // Render Badges
+      const badgesContainer = document.getElementById('badges-grid');
+      badgesContainer.innerHTML = '';
+      let unlockedBadgesCount = 0;
+
+      BADGES.forEach(badge => {
+        const mod = CURRICULUM.find(m => m.id === badge.modId);
+        let isUnlocked = false;
+        if (mod) {
+          const modCompleted = mod.tasks.every((_, idx) => state.completedTasks[`${mod.id}_${idx}`]);
+          if (modCompleted) isUnlocked = true;
+        }
+        if (isUnlocked) unlockedBadgesCount++;
+
+        const div = document.createElement('div');
+        div.className = `badge-item ${isUnlocked ? 'unlocked' : ''}`;
+        div.title = isUnlocked ? `Unlocked: ${badge.title}` : `Complete ${mod ? mod.title : 'module'} to unlock`;
+        div.innerHTML = `
+          <div class="badge-icon">${badge.icon}</div>
+          <div class="badge-title">${badge.title}</div>
+        `;
+        badgesContainer.appendChild(div);
+      });
+      document.getElementById('badge-count').innerText = `${unlockedBadgesCount}/${BADGES.length}`;
+
+      // Render Milestone Rewards
+      const rewardsContainer = document.getElementById('rewards-list');
+      rewardsContainer.innerHTML = '';
+      [2, 4, 6, 8, 10].forEach(lvl => {
+        const isUnlocked = currentRank.level >= lvl;
+        const rewardText = state.rewards[lvl] || DEFAULT_REWARDS[lvl];
+
+        const div = document.createElement('div');
+        div.className = `reward-item ${isUnlocked ? 'unlocked-reward' : ''}`;
+        div.innerHTML = `
+          <div class="reward-level">LVL ${lvl}</div>
+          <div class="reward-text">
+            <input type="text" value="${rewardText}" onchange="updateReward(${lvl}, this.value)">
+          </div>
+          ${isUnlocked ? '<span style="color:var(--accent-gold); font-size:1.2rem;">🎁</span>' : '<span style="color:var(--text-muted); font-size:1rem;">🔒</span>'}
+        `;
+        rewardsContainer.appendChild(div);
+      });
+
+      // Render Curriculum Modules
+      const curriculumContainer = document.getElementById('curriculum-list');
+      curriculumContainer.innerHTML = '';
+
+      CURRICULUM.forEach(mod => {
+        let modDoneCount = 0;
+        mod.tasks.forEach((_, idx) => {
+          if (state.completedTasks[`${mod.id}_${idx}`]) modDoneCount++;
+        });
+
+        const isFullyDone = modDoneCount === mod.tasks.length;
+        const card = document.createElement('div');
+        card.className = 'module-card';
+
+        const tasksHtml = mod.tasks.map((taskTitle, idx) => {
+          const key = `${mod.id}_${idx}`;
+          const isDone = !!state.completedTasks[key];
+          return `
+            <div class="task-item ${isDone ? 'done' : ''}" onclick="toggleTask('${mod.id}', ${idx})">
+              <div class="checkbox"></div>
+              <div class="task-title">${taskTitle}</div>
+              <div class="task-xp">+100 XP</div>
+            </div>
+          `;
+        }).join('');
+
+        card.innerHTML = `
+          <div class="module-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'grid' : 'none'">
+            <div class="module-title-group">
+              <div class="module-icon">${mod.icon}</div>
+              <div>
+                <div class="module-title">${mod.title}</div>
+                <div class="module-meta">Est. Duration: ${mod.duration}</div>
+              </div>
+            </div>
+            <div class="module-stats">
+              <span class="module-badge ${isFullyDone ? 'complete' : ''}">
+                ${modDoneCount}/${mod.tasks.length} Completed
+              </span>
+            </div>
+          </div>
+          <div class="module-content">
+            ${tasksHtml}
+          </div>
+        `;
+        curriculumContainer.appendChild(card);
+      });
+    }
+
+    function updateReward(lvl, value) {
+      state.rewards[lvl] = value;
+      saveState();
+    }
+
+    // Export/Import JSON Data
+    function exportData() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(state, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "ai_roadmap_progress.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    function importData() {
+      document.getElementById('file-input').click();
+    }
+
+    function handleFileSelect(evt) {
+      const file = evt.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          try {
+            const importedState = JSON.parse(e.target.result);
+            state = { ...state, ...importedState };
+            saveState();
+            showToast("📥 Progress imported successfully!");
+          } catch (err) {
+            alert("Invalid JSON file");
+          }
+        };
+        reader.readAsText(file);
+      }
+    }
+
+    function copyMarkdownSummary() {
+      const { totalXP, totalTasks, completedTasksCount } = calculateXP();
+      const { currentRank } = getRank(totalXP);
+      const pct = totalTasks > 0 ? Math.round((completedTasksCount / totalTasks) * 100) : 0;
+
+      const md = `### 🎓 AI Engineering Progress Summary
+- **Current Rank**: Level ${currentRank.level} - ${currentRank.title}
+- **Total XP**: ${totalXP} XP
+- **Curriculum Completion**: ${pct}% (${completedTasksCount}/${totalTasks} Tasks Completed)
+- **Last Updated**: ${new Date().toLocaleDateString()}
+`;
+
+      navigator.clipboard.writeText(md).then(() => {
+        showToast("📋 Markdown status copied to clipboard!");
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    function openHostGuide() {
+      document.getElementById('host-modal').classList.add('active');
+    }
+
+    function closeHostGuide() {
+      document.getElementById('host-modal').classList.remove('active');
+    }
+
+    // Initialize App
+    loadState();
+    renderDashboard();
+  </script>
+</body>
+</html>
