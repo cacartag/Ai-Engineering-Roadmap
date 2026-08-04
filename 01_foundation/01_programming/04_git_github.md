@@ -1,21 +1,27 @@
-# 🐙 Git & GitHub Version Control Mastery
+# 🎯 Git & GitHub Version Control Mastery
 
-> Dedicated Study Guide for Task 4 of Module 01: Programming for AI
+> Dedicated Focus Study Guide — Module: 01. Programming for AI
 
-## 🎯 Learning Objectives
-- Track version history, branches, commits, merges, and remote syncing.
-- Resolve git merge conflicts and manage collaborative open-source AI projects.
-- Set up SSH keys, `.gitignore`, and GitHub Pages deployment.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Git Handbook by GitHub Guides](https://guides.github.com/introduction/git-handbook/) — **Free Official Guide**
-- [Git and GitHub Crash Course (freeCodeCamp YouTube)](https://www.youtube.com/watch?v=RGOj5yH7evk) — **Free Video**
-- [The Odin Project: Git Basics](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/setting-up-git) — **Free Interactive Lesson**
+- [ ] **Requirement 1 (+50 XP)**: Read GitHub Guides Official Git Handbook
+- [ ] **Requirement 2 (+50 XP)**: Watch freeCodeCamp Git and GitHub Crash Course
+- [ ] **Requirement 3 (+50 XP)**: Complete The Odin Project Git Basics Interactive Lesson
+- [ ] **Requirement 4 (+50 XP)**: Practical Task: Create GitHub repo, manage branches, & submit a PR
 
-## 🔑 Key Concepts to Master
-1. **Core Commands**: `git init`, `git status`, `git add`, `git commit -m`, `git push`, `git pull`.
-2. **Branching Workflows**: `git checkout -b feature`, `git merge`, handling conflicts.
-3. **Open Source Etiquette**: Forking repositories, cloning, creating Pull Requests (PRs).
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: OOP](./03_oop.md) | [Next Task: Linux Command Line →](./05_linux_cli.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Git & GitHub Version Control Mastery.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

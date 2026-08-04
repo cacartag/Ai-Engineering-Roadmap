@@ -1,20 +1,27 @@
-# ⚡ Gradient Descent & Loss Optimization
+# 🎯 Gradient Descent & Loss Optimization
 
-> Dedicated Study Guide for Task 3 of Module 02: Math for AI Engineering
+> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
 
-## 🎯 Learning Objectives
-- Implement Batch Gradient Descent, Stochastic Gradient Descent (SGD), and Mini-Batch SGD from scratch in Python.
-- Understand Learning Rate schedules, momentum, and advanced optimizers (Adam, AdamW).
-- Formulate loss functions (MSE, Cross-Entropy Loss, Binary Cross-Entropy).
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [Gradient Descent Explained (StatQuest YouTube)](https://www.youtube.com/watch?v=sDv4f4s2SB8) — **Free Visual Guide**
-- [Optimization Algorithms for Deep Learning (d2l.ai)](https://d2l.ai/chapter_optimization/index.html) — **Free Interactive Book Chapter**
+- [ ] **Requirement 1 (+50 XP)**: Watch StatQuest Gradient Descent & SGD Videos
+- [ ] **Requirement 2 (+50 XP)**: Read d2l.ai Optimization Algorithms Chapter
+- [ ] **Requirement 3 (+50 XP)**: Formulate Mean Squared Error (MSE) and Cross-Entropy Loss equations
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Code Batch SGD and Mini-Batch SGD from scratch in Python
 
-## 🔑 Key Equations
-- Parameter update step:
-  $$\theta_{t+1} = \theta_t - \eta \cdot \nabla_\theta L(\theta_t)$$
-  where $\eta$ is the learning rate and $L(\theta)$ is the loss function.
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Calculus](./02_calculus.md) | [Next Task: Probability & Statistics →](./04_probability_stats.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Gradient Descent & Loss Optimization.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

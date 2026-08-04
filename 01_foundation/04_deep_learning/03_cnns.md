@@ -1,15 +1,27 @@
-# 🖼️ Convolutional Neural Networks (CNNs)
+# 🎯 Convolutional Neural Networks (CNNs)
 
-> Dedicated Study Guide for Task 3 of Module 04: Deep Learning & Neural Networks
+> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
 
-## 🎯 Learning Objectives
-- Understand Convolution operations, kernels, stride, padding, pooling (Max/Avg Pooling), and receptive fields.
-- Study classic architectures: LeNet, AlexNet, VGG, ResNet (Skip Connections), and EfficientNet.
-- Implement Transfer Learning using torchvision pre-trained models.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [CS231n: Convolutional Neural Networks for Visual Recognition (Stanford)](http://cs231n.stanford.edu/) — **Free Lecture Notes**
-- [Fast.ai Practical Deep Learning for Coders](https://course.fast.ai/) — **Free Hands-on Course**
+- [ ] **Requirement 1 (+50 XP)**: Study Stanford CS231n Convolutional Networks lecture notes
+- [ ] **Requirement 2 (+50 XP)**: Watch Fast.ai Practical Deep Learning for Coders CNN module
+- [ ] **Requirement 3 (+50 XP)**: Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: PyTorch](./02_pytorch_fundamentals.md) | [Next Task: RNNs & Attention →](./04_rnns_attention.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Convolutional Neural Networks (CNNs).
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

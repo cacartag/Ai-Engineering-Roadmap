@@ -1,15 +1,27 @@
-# 🔄 Recurrent Neural Networks (RNNs) & Attention Intro
+# 🎯 Recurrent Neural Networks (RNNs) & Attention Intro
 
-> Dedicated Study Guide for Task 4 of Module 04: Deep Learning & Neural Networks
+> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
 
-## 🎯 Learning Objectives
-- Understand Sequential modeling with Recurrent Neural Networks (RNNs), LSTMs, and GRUs.
-- Analyze Vanishing/Exploding Gradient problems in long sequences.
-- Master the Self-Attention Mechanism ($\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$) paving the way for Transformers.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [The Unreasonable Effectiveness of Recurrent Neural Networks (Andrej Karpathy Blog)](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) — **Must Read**
-- [Illustrated Guide to LSTMs and GRUs (YouTube)](https://www.youtube.com/watch?g&v=8HyCNIVRbSU) — **Free Video**
+- [ ] **Requirement 1 (+50 XP)**: Read Andrej Karpathy's Unreasonable Effectiveness of RNNs
+- [ ] **Requirement 2 (+50 XP)**: Watch Illustrated Guide to LSTMs and GRUs Video
+- [ ] **Requirement 3 (+50 XP)**: Master Sequential modeling, LSTMs, GRUs, and Self-Attention math
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build a PyTorch Character-level Language Model using RNNs/LSTMs
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: CNNs](./03_cnns.md) | [Next Module: Specializations (NLP) →](../../02_specializations/nlp/01_text_preprocessing.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Recurrent Neural Networks (RNNs) & Attention Intro.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

@@ -1,15 +1,27 @@
-# 📊 Unsupervised Learning (Clustering & Dimensionality Reduction)
+# 🎯 Unsupervised Learning (Clustering & Dimensionality Reduction)
 
-> Dedicated Study Guide for Task 2 of Module 03: Machine Learning Core
+> Dedicated Focus Study Guide — Module: 03. Machine Learning Core
 
-## 🎯 Learning Objectives
-- Implement K-Means Clustering, Hierarchical Clustering, and DBSCAN algorithm.
-- Reduce feature dimensionality using Principal Component Analysis (PCA) and t-SNE.
-- Analyze anomaly detection and unlabeled dataset patterns.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [Unsupervised Learning – Coursera (Andrew Ng)](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning) — **Free to Audit**
-- [StatQuest: PCA Main Ideas (YouTube)](https://www.youtube.com/watch?g&v=FgakZw6K1QQ) — **Free Video**
+- [ ] **Requirement 1 (+50 XP)**: Audit Coursera Unsupervised Learning Course (Andrew Ng)
+- [ ] **Requirement 2 (+50 XP)**: Study StatQuest PCA & K-Means clustering tutorials
+- [ ] **Requirement 3 (+50 XP)**: Practice K-Means, Hierarchical Clustering, and DBSCAN algorithms
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Reduce dimensionality of dataset using PCA & t-SNE
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Supervised Learning](./01_supervised_learning.md) | [Next Task: Model Evaluation →](./03_model_evaluation.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Unsupervised Learning (Clustering & Dimensionality Reduction).
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

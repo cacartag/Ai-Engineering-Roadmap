@@ -1,25 +1,27 @@
-# 💡 Data Structures & Algorithms in Python
+# 🎯 Data Structures & Algorithms in Python
 
-> Dedicated Study Guide for Task 2 of Module 01: Programming for AI
+> Dedicated Focus Study Guide — Module: 01. Programming for AI
 
-## 🎯 Learning Objectives
-- Understand core Python data structures: Lists, Dictionaries, Sets, Tuples, Deques, and Stacks.
-- Master algorithmic complexities: Big-O notation for time and space ($O(1)$, $O(\log n)$, $O(n)$, $O(n^2)$).
-- Implement basic searching, sorting, hashing, and recursion.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/index.html) — **Free Interactive Book**
-- [Data Structures - Python (freeCodeCamp YouTube)](https://www.youtube.com/watch?v=pkYVOmU3MgA) — **Free Video Course**
-- [LeetCode Easy DSA Problem Set](https://leetcode.com/problemset/?difficulty=Easy) — **Free**
+- [ ] **Requirement 1 (+50 XP)**: Study Problem Solving with Algorithms & Data Structures (Runestone)
+- [ ] **Requirement 2 (+50 XP)**: Watch freeCodeCamp Data Structures in Python Video Course
+- [ ] **Requirement 3 (+50 XP)**: Solve 10 LeetCode Easy DSA problems (Arrays, HashMaps, Strings)
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Implement a custom Stack and Queue class in Python
 
-## 🔑 Key Concepts to Master
-1. **Hash Maps / Dictionaries**: Constant time $O(1)$ lookups, dictionary operations, frequency counters.
-2. **List Operations & Slicing**: Memory layout of dynamic arrays.
-3. **Big-O Notation**: Evaluating time vs space trade-offs in data processing pipelines.
-
-## 💻 Recommended Practice
-- Solve 5 array/hashmap problems on LeetCode (e.g., *Two Sum*, *Valid Anagram*).
-- Implement a custom Stack and Queue class in Python using native structures.
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Python Basics](./01_python_basics.md) | [Next Task: Object-Oriented Programming →](./03_oop.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Data Structures & Algorithms in Python.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

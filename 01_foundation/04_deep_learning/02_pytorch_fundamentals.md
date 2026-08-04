@@ -1,15 +1,27 @@
-# 🔥 PyTorch Framework Fundamentals
+# 🎯 PyTorch Framework Fundamentals
 
-> Dedicated Study Guide for Task 2 of Module 04: Deep Learning & Neural Networks
+> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
 
-## 🎯 Learning Objectives
-- Master PyTorch Tensors, GPU acceleration (`cuda`/`mps`), and Automatic Differentiation (`autograd`).
-- Construct custom neural networks extending `torch.nn.Module`.
-- Implement `DataLoader`, `Dataset`, training loops, and validation loops.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [Deep Learning with PyTorch: A 60 Minute Blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html) — **Official Tutorial**
-- [PyTorch for Deep Learning Bootcamp (freeCodeCamp YouTube)](https://www.youtube.com/watch?v=V_xro1bcAuA) — **Free**
+- [ ] **Requirement 1 (+50 XP)**: Complete PyTorch Official 60-Minute Blitz Tutorial
+- [ ] **Requirement 2 (+50 XP)**: Watch freeCodeCamp PyTorch for Deep Learning Bootcamp
+- [ ] **Requirement 3 (+50 XP)**: Master Tensors, GPU acceleration (cuda/mps), and autograd
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Write a complete PyTorch nn.Module training & validation loop
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Neural Networks](./01_neural_networks.md) | [Next Task: CNNs →](./03_cnns.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for PyTorch Framework Fundamentals.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

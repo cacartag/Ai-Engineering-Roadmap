@@ -1,21 +1,27 @@
-# 📐 Linear Algebra: Vectors, Matrices & Tensors
+# 🎯 Linear Algebra: Vectors, Matrices, Tensors & Multiplication
 
-> Dedicated Study Guide for Task 1 of Module 02: Math for AI Engineering
+> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
 
-## 🎯 Learning Objectives
-- Master vector space operations, matrix multiplication, dot products, and matrix transpose.
-- Understand Eigenvalues, Eigenvectors, and Principal Component Analysis (PCA).
-- Implement matrix operations in Python using NumPy and PyTorch tensors.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Essence of Linear Algebra by 3Blue1Brown (YouTube)](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — **Must Watch Free Series**
-- [Linear Algebra for Machine Learning – Coursera (Imperial College)](https://www.coursera.org/learn/linear-algebra-machine-learning) — **Free to Audit**
-- [Khan Academy: Linear Algebra](https://www.khanacademy.org/math/linear-algebra) — **Free**
+- [ ] **Requirement 1 (+50 XP)**: Watch 3Blue1Brown Essence of Linear Algebra (All Episodes)
+- [ ] **Requirement 2 (+50 XP)**: Audit Coursera Linear Algebra for Machine Learning (Imperial College)
+- [ ] **Requirement 3 (+50 XP)**: Complete Khan Academy Linear Algebra practice drills
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Code vector dot products & matrix multiplication in NumPy/PyTorch
 
-## 🔑 Key Concepts
-1. **Vectors & Tensors**: 1D, 2D, 3D, and N-Dimensional arrays representing data batches and model weights.
-2. **Matrix Multiplication**: Inner dot product rules, shape alignment $(m \times n) \cdot (n \times p) = (m \times p)$.
-3. **Eigenvalues & Eigenvectors**: Transformations, matrix factorization, and dimensional compression.
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Back to Dashboard](../../index.html) | [Next Task: Calculus →](./02_calculus.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Linear Algebra: Vectors, Matrices, Tensors & Multiplication.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

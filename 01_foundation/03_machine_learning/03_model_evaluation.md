@@ -1,15 +1,27 @@
-# ⚖️ Model Evaluation, Overfitting & Cross-Validation
+# 🎯 Model Evaluation, Overfitting & Cross-Validation
 
-> Dedicated Study Guide for Task 3 of Module 03: Machine Learning Core
+> Dedicated Focus Study Guide — Module: 03. Machine Learning Core
 
-## 🎯 Learning Objectives
-- Diagnose Overfitting vs Underfitting using Bias-Variance Tradeoff analysis.
-- Evaluate metrics: Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE, $R^2$.
-- Execute $K$-Fold Cross Validation and Hyperparameter tuning (GridSearchCV, RandomizedSearchCV).
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [Fast.ai Machine Learning Course](https://course.fast.ai/) — **Free**
-- [Scikit-Learn Model Evaluation Guide](https://scikit-learn.org/stable/modules/model_evaluation.html) — **Free Documentation**
+- [ ] **Requirement 1 (+50 XP)**: Study Fast.ai Model Evaluation Unit
+- [ ] **Requirement 2 (+50 XP)**: Master Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE
+- [ ] **Requirement 3 (+50 XP)**: Practice K-Fold Cross Validation & GridSearchCV hyperparameter tuning
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Evaluate model overfitting vs underfitting with validation curves
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Unsupervised Learning](./02_unsupervised_learning.md) | [Next Task: Scikit-Learn Pipelines →](./04_scikit_learn.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Model Evaluation, Overfitting & Cross-Validation.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

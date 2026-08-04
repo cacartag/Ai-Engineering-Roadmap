@@ -1,21 +1,27 @@
-# 📈 Multivariable Calculus & Partial Derivatives
+# 🎯 Calculus: Derivatives, Integrals & Chain Rule
 
-> Dedicated Study Guide for Task 2 of Module 02: Math for AI Engineering
+> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
 
-## 🎯 Learning Objectives
-- Master single-variable derivatives, partial derivatives, and the gradient vector $\nabla f$.
-- Understand the Chain Rule of calculus used in Neural Network Backpropagation.
-- Calculate directional derivatives and local minima/maxima.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Essence of Calculus by 3Blue1Brown (YouTube)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6) — **Free Video Series**
-- [Calculus for Machine Learning – Coursera (Imperial College London)](https://www.coursera.org/learn/calculus-machine-learning) — **Free to Audit**
-- [Khan Academy: Multivariable Calculus](https://www.khanacademy.org/math/multivariable-calculus) — **Free**
+- [ ] **Requirement 1 (+50 XP)**: Watch 3Blue1Brown Essence of Calculus Series
+- [ ] **Requirement 2 (+50 XP)**: Audit Coursera Calculus for Machine Learning
+- [ ] **Requirement 3 (+50 XP)**: Complete Khan Academy Multivariable Calculus derivative exercises
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Compute partial derivatives & gradients of loss functions analytically
 
-## 🔑 Key Concepts
-1. **Partial Derivatives**: $\frac{\partial f}{\partial x}$ measuring rate of change along a single dimension.
-2. **The Gradient Vector**: $\nabla f = \left[ \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots \right]^T$ pointing in direction of steepest ascent.
-3. **Multivariable Chain Rule**: Propagating error gradients backwards through composite functions $f(g(x))$.
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Linear Algebra](./01_linear_algebra.md) | [Next Task: Gradient Descent →](./03_gradient_descent.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Calculus: Derivatives, Integrals & Chain Rule.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

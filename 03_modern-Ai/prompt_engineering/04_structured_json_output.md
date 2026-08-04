@@ -1,23 +1,27 @@
 # 🎯 Structured Output Generation (JSON Schema)
 
-> Dedicated Focus & Study Guide for 11. Prompt Engineering Mastery
+> Dedicated Focus Study Guide — Module: 11. Prompt Engineering Mastery
 
-## 📖 Overview
-Enforce strict JSON schemas, Pydantic validation, and constrained decoding (Instructor / Outlines).
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 🎯 Learning Objectives
-- Gain deep conceptual mastery of Structured Output Generation (JSON Schema).
-- Implement practical code patterns and workflows.
-- Apply industry best practices and evaluation standards.
+- [ ] **Requirement 1 (+50 XP)**: Study JSON Schema specification & Pydantic data validation in Python
+- [ ] **Requirement 2 (+50 XP)**: Master Instructor library & Outlines constrained sampling engine
+- [ ] **Requirement 3 (+50 XP)**: Enforce strict JSON output parsing with automatic retries on validation failure
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build a Structured Extractor returning verified Pydantic objects
 
-## 📚 Free Recommended Courses & Resources
-- [Hugging Face Deep Learning & AI Course](https://huggingface.co/learn) — **Free**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+
+---
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Structured Output Generation (JSON Schema).
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
 - [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
 - [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
-
-## 💻 Practice & Verification
-1. Review core concepts and implement a code prototype.
-2. Verify output metrics and benchmark performance.
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)

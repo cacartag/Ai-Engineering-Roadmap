@@ -1,25 +1,27 @@
-# 🛠️ Python Basics: Variables, Control Flow & Data Types
+# 🎯 Python Basics: Variables, Control Flow & Data Types
 
-> Dedicated Study Guide for Task 1 of Module 01: Programming for AI
+> Dedicated Focus Study Guide — Module: 01. Programming for AI
 
-## 🎯 Learning Objectives
-- Master Python syntax, primitive types, and variable assignment.
-- Implement control flow structures (`if/elif/else`, `while` loops, `for` loops).
-- Master function definition, type hinting, error handling (`try/except`), and file I/O.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Harvard CS50’s Introduction to Programming with Python](https://cs50.harvard.edu/python/) — **Free**
-- [Python for Everybody – University of Michigan (Coursera)](https://www.coursera.org/specializations/python) — **Free to Audit**
-- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) — **Free Book & Tutorial**
+- [ ] **Requirement 1 (+50 XP)**: Complete Harvard CS50’s Intro to Programming with Python
+- [ ] **Requirement 2 (+50 XP)**: Audit Python for Everybody (Univ of Michigan on Coursera)
+- [ ] **Requirement 3 (+50 XP)**: Read & practice Automate the Boring Stuff with Python (Ch. 1-6)
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build & test a Python Command-Line Calculator app
 
-## 🔑 Key Concepts to Master
-1. **Control Flow**: Conditionals, ternary operators, list comprehensions.
-2. **Functions**: Default parameters, `*args`, `**kwargs`, lambdas.
-3. **Error & File I/O**: `with open(...)` contexts, handling `FileNotFoundError` and `ValueError`.
-
-## 💻 Recommended Practice
-- Complete 10 basic Python exercises on [LeetCode](https://leetcode.com) or [HackerRank](https://hackerrank.com).
-- Build a command-line calculator or text processing script in Python.
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Back to Dashboard](../../index.html) | [Next Task: Data Structures & Algorithms →](./02_dsa.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Python Basics: Variables, Control Flow & Data Types.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

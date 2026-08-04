@@ -1,15 +1,27 @@
-# ⚙️ Scikit-Learn & ML Pipeline Construction
+# 🎯 Scikit-Learn & ML Pipeline Construction
 
-> Dedicated Study Guide for Task 4 of Module 03: Machine Learning Core
+> Dedicated Focus Study Guide — Module: 03. Machine Learning Core
 
-## 🎯 Learning Objectives
-- Build reproducible machine learning workflows using `sklearn.pipeline.Pipeline`.
-- Automate data imputation, feature scaling (`StandardScaler`, `MinMaxScaler`), and encoding (`OneHotEncoder`).
-- Serialize trained models using `joblib` or `pickle` for API production deployment.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Resources
-- [Scikit-Learn Official User Guide](https://scikit-learn.org/stable/user_guide.html) — **Free Documentation**
-- [Kaggle Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) — **Free Course**
+- [ ] **Requirement 1 (+50 XP)**: Read Scikit-Learn User Guide on Pipelines & Preprocessing
+- [ ] **Requirement 2 (+50 XP)**: Complete Kaggle Intermediate Machine Learning Course
+- [ ] **Requirement 3 (+50 XP)**: Build automated data imputation, scaling (StandardScaler), & encoding pipelines
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Save trained Scikit-Learn pipeline to disk with joblib & serve API
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Model Evaluation](./03_model_evaluation.md) | [Next Module: Deep Learning →](../04_deep_learning/01_neural_networks.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Scikit-Learn & ML Pipeline Construction.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

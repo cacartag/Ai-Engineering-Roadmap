@@ -1,15 +1,27 @@
-# 🎲 Probability & Statistics for AI
+# 🎯 Probability & Statistics: Distributions, Bayes Theorem & Inference
 
-> Dedicated Study Guide for Task 4 of Module 02: Math for AI Engineering
+> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
 
-## 🎯 Learning Objectives
-- Understand discrete and continuous probability distributions (Gaussian / Normal, Binomial, Uniform).
-- Master Bayes' Theorem $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$ and Naive Bayes Classification.
-- Learn expectation, variance, standard deviation, covariance, correlation, and Maximum Likelihood Estimation (MLE).
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Introduction to Probability and Statistics – MIT OpenCourseWare](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) — **Free Course Material**
-- [Khan Academy: Probability & Statistics](https://www.khanacademy.org/math/statistics-probability) — **Free**
+- [ ] **Requirement 1 (+50 XP)**: Study MIT OpenCourseWare Introduction to Probability and Statistics
+- [ ] **Requirement 2 (+50 XP)**: Complete Khan Academy Probability & Statistics exercises
+- [ ] **Requirement 3 (+50 XP)**: Master Gaussian distribution, Bayes Theorem, & Naive Bayes math
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build a Naive Bayes Spam Classifier in Python from scratch
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Gradient Descent](./03_gradient_descent.md) | [Next Module: Machine Learning Core →](../03_machine_learning/01_supervised_learning.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Probability & Statistics: Distributions, Bayes Theorem & Inference.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

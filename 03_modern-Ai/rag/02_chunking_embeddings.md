@@ -1,23 +1,27 @@
 # 🎯 Document Chunking Strategies & Embedding Models
 
-> Dedicated Focus & Study Guide for 10. Retrieval-Augmented Generation
+> Dedicated Focus Study Guide — Module: 10. Retrieval-Augmented Generation (RAG)
 
-## 📖 Overview
-Implement fixed-size, semantic, and hierarchical chunking strategies paired with state-of-the-art embedding models.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 🎯 Learning Objectives
-- Gain deep conceptual mastery of Document Chunking Strategies & Embedding Models.
-- Implement practical code patterns and workflows.
-- Apply industry best practices and evaluation standards.
+- [ ] **Requirement 1 (+50 XP)**: Study Document Chunking strategies (Fixed-size, Recursive, Semantic)
+- [ ] **Requirement 2 (+50 XP)**: Benchmark Sentence-Transformers (BGE, E5, OpenAI text-embedding-3)
+- [ ] **Requirement 3 (+50 XP)**: Measure retrieval recall and precision across chunk sizes
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build an automated Chunking & Embedding Pipeline for PDFs
 
-## 📚 Free Recommended Courses & Resources
-- [Hugging Face Deep Learning & AI Course](https://huggingface.co/learn) — **Free**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+
+---
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Document Chunking Strategies & Embedding Models.
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
 - [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
 - [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
-
-## 💻 Practice & Verification
-1. Review core concepts and implement a code prototype.
-2. Verify output metrics and benchmark performance.
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)

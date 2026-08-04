@@ -339,7 +339,7 @@
       border-bottom-color: var(--accent-gold);
     }
 
-    /* Curriculum Accordion / List */
+    /* Curriculum Accordions */
     .module-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -393,12 +393,6 @@
       margin-top: 2px;
     }
 
-    .module-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
     .module-badge {
       font-size: 0.85rem;
       font-weight: 600;
@@ -414,97 +408,133 @@
       border: 1px solid var(--accent-green);
     }
 
-    .module-content {
-      padding: 0 24px 20px 24px;
-      display: grid;
-      grid-template-columns: 1fr;
+    /* Topic Card Inside Module */
+    .topic-block {
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: var(--radius-md);
+      margin: 12px 24px 16px 24px;
+      background: rgba(255, 255, 255, 0.015);
+      overflow: hidden;
+    }
+
+    .topic-header {
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.03);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .topic-header:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .topic-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
       gap: 10px;
     }
 
-    .task-item {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      border-radius: var(--radius-md);
-      padding: 12px 16px;
+    .topic-actions {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 10px;
+    }
+
+    .topic-guide-btn {
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
       transition: var(--transition);
     }
 
-    .task-item:hover {
+    .topic-guide-btn:hover {
+      background: var(--accent-cyan);
+      color: #000;
+      box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+    }
+
+    /* Sub-task Requirements List */
+    .requirements-list {
+      padding: 12px 18px 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .req-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .req-item:hover {
       background: rgba(255, 255, 255, 0.05);
       border-color: rgba(255, 255, 255, 0.1);
     }
 
     .checkbox {
-      width: 22px;
-      height: 22px;
-      border-radius: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
       border: 2px solid rgba(255, 255, 255, 0.3);
       display: flex;
       align-items: center;
       justify-content: center;
       transition: var(--transition);
       flex-shrink: 0;
-      cursor: pointer;
     }
 
-    .task-item.done .checkbox {
+    .req-item.done .checkbox {
       background: var(--accent-cyan);
       border-color: var(--accent-cyan);
-      box-shadow: 0 0 10px var(--accent-cyan);
+      box-shadow: 0 0 8px var(--accent-cyan);
     }
 
-    .task-item.done .checkbox::after {
+    .req-item.done .checkbox::after {
       content: '✓';
       color: #000;
       font-weight: 900;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
 
-    .task-item.done .task-title {
+    .req-item.done .req-title {
       text-decoration: line-through;
       color: var(--text-muted);
     }
 
-    .task-title {
-      font-size: 0.95rem;
-      font-weight: 500;
+    .req-title {
+      font-size: 0.88rem;
+      font-weight: 400;
+      color: var(--text-main);
       flex: 1;
-      cursor: pointer;
     }
 
-    .task-link {
-      color: var(--accent-cyan);
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-      opacity: 0.9;
-      transition: var(--transition);
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 6px 12px;
-      border-radius: 8px;
-      background: rgba(6, 182, 212, 0.12);
-      border: 1px solid rgba(6, 182, 212, 0.25);
-    }
-
-    .task-link:hover {
-      opacity: 1;
-      background: var(--accent-cyan);
-      color: #000;
-      box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
-    }
-
-    .task-xp {
-      font-size: 0.8rem;
+    .req-xp {
+      font-size: 0.75rem;
       font-weight: 700;
       color: var(--accent-gold);
       background: rgba(245, 158, 11, 0.15);
       padding: 2px 8px;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     /* Modal */
@@ -600,7 +630,7 @@
       <img src="hero.jpg" alt="AI Dashboard Banner" class="hero-img">
       <div class="hero-overlay">
         <h1 class="hero-title">AI Engineering Quest & Tracker</h1>
-        <p class="hero-subtitle">Master AI from First Principles to Autonomous Agents — Each Task with Dedicated Focus Pages!</p>
+        <p class="hero-subtitle">Granular Mandatory Sub-Task Requirements & Mastery XP Bonuses</p>
         <div class="action-bar">
           <button class="btn btn-primary" onclick="openHostGuide()">🌐 GitHub Pages Status</button>
           <button class="btn" onclick="exportData()">💾 Export Backup (JSON)</button>
@@ -662,7 +692,7 @@
       <!-- Main Curriculum Section -->
       <div class="main-content">
         <h2 style="font-family: 'Space Grotesk'; font-size: 1.4rem; margin-bottom: 16px; color: var(--text-main);">
-          Curriculum Modules & Dedicated Sub-Topic Guides
+          Curriculum Modules & Mandatory Requirements
         </h2>
         <div id="curriculum-list"></div>
       </div>
@@ -673,11 +703,15 @@
   <div class="modal-overlay" id="host-modal">
     <div class="modal-box">
       <button class="modal-close" onclick="closeHostGuide()">&times;</button>
-      <h3 class="modal-title">🌐 Dedicated Topic Pages & Deployment</h3>
+      <h3 class="modal-title">🌐 Granular Mandatory Completion Rules</h3>
       <div class="modal-body">
-        <p>Every single task now links to its own <strong>dedicated focus page</strong>!</p>
+        <p>Every topic now breaks down into <strong>4 Mandatory Action Items</strong>:</p>
         <br>
-        <p>When deployed on GitHub Pages at <code>https://cacartag.github.io/Ai-Engineering-Roadmap</code>, clicking <strong>📖 Dedicated Focus Page &rarr;</strong> on any task opens its individual markdown guide directly.</p>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li><strong>+50 XP</strong> for completing each mandatory sub-requirement.</li>
+          <li><strong>+100 XP Bonus</strong> when all 4 items for a topic are complete ("Topic Mastered").</li>
+          <li><strong>+200 XP Bonus</strong> when an entire module is complete ("Module Mastered").</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -688,19 +722,69 @@
   <script>
     const GITHUB_REPO_URL = "https://github.com/cacartag/Ai-Engineering-Roadmap/blob/main/";
 
-    // Curriculum Data Structure with Individual Task Markdown Paths
+    // Deep Granular Curriculum Structure with Sub-Requirements
     const CURRICULUM = [
       {
         id: 'mod1',
         title: '01. Programming for AI',
         icon: '🛠️',
         duration: '4-6 weeks',
-        tasks: [
-          { name: 'Python Basics: Variables, Control Flow & Data Types', path: './01_foundation/01_programming/01_python_basics.md' },
-          { name: 'Data Structures & Algorithms in Python', path: './01_foundation/01_programming/02_dsa.md' },
-          { name: 'Object-Oriented Programming (Classes & Inheritance)', path: './01_foundation/01_programming/03_oop.md' },
-          { name: 'Git & GitHub Version Control Mastery', path: './01_foundation/01_programming/04_git_github.md' },
-          { name: 'Linux Command Line Fundamentals', path: './01_foundation/01_programming/05_linux_cli.md' }
+        topics: [
+          {
+            id: 'm1_t1',
+            name: 'Python Basics: Variables, Control Flow & Data Types',
+            path: './01_foundation/01_programming/01_python_basics.md',
+            requirements: [
+              { id: 'm1_t1_r1', title: 'Complete Harvard CS50’s Intro to Programming with Python', xp: 50 },
+              { id: 'm1_t1_r2', title: 'Audit Python for Everybody (Univ of Michigan on Coursera)', xp: 50 },
+              { id: 'm1_t1_r3', title: 'Read & practice Automate the Boring Stuff with Python (Ch. 1-6)', xp: 50 },
+              { id: 'm1_t1_r4', title: 'Mini-Project: Build & test a Python Command-Line Calculator app', xp: 50 }
+            ]
+          },
+          {
+            id: 'm1_t2',
+            name: 'Data Structures & Algorithms in Python',
+            path: './01_foundation/01_programming/02_dsa.md',
+            requirements: [
+              { id: 'm1_t2_r1', title: 'Study Problem Solving with Algorithms & Data Structures (Runestone)', xp: 50 },
+              { id: 'm1_t2_r2', title: 'Watch freeCodeCamp Data Structures in Python Video Course', xp: 50 },
+              { id: 'm1_t2_r3', title: 'Solve 10 LeetCode Easy DSA problems (Arrays, HashMaps, Strings)', xp: 50 },
+              { id: 'm1_t2_r4', title: 'Mini-Project: Implement a custom Stack and Queue class in Python', xp: 50 }
+            ]
+          },
+          {
+            id: 'm1_t3',
+            name: 'Object-Oriented Programming (Classes & Inheritance)',
+            path: './01_foundation/01_programming/03_oop.md',
+            requirements: [
+              { id: 'm1_t3_r1', title: 'Read Real Python Object-Oriented Programming in Python 3 Guide', xp: 50 },
+              { id: 'm1_t3_r2', title: 'Watch Corey Schafer Python OOP Tutorial Series on YouTube', xp: 50 },
+              { id: 'm1_t3_r3', title: 'Master Dunder methods (__init__, __repr__, __len__, __getitem__)', xp: 50 },
+              { id: 'm1_t3_r4', title: 'Mini-Project: Build an Object-Oriented Model & Metric Evaluator Class', xp: 50 }
+            ]
+          },
+          {
+            id: 'm1_t4',
+            name: 'Git & GitHub Version Control Mastery',
+            path: './01_foundation/01_programming/04_git_github.md',
+            requirements: [
+              { id: 'm1_t4_r1', title: 'Read GitHub Guides Official Git Handbook', xp: 50 },
+              { id: 'm1_t4_r2', title: 'Watch freeCodeCamp Git and GitHub Crash Course', xp: 50 },
+              { id: 'm1_t4_r3', title: 'Complete The Odin Project Git Basics Interactive Lesson', xp: 50 },
+              { id: 'm1_t4_r4', title: 'Practical Task: Create GitHub repo, manage branches, & submit a PR', xp: 50 }
+            ]
+          },
+          {
+            id: 'm1_t5',
+            name: 'Linux Command Line Fundamentals',
+            path: './01_foundation/01_programming/05_linux_cli.md',
+            requirements: [
+              { id: 'm1_t5_r1', title: 'Audit Linux Command Line Basics (Coursera - UC Davis)', xp: 50 },
+              { id: 'm1_t5_r2', title: 'Read The Linux Command Line Book by William Shotts (Ch 1-10)', xp: 50 },
+              { id: 'm1_t5_r3', title: 'Practice shell navigation, permissions, grep, awk, & environment variables', xp: 50 },
+              { id: 'm1_t5_r4', title: 'Mini-Project: Write a shell script to automate Python virtualenv setup', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -708,11 +792,51 @@
         title: '02. Math for AI Engineering',
         icon: '📐',
         duration: '6-8 weeks',
-        tasks: [
-          { name: 'Linear Algebra: Vectors, Matrices, Tensors & Multiplication', path: './01_foundation/02_math/01_linear_algebra.md' },
-          { name: 'Calculus: Derivatives, Integrals & Chain Rule', path: './01_foundation/02_math/02_calculus.md' },
-          { name: 'Gradient Descent & Loss Optimization', path: './01_foundation/02_math/03_gradient_descent.md' },
-          { name: 'Probability & Statistics: Distributions, Bayes Theorem & Inference', path: './01_foundation/02_math/04_probability_stats.md' }
+        topics: [
+          {
+            id: 'm2_t1',
+            name: 'Linear Algebra: Vectors, Matrices, Tensors & Multiplication',
+            path: './01_foundation/02_math/01_linear_algebra.md',
+            requirements: [
+              { id: 'm2_t1_r1', title: 'Watch 3Blue1Brown Essence of Linear Algebra (All Episodes)', xp: 50 },
+              { id: 'm2_t1_r2', title: 'Audit Coursera Linear Algebra for Machine Learning (Imperial College)', xp: 50 },
+              { id: 'm2_t1_r3', title: 'Complete Khan Academy Linear Algebra practice drills', xp: 50 },
+              { id: 'm2_t1_r4', title: 'Mini-Project: Code vector dot products & matrix multiplication in NumPy/PyTorch', xp: 50 }
+            ]
+          },
+          {
+            id: 'm2_t2',
+            name: 'Calculus: Derivatives, Integrals & Chain Rule',
+            path: './01_foundation/02_math/02_calculus.md',
+            requirements: [
+              { id: 'm2_t2_r1', title: 'Watch 3Blue1Brown Essence of Calculus Series', xp: 50 },
+              { id: 'm2_t2_r2', title: 'Audit Coursera Calculus for Machine Learning', xp: 50 },
+              { id: 'm2_t2_r3', title: 'Complete Khan Academy Multivariable Calculus derivative exercises', xp: 50 },
+              { id: 'm2_t2_r4', title: 'Mini-Project: Compute partial derivatives & gradients of loss functions analytically', xp: 50 }
+            ]
+          },
+          {
+            id: 'm2_t3',
+            name: 'Gradient Descent & Loss Optimization',
+            path: './01_foundation/02_math/03_gradient_descent.md',
+            requirements: [
+              { id: 'm2_t3_r1', title: 'Watch StatQuest Gradient Descent & SGD Videos', xp: 50 },
+              { id: 'm2_t3_r2', title: 'Read d2l.ai Optimization Algorithms Chapter', xp: 50 },
+              { id: 'm2_t3_r3', title: 'Formulate Mean Squared Error (MSE) and Cross-Entropy Loss equations', xp: 50 },
+              { id: 'm2_t3_r4', title: 'Mini-Project: Code Batch SGD and Mini-Batch SGD from scratch in Python', xp: 50 }
+            ]
+          },
+          {
+            id: 'm2_t4',
+            name: 'Probability & Statistics: Distributions, Bayes Theorem & Inference',
+            path: './01_foundation/02_math/04_probability_stats.md',
+            requirements: [
+              { id: 'm2_t4_r1', title: 'Study MIT OpenCourseWare Introduction to Probability and Statistics', xp: 50 },
+              { id: 'm2_t4_r2', title: 'Complete Khan Academy Probability & Statistics exercises', xp: 50 },
+              { id: 'm2_t4_r3', title: 'Master Gaussian distribution, Bayes Theorem, & Naive Bayes math', xp: 50 },
+              { id: 'm2_t4_r4', title: 'Mini-Project: Build a Naive Bayes Spam Classifier in Python from scratch', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -720,11 +844,51 @@
         title: '03. Machine Learning Core',
         icon: '🤖',
         duration: '6-8 weeks',
-        tasks: [
-          { name: 'Supervised Learning (Regression & Classification)', path: './01_foundation/03_machine_learning/01_supervised_learning.md' },
-          { name: 'Unsupervised Learning (Clustering & Dimensionality Reduction)', path: './01_foundation/03_machine_learning/02_unsupervised_learning.md' },
-          { name: 'Model Evaluation, Overfitting & Cross-Validation', path: './01_foundation/03_machine_learning/03_model_evaluation.md' },
-          { name: 'Scikit-Learn & ML Pipeline Construction', path: './01_foundation/03_machine_learning/04_scikit_learn.md' }
+        topics: [
+          {
+            id: 'm3_t1',
+            name: 'Supervised Learning (Regression & Classification)',
+            path: './01_foundation/03_machine_learning/01_supervised_learning.md',
+            requirements: [
+              { id: 'm3_t1_r1', title: 'Audit Stanford Machine Learning Course by Andrew Ng (Coursera)', xp: 50 },
+              { id: 'm3_t1_r2', title: 'Complete Kaggle Learn Intro to Machine Learning Tutorials', xp: 50 },
+              { id: 'm3_t1_r3', title: 'Practice Linear Regression, Logistic Regression, Decision Trees & Random Forests', xp: 50 },
+              { id: 'm3_t1_r4', title: 'Mini-Project: Train and evaluate a Housing Price Prediction model', xp: 50 }
+            ]
+          },
+          {
+            id: 'm3_t2',
+            name: 'Unsupervised Learning (Clustering & Dimensionality Reduction)',
+            path: './01_foundation/03_machine_learning/02_unsupervised_learning.md',
+            requirements: [
+              { id: 'm3_t2_r1', title: 'Audit Coursera Unsupervised Learning Course (Andrew Ng)', xp: 50 },
+              { id: 'm3_t2_r2', title: 'Study StatQuest PCA & K-Means clustering tutorials', xp: 50 },
+              { id: 'm3_t2_r3', title: 'Practice K-Means, Hierarchical Clustering, and DBSCAN algorithms', xp: 50 },
+              { id: 'm3_t2_r4', title: 'Mini-Project: Reduce dimensionality of dataset using PCA & t-SNE', xp: 50 }
+            ]
+          },
+          {
+            id: 'm3_t3',
+            name: 'Model Evaluation, Overfitting & Cross-Validation',
+            path: './01_foundation/03_machine_learning/03_model_evaluation.md',
+            requirements: [
+              { id: 'm3_t3_r1', title: 'Study Fast.ai Model Evaluation Unit', xp: 50 },
+              { id: 'm3_t3_r2', title: 'Master Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE', xp: 50 },
+              { id: 'm3_t3_r3', title: 'Practice K-Fold Cross Validation & GridSearchCV hyperparameter tuning', xp: 50 },
+              { id: 'm3_t3_r4', title: 'Mini-Project: Evaluate model overfitting vs underfitting with validation curves', xp: 50 }
+            ]
+          },
+          {
+            id: 'm3_t4',
+            name: 'Scikit-Learn & ML Pipeline Construction',
+            path: './01_foundation/03_machine_learning/04_scikit_learn.md',
+            requirements: [
+              { id: 'm3_t4_r1', title: 'Read Scikit-Learn User Guide on Pipelines & Preprocessing', xp: 50 },
+              { id: 'm3_t4_r2', title: 'Complete Kaggle Intermediate Machine Learning Course', xp: 50 },
+              { id: 'm3_t4_r3', title: 'Build automated data imputation, scaling (StandardScaler), & encoding pipelines', xp: 50 },
+              { id: 'm3_t4_r4', title: 'Mini-Project: Save trained Scikit-Learn pipeline to disk with joblib & serve API', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -732,11 +896,51 @@
         title: '04. Deep Learning & Neural Networks',
         icon: '🧠',
         duration: '4-6 weeks',
-        tasks: [
-          { name: 'Neural Network Foundations & Backpropagation', path: './01_foundation/04_deep_learning/01_neural_networks.md' },
-          { name: 'PyTorch Framework Fundamentals', path: './01_foundation/04_deep_learning/02_pytorch_fundamentals.md' },
-          { name: 'Convolutional Neural Networks (CNNs)', path: './01_foundation/04_deep_learning/03_cnns.md' },
-          { name: 'Recurrent Neural Networks (RNNs) & Attention Intro', path: './01_foundation/04_deep_learning/04_rnns_attention.md' }
+        topics: [
+          {
+            id: 'm4_t1',
+            name: 'Neural Network Foundations & Backpropagation',
+            path: './01_foundation/04_deep_learning/01_neural_networks.md',
+            requirements: [
+              { id: 'm4_t1_r1', title: "Watch Andrej Karpathy's Micrograd & Neural Networks Zero to Hero", xp: 50 },
+              { id: 'm4_t1_r2', title: 'Audit Deep Learning Specialization (Andrew Ng) Course 1', xp: 50 },
+              { id: 'm4_t1_r3', title: 'Master Perceptrons, ReLU/Sigmoid/Softmax activation functions & Backprop math', xp: 50 },
+              { id: 'm4_t1_r4', title: 'Mini-Project: Build a 2-layer Neural Network from scratch in raw NumPy', xp: 50 }
+            ]
+          },
+          {
+            id: 'm4_t2',
+            name: 'PyTorch Framework Fundamentals',
+            path: './01_foundation/04_deep_learning/02_pytorch_fundamentals.md',
+            requirements: [
+              { id: 'm4_t2_r1', title: 'Complete PyTorch Official 60-Minute Blitz Tutorial', xp: 50 },
+              { id: 'm4_t2_r2', title: 'Watch freeCodeCamp PyTorch for Deep Learning Bootcamp', xp: 50 },
+              { id: 'm4_t2_r3', title: 'Master Tensors, GPU acceleration (cuda/mps), and autograd', xp: 50 },
+              { id: 'm4_t2_r4', title: 'Mini-Project: Write a complete PyTorch nn.Module training & validation loop', xp: 50 }
+            ]
+          },
+          {
+            id: 'm4_t3',
+            name: 'Convolutional Neural Networks (CNNs)',
+            path: './01_foundation/04_deep_learning/03_cnns.md',
+            requirements: [
+              { id: 'm4_t3_r1', title: 'Study Stanford CS231n Convolutional Networks lecture notes', xp: 50 },
+              { id: 'm4_t3_r2', title: 'Watch Fast.ai Practical Deep Learning for Coders CNN module', xp: 50 },
+              { id: 'm4_t3_r3', title: 'Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures', xp: 50 },
+              { id: 'm4_t3_r4', title: 'Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch', xp: 50 }
+            ]
+          },
+          {
+            id: 'm4_t4',
+            name: 'Recurrent Neural Networks (RNNs) & Attention Intro',
+            path: './01_foundation/04_deep_learning/04_rnns_attention.md',
+            requirements: [
+              { id: 'm4_t4_r1', title: "Read Andrej Karpathy's Unreasonable Effectiveness of RNNs", xp: 50 },
+              { id: 'm4_t4_r2', title: 'Watch Illustrated Guide to LSTMs and GRUs Video', xp: 50 },
+              { id: 'm4_t4_r3', title: 'Master Sequential modeling, LSTMs, GRUs, and Self-Attention math', xp: 50 },
+              { id: 'm4_t4_r4', title: 'Mini-Project: Build a PyTorch Character-level Language Model using RNNs/LSTMs', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -744,11 +948,51 @@
         title: '05. Natural Language Processing',
         icon: '🗣️',
         duration: '3-4 weeks',
-        tasks: [
-          { name: 'Text Preprocessing, Tokenization & Regex', path: './02_specializations/nlp/01_text_preprocessing.md' },
-          { name: 'Word Embeddings (Word2Vec, GloVe)', path: './02_specializations/nlp/02_word_embeddings.md' },
-          { name: 'Seq2Seq Models & Attention Mechanisms', path: './02_specializations/nlp/03_seq2seq_attention.md' },
-          { name: 'Transformers Architecture & HuggingFace Transformers', path: './02_specializations/nlp/04_transformers_huggingface.md' }
+        topics: [
+          {
+            id: 'm5_t1',
+            name: 'Text Preprocessing, Tokenization & Regex',
+            path: './02_specializations/nlp/01_text_preprocessing.md',
+            requirements: [
+              { id: 'm5_t1_r1', title: 'Complete spaCy 101 Course & NLTK Text Processing guides', xp: 50 },
+              { id: 'm5_t1_r2', title: 'Master Regex text cleaning, tokenization, lemmatization, & stop-words', xp: 50 },
+              { id: 'm5_t1_r3', title: 'Understand Byte-Pair Encoding (BPE) & WordPiece tokenizers', xp: 50 },
+              { id: 'm5_t1_r4', title: 'Mini-Project: Build a custom NLP text preprocessing pipeline in Python', xp: 50 }
+            ]
+          },
+          {
+            id: 'm5_t2',
+            name: 'Word Embeddings (Word2Vec, GloVe)',
+            path: './02_specializations/nlp/02_word_embeddings.md',
+            requirements: [
+              { id: 'm5_t2_r1', title: "Study Mikolov's Word2Vec paper & Stanford CS224n Embeddings lecture", xp: 50 },
+              { id: 'm5_t2_r2', title: 'Practice Word2Vec Skip-Gram, CBOW, and GloVe embeddings', xp: 50 },
+              { id: 'm5_t2_r3', title: 'Compute Cosine Similarity, Word Analogies, & Vector Space Math', xp: 50 },
+              { id: 'm5_t2_r4', title: 'Mini-Project: Train custom Word2Vec embeddings using Gensim on text corpus', xp: 50 }
+            ]
+          },
+          {
+            id: 'm5_t3',
+            name: 'Seq2Seq Models & Attention Mechanisms',
+            path: './02_specializations/nlp/03_seq2seq_attention.md',
+            requirements: [
+              { id: 'm5_t3_r1', title: 'Read Bahdanau Attention Paper & Stanford CS224n Seq2Seq lectures', xp: 50 },
+              { id: 'm5_t3_r2', title: 'Master Encoder-Decoder architecture for Machine Translation', xp: 50 },
+              { id: 'm5_t3_r3', title: 'Implement Luong & Bahdanau Attention mechanisms', xp: 50 },
+              { id: 'm5_t3_r4', title: 'Mini-Project: Build an English-to-Spanish Seq2Seq translator in PyTorch', xp: 50 }
+            ]
+          },
+          {
+            id: 'm5_t4',
+            name: 'Transformers Architecture & HuggingFace Transformers',
+            path: './02_specializations/nlp/04_transformers_huggingface.md',
+            requirements: [
+              { id: 'm5_t4_r1', title: "Read Jay Alammar's The Illustrated Transformer Guide", xp: 50 },
+              { id: 'm5_t4_r2', title: 'Complete Hugging Face NLP Course (Modules 1-4)', xp: 50 },
+              { id: 'm5_t4_r3', title: 'Master BERT, RoBERTa, Hugging Face AutoModel & AutoTokenizer', xp: 50 },
+              { id: 'm5_t4_r4', title: 'Mini-Project: Fine-tune a BERT model on custom text classification dataset', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -756,11 +1000,51 @@
         title: '06. Computer Vision',
         icon: '👁️',
         duration: '3-4 weeks',
-        tasks: [
-          { name: 'Image Processing with OpenCV & PIL', path: './02_specializations/computer_vision/01_opencv_image_processing.md' },
-          { name: 'Deep Learning Vision Models (ResNet, EfficientNet)', path: './02_specializations/computer_vision/02_deep_vision_models.md' },
-          { name: 'Object Detection (YOLO, Faster R-CNN)', path: './02_specializations/computer_vision/03_object_detection_yolo.md' },
-          { name: 'Image Segmentation & Generative Vision', path: './02_specializations/computer_vision/04_image_segmentation.md' }
+        topics: [
+          {
+            id: 'm6_t1',
+            name: 'Image Processing with OpenCV & PIL',
+            path: './02_specializations/computer_vision/01_opencv_image_processing.md',
+            requirements: [
+              { id: 'm6_t1_r1', title: 'Complete OpenCV Python Tutorials & PIL Image Processing guide', xp: 50 },
+              { id: 'm6_t1_r2', title: 'Master Color spaces (RGB, HSV, Grayscale), Thresholding, & Edge Detection', xp: 50 },
+              { id: 'm6_t1_r3', title: 'Practice Image warping, resizing, and Data Augmentation', xp: 50 },
+              { id: 'm6_t1_r4', title: 'Mini-Project: Build an Automated Object Counter using OpenCV contours', xp: 50 }
+            ]
+          },
+          {
+            id: 'm6_t2',
+            name: 'Deep Learning Vision Models (ResNet, EfficientNet)',
+            path: './02_specializations/computer_vision/02_deep_vision_models.md',
+            requirements: [
+              { id: 'm6_t2_r1', title: 'Study ResNet, EfficientNet, and MobileNet research papers', xp: 50 },
+              { id: 'm6_t2_r2', title: 'Master Feature extraction, pre-trained weights, & fine-tuning strategies', xp: 50 },
+              { id: 'm6_t2_r3', title: 'Practice Torchvision pre-trained models', xp: 50 },
+              { id: 'm6_t2_r4', title: 'Mini-Project: Train a Multi-Class Image Classifier with EfficientNet', xp: 50 }
+            ]
+          },
+          {
+            id: 'm6_t3',
+            name: 'Object Detection (YOLO, Faster R-CNN)',
+            path: './02_specializations/computer_vision/03_object_detection_yolo.md',
+            requirements: [
+              { id: 'm6_t3_r1', title: 'Study YOLO architecture & Faster R-CNN papers', xp: 50 },
+              { id: 'm6_t3_r2', title: 'Understand Bounding Box Regression, IoU, and Non-Maximum Suppression', xp: 50 },
+              { id: 'm6_t3_r3', title: 'Practice Ultralytics YOLOv8 Python API', xp: 50 },
+              { id: 'm6_t3_r4', title: 'Mini-Project: Train a custom YOLOv8 object detector on custom dataset', xp: 50 }
+            ]
+          },
+          {
+            id: 'm6_t4',
+            name: 'Image Segmentation & Generative Vision',
+            path: './02_specializations/computer_vision/04_image_segmentation.md',
+            requirements: [
+              { id: 'm6_t4_r1', title: 'Study U-Net architecture paper for Biomedical Image Segmentation', xp: 50 },
+              { id: 'm6_t4_r2', title: 'Understand Semantic vs Instance Segmentation vs Panoptic Segmentation', xp: 50 },
+              { id: 'm6_t4_r3', title: 'Practice Mask R-CNN & Segment Anything Model (SAM) APIs', xp: 50 },
+              { id: 'm6_t4_r4', title: 'Mini-Project: Build a U-Net model in PyTorch for background removal', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -768,11 +1052,51 @@
         title: '07. Reinforcement Learning',
         icon: '🧭',
         duration: '3-5 weeks',
-        tasks: [
-          { name: 'Markov Decision Processes (MDPs)', path: './02_specializations/reinforcement_learning/01_mdps.md' },
-          { name: 'Q-Learning & Value Iteration', path: './02_specializations/reinforcement_learning/02_q_learning.md' },
-          { name: 'Deep Q-Networks (DQN)', path: './02_specializations/reinforcement_learning/03_deep_q_networks.md' },
-          { name: 'Policy Gradient Methods & PPO', path: './02_specializations/reinforcement_learning/04_policy_gradients.md' }
+        topics: [
+          {
+            id: 'm7_t1',
+            name: 'Markov Decision Processes (MDPs)',
+            path: './02_specializations/reinforcement_learning/01_mdps.md',
+            requirements: [
+              { id: 'm7_t1_r1', title: 'Read Sutton & Barto Reinforcement Learning Book (Chapters 1-3)', xp: 50 },
+              { id: 'm7_t1_r2', title: 'Master States, Actions, Rewards, Discount Factor, & Transition Dynamics', xp: 50 },
+              { id: 'm7_t1_r3', title: 'Master Bellman Expectation & Optimality Equations', xp: 50 },
+              { id: 'm7_t1_r4', title: 'Mini-Project: Formulate a custom GridWorld environment as an MDP', xp: 50 }
+            ]
+          },
+          {
+            id: 'm7_t2',
+            name: 'Q-Learning & Value Iteration',
+            path: './02_specializations/reinforcement_learning/02_q_learning.md',
+            requirements: [
+              { id: 'm7_t2_r1', title: 'Read Sutton & Barto Book (Chapter 6: Temporal-Difference Learning)', xp: 50 },
+              { id: 'm7_t2_r2', title: 'Master Tabular Q-Learning update rule and Epsilon-Greedy exploration', xp: 50 },
+              { id: 'm7_t2_r3', title: 'Complete Value Iteration and Policy Iteration algorithm implementations', xp: 50 },
+              { id: 'm7_t2_r4', title: 'Mini-Project: Implement Q-Learning agent to solve OpenAI Gym FrozenLake', xp: 50 }
+            ]
+          },
+          {
+            id: 'm7_t3',
+            name: 'Deep Q-Networks (DQN)',
+            path: './02_specializations/reinforcement_learning/03_deep_q_networks.md',
+            requirements: [
+              { id: 'm7_t3_r1', title: "Read DeepMind's Playing Atari with Deep RL paper", xp: 50 },
+              { id: 'm7_t3_r2', title: 'Master Deep Q-Networks (DQN), Replay Buffers, & Target Networks', xp: 50 },
+              { id: 'm7_t3_r3', title: 'Study Double DQN & Dueling DQN improvements', xp: 50 },
+              { id: 'm7_t3_r4', title: 'Mini-Project: Build a PyTorch DQN agent to solve Gym CartPole-v1', xp: 50 }
+            ]
+          },
+          {
+            id: 'm7_t4',
+            name: 'Policy Gradient Methods & PPO',
+            path: './02_specializations/reinforcement_learning/04_policy_gradients.md',
+            requirements: [
+              { id: 'm7_t4_r1', title: 'Study David Silver RL Course & OpenAI Spinning Up', xp: 50 },
+              { id: 'm7_t4_r2', title: 'Master REINFORCE algorithm, Advantage Actor-Critic (A2C), & PPO', xp: 50 },
+              { id: 'm7_t4_r3', title: 'Understand Reinforcement Learning from Human Feedback (RLHF)', xp: 50 },
+              { id: 'm7_t4_r4', title: 'Mini-Project: Implement a PPO agent in PyTorch for continuous control', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -780,11 +1104,51 @@
         title: '08. Large Language Models (LLMs)',
         icon: '🚀',
         duration: '2-3 weeks',
-        tasks: [
-          { name: 'LLM Architectures & Decoder-Only Transformers', path: './03_modern-Ai/llms/01_architectures_transformers.md' },
-          { name: 'Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)', path: './03_modern-Ai/llms/02_finetuning_lora_peft.md' },
-          { name: 'Quantization, GGUF & Running Local Models with Ollama', path: './03_modern-Ai/llms/03_quantization_ollama.md' },
-          { name: 'LLM Evaluation & Benchmarking', path: './03_modern-Ai/llms/04_evaluation_benchmarks.md' }
+        topics: [
+          {
+            id: 'm8_t1',
+            name: 'LLM Architectures & Decoder-Only Transformers',
+            path: './03_modern-Ai/llms/01_architectures_transformers.md',
+            requirements: [
+              { id: 'm8_t1_r1', title: "Read Vaswani et al. 'Attention Is All You Need' paper", xp: 50 },
+              { id: 'm8_t1_r2', title: 'Study GPT Causal Decoder architecture, RoPE embeddings, & SwiGLU', xp: 50 },
+              { id: 'm8_t1_r3', title: 'Understand Multi-Head Attention, Grouped-Query Attention (GQA), & KV Cache', xp: 50 },
+              { id: 'm8_t1_r4', title: 'Mini-Project: Build a Mini-GPT model from scratch in PyTorch (nanoGPT style)', xp: 50 }
+            ]
+          },
+          {
+            id: 'm8_t2',
+            name: 'Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)',
+            path: './03_modern-Ai/llms/02_finetuning_lora_peft.md',
+            requirements: [
+              { id: 'm8_t2_r1', title: 'Study LoRA (Low-Rank Adaptation) and QLoRA research papers', xp: 50 },
+              { id: 'm8_t2_r2', title: 'Complete Hugging Face TRL library documentation', xp: 50 },
+              { id: 'm8_t2_r3', title: 'Master Supervised Fine-Tuning (SFT) & Alpaca dataset formatting', xp: 50 },
+              { id: 'm8_t2_r4', title: 'Mini-Project: Fine-tune Llama 3 or Mistral 7B using QLoRA & Unsloth on GPU', xp: 50 }
+            ]
+          },
+          {
+            id: 'm8_t3',
+            name: 'Quantization, GGUF & Running Local Models with Ollama',
+            path: './03_modern-Ai/llms/03_quantization_ollama.md',
+            requirements: [
+              { id: 'm8_t3_r1', title: 'Study GGUF format, AWQ, and GPTQ quantization papers', xp: 50 },
+              { id: 'm8_t3_r2', title: 'Master Ollama CLI, Modelfiles, and local vLLM API server execution', xp: 50 },
+              { id: 'm8_t3_r3', title: 'Benchmark latency, throughput (tokens/sec), & memory footprint', xp: 50 },
+              { id: 'm8_t3_r4', title: 'Mini-Project: Deploy a local quantized Llama 3 model with Ollama & API backend', xp: 50 }
+            ]
+          },
+          {
+            id: 'm8_t4',
+            name: 'LLM Evaluation & Benchmarking',
+            path: './03_modern-Ai/llms/04_evaluation_benchmarks.md',
+            requirements: [
+              { id: 'm8_t4_r1', title: 'Study MMLU, GSM8K, HumanEval, & LMSYS Chatbot Arena methodology', xp: 50 },
+              { id: 'm8_t4_r2', title: 'Master LLM-as-a-Judge evaluation techniques (GPT-4 / Claude scoring)', xp: 50 },
+              { id: 'm8_t4_r3', title: 'Practice Ragas / DeepEval framework for automated LLM scoring', xp: 50 },
+              { id: 'm8_t4_r4', title: 'Mini-Project: Build an automated evaluation benchmark suite for custom LLM outputs', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -792,11 +1156,51 @@
         title: '09. Agentic AI & Autonomous Systems',
         icon: '⚙️',
         duration: '2-3 weeks',
-        tasks: [
-          { name: 'ReAct Pattern & Tool-Use Execution', path: './03_modern-Ai/agentic_ai/01_react_tool_use.md' },
-          { name: 'Stateful Multi-Agent Frameworks (LangGraph, CrewAI, AutoGen)', path: './03_modern-Ai/agentic_ai/02_multi_agent_frameworks.md' },
-          { name: 'Memory Systems & Long-Term Planning', path: './03_modern-Ai/agentic_ai/03_memory_planning.md' },
-          { name: 'Autonomous Agentic Workflow Implementation', path: './03_modern-Ai/agentic_ai/04_autonomous_workflows.md' }
+        topics: [
+          {
+            id: 'm9_t1',
+            name: 'ReAct Pattern & Tool-Use Execution',
+            path: './03_modern-Ai/agentic_ai/01_react_tool_use.md',
+            requirements: [
+              { id: 'm9_t1_r1', title: "Read Yao et al. 'ReAct: Synergizing Reasoning and Acting in LLMs'", xp: 50 },
+              { id: 'm9_t1_r2', title: 'Master OpenAI Function Calling & JSON Schema tool definition', xp: 50 },
+              { id: 'm9_t1_r3', title: 'Implement Thought-Action-Observation loop execution parser', xp: 50 },
+              { id: 'm9_t1_r4', title: 'Mini-Project: Build a Python ReAct Agent with Web Search & Calculator tools', xp: 50 }
+            ]
+          },
+          {
+            id: 'm9_t2',
+            name: 'Stateful Multi-Agent Frameworks (LangGraph, CrewAI, AutoGen)',
+            path: './03_modern-Ai/agentic_ai/02_multi_agent_frameworks.md',
+            requirements: [
+              { id: 'm9_t2_r1', title: 'Study LangGraph documentation, CrewAI framework, & AutoGen concepts', xp: 50 },
+              { id: 'm9_t2_r2', title: 'Master Stateful agent graphs, cyclic execution loops, & state transitions', xp: 50 },
+              { id: 'm9_t2_r3', title: 'Implement Human-in-the-Loop approval nodes & sub-agent delegation', xp: 50 },
+              { id: 'm9_t2_r4', title: 'Mini-Project: Build a Multi-Agent Research & Writer team in LangGraph', xp: 50 }
+            ]
+          },
+          {
+            id: 'm9_t3',
+            name: 'Memory Systems & Long-Term Planning',
+            path: './03_modern-Ai/agentic_ai/03_memory_planning.md',
+            requirements: [
+              { id: 'm9_t3_r1', title: "Read MemGPT paper & Lilian Weng's Autonomous Agents blog", xp: 50 },
+              { id: 'm9_t3_r2', title: 'Implement Short-term working memory & Long-term vector memory stores', xp: 50 },
+              { id: 'm9_t3_r3', title: 'Master Reflexion, Self-Correction, & Plan-and-Solve decomposition', xp: 50 },
+              { id: 'm9_t3_r4', title: 'Mini-Project: Build an AI Agent with persistent episodic vector memory', xp: 50 }
+            ]
+          },
+          {
+            id: 'm9_t4',
+            name: 'Autonomous Agentic Workflow Implementation',
+            path: './03_modern-Ai/agentic_ai/04_autonomous_workflows.md',
+            requirements: [
+              { id: 'm9_t4_r1', title: 'Study OpenDevin, AutoGPT, and SWE-bench agent architecture patterns', xp: 50 },
+              { id: 'm9_t4_r2', title: 'Master Sandboxed code execution (Docker / E2B sandbox environment)', xp: 50 },
+              { id: 'm9_t4_r3', title: 'Implement automated error handling, re-trying, & multi-step verification', xp: 50 },
+              { id: 'm9_t4_r4', title: 'Mini-Project: Build an Autonomous Coding Agent that writes & debugs Python scripts', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -804,11 +1208,51 @@
         title: '10. Retrieval-Augmented Generation (RAG)',
         icon: '🔄',
         duration: '1-2 weeks',
-        tasks: [
-          { name: 'Vector Databases (Chroma, Pinecone, Qdrant)', path: './03_modern-Ai/rag/01_vector_databases.md' },
-          { name: 'Document Chunking Strategies & Embedding Models', path: './03_modern-Ai/rag/02_chunking_embeddings.md' },
-          { name: 'Hybrid Search (Sparse + Dense Retrieval)', path: './03_modern-Ai/rag/03_hybrid_search.md' },
-          { name: 'Advanced RAG: Re-ranking, Query Transformation & GraphRAG', path: './03_modern-Ai/rag/04_advanced_rag_reranking.md' }
+        topics: [
+          {
+            id: 'm10_t1',
+            name: 'Vector Databases (Chroma, Pinecone, Qdrant)',
+            path: './03_modern-Ai/rag/01_vector_databases.md',
+            requirements: [
+              { id: 'm10_t1_r1', title: 'Study Chroma, Pinecone, Qdrant, and Weaviate documentation', xp: 50 },
+              { id: 'm10_t1_r2', title: 'Master Vector Similarity Metrics (Cosine, Euclidean, Dot Product) & HNSW', xp: 50 },
+              { id: 'm10_t1_r3', title: 'Implement Metadata Filtering & Payload Indexing', xp: 50 },
+              { id: 'm10_t1_r4', title: 'Mini-Project: Set up Chroma DB / Qdrant instance & ingest 100+ documents', xp: 50 }
+            ]
+          },
+          {
+            id: 'm10_t2',
+            name: 'Document Chunking Strategies & Embedding Models',
+            path: './03_modern-Ai/rag/02_chunking_embeddings.md',
+            requirements: [
+              { id: 'm10_t2_r1', title: 'Study Document Chunking strategies (Fixed-size, Recursive, Semantic)', xp: 50 },
+              { id: 'm10_t2_r2', title: 'Benchmark Sentence-Transformers (BGE, E5, OpenAI text-embedding-3)', xp: 50 },
+              { id: 'm10_t2_r3', title: 'Measure retrieval recall and precision across chunk sizes', xp: 50 },
+              { id: 'm10_t2_r4', title: 'Mini-Project: Build an automated Chunking & Embedding Pipeline for PDFs', xp: 50 }
+            ]
+          },
+          {
+            id: 'm10_t3',
+            name: 'Hybrid Search (Sparse + Dense Retrieval)',
+            path: './03_modern-Ai/rag/03_hybrid_search.md',
+            requirements: [
+              { id: 'm10_t3_r1', title: 'Study BM25 Lexical Keyword Search algorithm & Sparse Vectors', xp: 50 },
+              { id: 'm10_t3_r2', title: 'Master Reciprocal Rank Fusion (RRF) for merging Sparse + Dense results', xp: 50 },
+              { id: 'm10_t3_r3', title: 'Practice Qdrant / Pinecone Hybrid Search APIs', xp: 50 },
+              { id: 'm10_t3_r4', title: 'Mini-Project: Implement a Hybrid RAG Search Engine with BM25 + Vector Retrieval', xp: 50 }
+            ]
+          },
+          {
+            id: 'm10_t4',
+            name: 'Advanced RAG: Re-ranking, Query Transformation & GraphRAG',
+            path: './03_modern-Ai/rag/04_advanced_rag_reranking.md',
+            requirements: [
+              { id: 'm10_t4_r1', title: 'Study Cohere Rerank / BGE Cross-Encoders and HyDE (Hypothetical Embeddings)', xp: 50 },
+              { id: 'm10_t4_r2', title: 'Read GraphRAG paper & Query Transformation techniques (Multi-Query, Step-Back)', xp: 50 },
+              { id: 'm10_t4_r3', title: 'Implement Context Compression and Self-RAG verification loops', xp: 50 },
+              { id: 'm10_t4_r4', title: 'Mini-Project: Build an Advanced RAG Pipeline with Query Rewriting + Re-ranking', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -816,11 +1260,51 @@
         title: '11. Prompt Engineering Mastery',
         icon: '⚡',
         duration: '1-2 weeks',
-        tasks: [
-          { name: 'Zero-Shot & Few-Shot Prompting Techniques', path: './03_modern-Ai/prompt_engineering/01_zero_few_shot.md' },
-          { name: 'Chain-of-Thought & Tree-of-Thought Reasoning', path: './03_modern-Ai/prompt_engineering/02_chain_tree_of_thought.md' },
-          { name: 'System Prompt Optimization & Guardrails', path: './03_modern-Ai/prompt_engineering/03_system_prompts_guardrails.md' },
-          { name: 'Structured Output Generation (JSON/JSON Schema)', path: './03_modern-Ai/prompt_engineering/04_structured_json_output.md' }
+        topics: [
+          {
+            id: 'm11_t1',
+            name: 'Zero-Shot & Few-Shot Prompting Techniques',
+            path: './03_modern-Ai/prompt_engineering/01_zero_few_shot.md',
+            requirements: [
+              { id: 'm11_t1_r1', title: 'Read OpenAI Prompt Engineering Guide & Anthropic Prompt Library', xp: 50 },
+              { id: 'm11_t1_r2', title: 'Master Zero-Shot, Few-Shot In-Context Exemplars, & Prompt Formatting', xp: 50 },
+              { id: 'm11_t1_r3', title: 'Optimize prompt instruction clarity, tone, role, and output formatting', xp: 50 },
+              { id: 'm11_t1_r4', title: 'Mini-Project: Build a Few-Shot Prompt Template library for 5 distinct tasks', xp: 50 }
+            ]
+          },
+          {
+            id: 'm11_t2',
+            name: 'Chain-of-Thought & Tree-of-Thought Reasoning',
+            path: './03_modern-Ai/prompt_engineering/02_chain_tree_of_thought.md',
+            requirements: [
+              { id: 'm11_t2_r1', title: "Read Wei et al. 'Chain-of-Thought' and Yao et al. 'Tree of Thoughts' papers", xp: 50 },
+              { id: 'm11_t2_r2', title: 'Implement Self-Consistency decoding (sampling multiple CoT paths & voting)', xp: 50 },
+              { id: 'm11_t2_r3', title: 'Implement Tree-of-Thought (ToT) search over candidate reasoning steps', xp: 50 },
+              { id: 'm11_t2_r4', title: 'Mini-Project: Build a CoT / ToT solver script for complex math word problems', xp: 50 }
+            ]
+          },
+          {
+            id: 'm11_t3',
+            name: 'System Prompt Optimization & Guardrails',
+            path: './03_modern-Ai/prompt_engineering/03_system_prompts_guardrails.md',
+            requirements: [
+              { id: 'm11_t3_r1', title: 'Study Prompt Injection, Jailbreaking techniques, & Safety Mitigation', xp: 50 },
+              { id: 'm11_t3_r2', title: 'Master System Prompt optimization & XML tag structuring (<context>, <instructions>)', xp: 50 },
+              { id: 'm11_t3_r3', title: 'Implement Safety Guardrails using NeMo Guardrails or Llama Guard', xp: 50 },
+              { id: 'm11_t3_r4', title: 'Mini-Project: Build a Secure System Prompt & Guardrail filter against malicious input', xp: 50 }
+            ]
+          },
+          {
+            id: 'm11_t4',
+            name: 'Structured Output Generation (JSON Schema)',
+            path: './03_modern-Ai/prompt_engineering/04_structured_json_output.md',
+            requirements: [
+              { id: 'm11_t4_r1', title: 'Study JSON Schema specification & Pydantic data validation in Python', xp: 50 },
+              { id: 'm11_t4_r2', title: 'Master Instructor library & Outlines constrained sampling engine', xp: 50 },
+              { id: 'm11_t4_r3', title: 'Enforce strict JSON output parsing with automatic retries on validation failure', xp: 50 },
+              { id: 'm11_t4_r4', title: 'Mini-Project: Build a Structured Extractor returning verified Pydantic objects', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -828,11 +1312,51 @@
         title: '12. AI Tooling & MLOps Infrastructure',
         icon: '🧰',
         duration: '1-2 weeks',
-        tasks: [
-          { name: 'LangChain & LlamaIndex Framework Integration', path: './03_modern-Ai/ai_tooling/01_langchain_llamaindex.md' },
-          { name: 'Model Deployment & API Serving (FastAPI, Modal, vLLM)', path: './03_modern-Ai/ai_tooling/02_model_deployment_apis.md' },
-          { name: 'Tracing, Observability & Evaluation (LangSmith, Phoenix)', path: './03_modern-Ai/ai_tooling/03_tracing_observability.md' },
-          { name: 'CI/CD Pipelines for AI Applications', path: './03_modern-Ai/ai_tooling/04_cicd_ai_pipelines.md' }
+        topics: [
+          {
+            id: 'm12_t1',
+            name: 'LangChain & LlamaIndex Framework Integration',
+            path: './03_modern-Ai/ai_tooling/01_langchain_llamaindex.md',
+            requirements: [
+              { id: 'm12_t1_r1', title: 'Complete LangChain Academy & LlamaIndex Official Tutorials', xp: 50 },
+              { id: 'm12_t1_r2', title: 'Master LCEL (LangChain Expression Language), Runnables, & Chains', xp: 50 },
+              { id: 'm12_t1_r3', title: 'Implement LlamaIndex Data Connectors, Indexing, and Query Engines', xp: 50 },
+              { id: 'm12_t1_r4', title: 'Mini-Project: Build an end-to-end RAG QA Application using LangChain & LlamaIndex', xp: 50 }
+            ]
+          },
+          {
+            id: 'm12_t2',
+            name: 'Model Deployment & API Serving (FastAPI, Modal, vLLM)',
+            path: './03_modern-Ai/ai_tooling/02_model_deployment_apis.md',
+            requirements: [
+              { id: 'm12_t2_r1', title: 'Study FastAPI framework, Pydantic schemas, and async endpoints', xp: 50 },
+              { id: 'm12_t2_r2', title: 'Master Docker containerization for AI services & Modal serverless GPUs', xp: 50 },
+              { id: 'm12_t2_r3', title: 'Serve LLM endpoints with high concurrency using vLLM / TGI', xp: 50 },
+              { id: 'm12_t2_r4', title: 'Mini-Project: Build & deploy a Dockerized FastAPI service serving RAG/Agent backend', xp: 50 }
+            ]
+          },
+          {
+            id: 'm12_t3',
+            name: 'Tracing, Observability & Evaluation (LangSmith, Phoenix)',
+            path: './03_modern-Ai/ai_tooling/03_tracing_observability.md',
+            requirements: [
+              { id: 'm12_t3_r1', title: 'Study LangSmith, Arize Phoenix, and LangFuse observability platforms', xp: 50 },
+              { id: 'm12_t3_r2', title: 'Instrument AI applications with full execution traces, latency, & token usage', xp: 50 },
+              { id: 'm12_t3_r3', title: 'Implement feedback logging and automated online evaluation rules', xp: 50 },
+              { id: 'm12_t3_r4', title: 'Mini-Project: Connect LangSmith / Phoenix tracing to your AI Agent application', xp: 50 }
+            ]
+          },
+          {
+            id: 'm12_t4',
+            name: 'CI/CD Pipelines for AI Applications',
+            path: './03_modern-Ai/ai_tooling/04_cicd_ai_pipelines.md',
+            requirements: [
+              { id: 'm12_t4_r1', title: 'Study GitHub Actions CI/CD workflows for AI repositories', xp: 50 },
+              { id: 'm12_t4_r2', title: 'Implement automated prompt evaluation regression tests in CI', xp: 50 },
+              { id: 'm12_t4_r3', title: 'Automate model testing, linting (ruff), and deployment triggers', xp: 50 },
+              { id: 'm12_t4_r4', title: 'Mini-Project: Build a GitHub Action workflow that runs RAG evaluation tests on PRs', xp: 50 }
+            ]
+          }
         ]
       },
       {
@@ -840,11 +1364,51 @@
         title: '13. Capstone Projects',
         icon: '🧪',
         duration: 'Ongoing',
-        tasks: [
-          { name: 'Design & Architecture Specification of AI Application', path: './04_capstone-project/01_architecture_spec.md' },
-          { name: 'Full-Stack Implementation (RAG/Agents + Backend + UI)', path: './04_capstone-project/02_fullstack_implementation.md' },
-          { name: 'Evaluation & Testing Suite Execution', path: './04_capstone-project/03_evaluation_testing.md' },
-          { name: 'Public GitHub Release & Live Demo Deployment', path: './04_capstone-project/04_public_demo_deployment.md' }
+        topics: [
+          {
+            id: 'm13_t1',
+            name: 'Design & Architecture Specification of AI Application',
+            path: './04_capstone-project/01_architecture_spec.md',
+            requirements: [
+              { id: 'm13_t1_r1', title: 'Write a comprehensive Technical Architecture Spec Doc for your Capstone', xp: 50 },
+              { id: 'm13_t1_r2', title: 'Draw complete System Architecture Diagrams (Agents, RAG, DB, API, UI)', xp: 50 },
+              { id: 'm13_t1_r3', title: 'Define dataset requirements, evaluation metrics, & acceptance criteria', xp: 50 },
+              { id: 'm13_t1_r4', title: 'Publish Architecture Spec markdown in your project repository', xp: 50 }
+            ]
+          },
+          {
+            id: 'm13_t2',
+            name: 'Full-Stack Implementation (RAG/Agents + Backend + UI)',
+            path: './04_capstone-project/02_fullstack_implementation.md',
+            requirements: [
+              { id: 'm13_t2_r1', title: 'Develop backend API serving your AI Agent / RAG reasoning engine', xp: 50 },
+              { id: 'm13_t2_r2', title: 'Integrate Vector Database, Tooling, and LLM provider APIs', xp: 50 },
+              { id: 'm13_t2_r3', title: 'Build a clean, responsive Web User Interface (React / Next.js / Streamlit / HTML5)', xp: 50 },
+              { id: 'm13_t2_r4', title: 'Deliver a working full-stack AI application connecting UI -> API -> Agent', xp: 50 }
+            ]
+          },
+          {
+            id: 'm13_t3',
+            name: 'Evaluation & Testing Suite Execution',
+            path: './04_capstone-project/03_evaluation_testing.md',
+            requirements: [
+              { id: 'm13_t3_r1', title: 'Build a test dataset of 30+ representative test queries & ground truth answers', xp: 50 },
+              { id: 'm13_t3_r2', title: 'Execute automated evaluation metrics (Faithfulness, Answer Relevance, Latency)', xp: 50 },
+              { id: 'm13_t3_r3', title: 'Generate an Evaluation Report documenting accuracy & benchmark performance', xp: 50 },
+              { id: 'm13_t3_r4', title: 'Fix edge-case failures & optimize prompt/RAG parameters based on eval results', xp: 50 }
+            ]
+          },
+          {
+            id: 'm13_t4',
+            name: 'Public GitHub Release & Live Demo Deployment',
+            path: './04_capstone-project/04_public_demo_deployment.md',
+            requirements: [
+              { id: 'm13_t4_r1', title: 'Deploy application to a live public URL (HuggingFace / Vercel / Modal)', xp: 50 },
+              { id: 'm13_t4_r2', title: 'Write a professional GitHub README with demo GIF, architecture diagram, & setup guide', xp: 50 },
+              { id: 'm13_t4_r3', title: 'Record a 2-minute video walkthrough showcasing your AI Capstone project', xp: 50 },
+              { id: 'm13_t4_r4', title: 'Publish open-source repository & share with the AI Engineering community', xp: 50 }
+            ]
+          }
         ]
       }
     ];
@@ -852,14 +1416,14 @@
     const RANKS = [
       { level: 1, xpRequired: 0, title: "Novice Prompt Crafter" },
       { level: 2, xpRequired: 400, title: "Python Apprentice" },
-      { level: 3, xpRequired: 900, title: "Math & Logic Explorer" },
-      { level: 4, xpRequired: 1500, title: "ML Practitioner" },
-      { level: 5, xpRequired: 2200, title: "Neural Net Constructor" },
-      { level: 6, xpRequired: 3000, title: "Specialization Scholar" },
-      { level: 7, xpRequired: 3900, title: "Transformer Strategist" },
-      { level: 8, xpRequired: 4900, title: "RAG & Agentic Architect" },
-      { level: 9, xpRequired: 6000, title: "AI Systems Engineer" },
-      { level: 10, xpRequired: 7200, title: "Autonomous AI Sovereign" }
+      { level: 3, xpRequired: 1000, title: "Math & Logic Explorer" },
+      { level: 4, xpRequired: 2000, title: "ML Practitioner" },
+      { level: 5, xpRequired: 3500, title: "Neural Net Constructor" },
+      { level: 6, xpRequired: 5000, title: "Specialization Scholar" },
+      { level: 7, xpRequired: 6800, title: "Transformer Strategist" },
+      { level: 8, xpRequired: 8800, title: "RAG & Agentic Architect" },
+      { level: 9, xpRequired: 11000, title: "AI Systems Engineer" },
+      { level: 10, xpRequired: 14000, title: "Autonomous AI Sovereign" }
     ];
 
     const BADGES = [
@@ -886,9 +1450,8 @@
     };
 
     let state = {
-      completedTasks: {},
-      rewards: { ...DEFAULT_REWARDS },
-      claimedRewards: {}
+      completedReqs: {},
+      rewards: { ...DEFAULT_REWARDS }
     };
 
     function playChime() {
@@ -909,7 +1472,7 @@
     }
 
     function loadState() {
-      const saved = localStorage.getItem('ai_roadmap_state_v1');
+      const saved = localStorage.getItem('ai_roadmap_state_v2');
       if (saved) {
         try {
           state = { ...state, ...JSON.parse(saved) };
@@ -920,32 +1483,39 @@
     }
 
     function saveState() {
-      localStorage.setItem('ai_roadmap_state_v1', JSON.stringify(state));
+      localStorage.setItem('ai_roadmap_state_v2', JSON.stringify(state));
       renderDashboard();
     }
 
     function calculateXP() {
       let totalXP = 0;
-      let totalTasks = 0;
-      let completedTasksCount = 0;
+      let totalReqs = 0;
+      let completedReqsCount = 0;
 
       CURRICULUM.forEach(mod => {
-        let modDone = 0;
-        mod.tasks.forEach((taskObj, idx) => {
-          totalTasks++;
-          const key = `${mod.id}_${idx}`;
-          if (state.completedTasks[key]) {
-            completedTasksCount++;
-            modDone++;
-            totalXP += 100;
+        let modFullyDone = true;
+        mod.topics.forEach(topic => {
+          let topicFullyDone = true;
+          topic.requirements.forEach(req => {
+            totalReqs++;
+            if (state.completedReqs[req.id]) {
+              completedReqsCount++;
+              totalXP += req.xp; // +50 XP per sub-task
+            } else {
+              topicFullyDone = false;
+              modFullyDone = false;
+            }
+          });
+          if (topicFullyDone && topic.requirements.length > 0) {
+            totalXP += 100; // +100 XP Topic Completion Bonus
           }
         });
-        if (modDone === mod.tasks.length && mod.tasks.length > 0) {
-          totalXP += 200;
+        if (modFullyDone && mod.topics.length > 0) {
+          totalXP += 200; // +200 XP Module Mastery Bonus
         }
       });
 
-      return { totalXP, totalTasks, completedTasksCount };
+      return { totalXP, totalReqs, completedReqsCount };
     }
 
     function getRank(xp) {
@@ -962,10 +1532,9 @@
       return { currentRank, nextRank };
     }
 
-    function toggleTask(modId, taskIdx) {
-      const key = `${modId}_${taskIdx}`;
-      const wasDone = !!state.completedTasks[key];
-      state.completedTasks[key] = !wasDone;
+    function toggleReq(reqId) {
+      const wasDone = !!state.completedReqs[reqId];
+      state.completedReqs[reqId] = !wasDone;
 
       if (!wasDone) {
         playChime();
@@ -980,9 +1549,9 @@
     }
 
     function renderDashboard() {
-      const { totalXP, totalTasks, completedTasksCount } = calculateXP();
+      const { totalXP, totalReqs, completedReqsCount } = calculateXP();
       const { currentRank, nextRank } = getRank(totalXP);
-      const overallPct = totalTasks > 0 ? Math.round((completedTasksCount / totalTasks) * 100) : 0;
+      const overallPct = totalReqs > 0 ? Math.round((completedReqsCount / totalReqs) * 100) : 0;
 
       document.getElementById('level-badge').innerText = `LVL ${currentRank.level}`;
       document.getElementById('rank-name').innerText = currentRank.title;
@@ -1009,14 +1578,13 @@
         const mod = CURRICULUM.find(m => m.id === badge.modId);
         let isUnlocked = false;
         if (mod) {
-          const modCompleted = mod.tasks.every((_, idx) => state.completedTasks[`${mod.id}_${idx}`]);
-          if (modCompleted) isUnlocked = true;
+          isUnlocked = mod.topics.every(t => t.requirements.every(r => state.completedReqs[r.id]));
         }
         if (isUnlocked) unlockedBadgesCount++;
 
         const div = document.createElement('div');
         div.className = `badge-item ${isUnlocked ? 'unlocked' : ''}`;
-        div.title = isUnlocked ? `Unlocked: ${badge.title}` : `Complete ${mod ? mod.title : 'module'} to unlock`;
+        div.title = isUnlocked ? `Unlocked: ${badge.title}` : `Complete all tasks in ${mod ? mod.title : 'module'} to unlock`;
         div.innerHTML = `
           <div class="badge-icon">${badge.icon}</div>
           <div class="badge-title">${badge.title}</div>
@@ -1044,40 +1612,67 @@
         rewardsContainer.appendChild(div);
       });
 
-      // Render Curriculum Modules
+      // Render Curriculum Modules & Topic Accordions
       const curriculumContainer = document.getElementById('curriculum-list');
       curriculumContainer.innerHTML = '';
 
       CURRICULUM.forEach(mod => {
-        let modDoneCount = 0;
-        mod.tasks.forEach((_, idx) => {
-          if (state.completedTasks[`${mod.id}_${idx}`]) modDoneCount++;
-        });
+        let modDoneReqs = 0;
+        let modTotalReqs = 0;
 
-        const isFullyDone = modDoneCount === mod.tasks.length;
+        const topicsHtml = mod.topics.map(topic => {
+          let topicDoneReqs = 0;
+          topic.requirements.forEach(r => {
+            modTotalReqs++;
+            if (state.completedReqs[r.id]) {
+              topicDoneReqs++;
+              modDoneReqs++;
+            }
+          });
 
-        const card = document.createElement('div');
-        card.className = 'module-card';
+          const isTopicFullyDone = topicDoneReqs === topic.requirements.length;
+          const topicGuideUrl = getFullGuideLink(topic.path);
 
-        const tasksHtml = mod.tasks.map((taskObj, idx) => {
-          const key = `${mod.id}_${idx}`;
-          const isDone = !!state.completedTasks[key];
-          const taskGuideUrl = getFullGuideLink(taskObj.path);
+          const reqsHtml = topic.requirements.map(req => {
+            const isDone = !!state.completedReqs[req.id];
+            return `
+              <div class="req-item ${isDone ? 'done' : ''}" onclick="toggleReq('${req.id}')">
+                <div class="checkbox"></div>
+                <div class="req-title">${req.title}</div>
+                <div class="req-xp">+${req.xp} XP</div>
+              </div>
+            `;
+          }).join('');
 
           return `
-            <div class="task-item ${isDone ? 'done' : ''}">
-              <div class="checkbox" onclick="toggleTask('${mod.id}', ${idx})"></div>
-              <div class="task-title" onclick="toggleTask('${mod.id}', ${idx})">${taskObj.name}</div>
-              <a href="${taskGuideUrl}" target="_blank" class="task-link" title="Open dedicated focus study guide for this topic">
-                📖 Dedicated Focus Page &rarr;
-              </a>
-              <div class="task-xp">+100 XP</div>
+            <div class="topic-block">
+              <div class="topic-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'flex' : 'none'">
+                <div class="topic-name">
+                  <span>${isTopicFullyDone ? '✅' : '📌'}</span>
+                  <span>${topic.name}</span>
+                </div>
+                <div class="topic-actions">
+                  <a href="${topicGuideUrl}" target="_blank" class="topic-guide-btn" onclick="event.stopPropagation()">
+                    📖 Focus Page &rarr;
+                  </a>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">
+                    ${topicDoneReqs}/${topic.requirements.length} Done ${isTopicFullyDone ? '(+100 Bonus!)' : ''}
+                  </span>
+                </div>
+              </div>
+              <div class="requirements-list">
+                ${reqsHtml}
+              </div>
             </div>
           `;
         }).join('');
 
+        const isModFullyDone = modDoneReqs === modTotalReqs;
+        const card = document.createElement('div');
+        card.className = 'module-card';
+
         card.innerHTML = `
-          <div class="module-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'grid' : 'none'">
+          <div class="module-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
             <div class="module-title-group">
               <div class="module-icon">${mod.icon}</div>
               <div>
@@ -1086,13 +1681,13 @@
               </div>
             </div>
             <div class="module-actions">
-              <span class="module-badge ${isFullyDone ? 'complete' : ''}">
-                ${modDoneCount}/${mod.tasks.length} Done
+              <span class="module-badge ${isModFullyDone ? 'complete' : ''}">
+                ${modDoneReqs}/${modTotalReqs} Sub-Tasks Done
               </span>
             </div>
           </div>
-          <div class="module-content">
-            ${tasksHtml}
+          <div class="module-content-wrapper">
+            ${topicsHtml}
           </div>
         `;
         curriculumContainer.appendChild(card);
@@ -1136,14 +1731,14 @@
     }
 
     function copyMarkdownSummary() {
-      const { totalXP, totalTasks, completedTasksCount } = calculateXP();
+      const { totalXP, totalReqs, completedReqsCount } = calculateXP();
       const { currentRank } = getRank(totalXP);
-      const pct = totalTasks > 0 ? Math.round((completedTasksCount / totalTasks) * 100) : 0;
+      const pct = totalReqs > 0 ? Math.round((completedReqsCount / totalReqs) * 100) : 0;
 
       const md = `### 🎓 AI Engineering Progress Summary
 - **Current Rank**: Level ${currentRank.level} - ${currentRank.title}
 - **Total XP**: ${totalXP} XP
-- **Curriculum Completion**: ${pct}% (${completedTasksCount}/${totalTasks} Tasks Completed)
+- **Curriculum Sub-Task Completion**: ${pct}% (${completedReqsCount}/${totalReqs} Action Items Completed)
 - **Last Updated**: ${new Date().toLocaleDateString()}
 `;
 

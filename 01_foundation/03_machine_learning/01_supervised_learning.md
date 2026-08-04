@@ -1,15 +1,27 @@
-# 🤖 Supervised Learning (Regression & Classification)
+# 🎯 Supervised Learning (Regression & Classification)
 
-> Dedicated Study Guide for Task 1 of Module 03: Machine Learning Core
+> Dedicated Focus Study Guide — Module: 03. Machine Learning Core
 
-## 🎯 Learning Objectives
-- Master Linear Regression, Logistic Regression, Decision Trees, Random Forests, and Support Vector Machines (SVM).
-- Implement cost functions (Mean Squared Error, Binary Cross-Entropy) and optimization via Scikit-Learn.
-- Handle feature scaling, one-hot encoding, and data splitting.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Machine Learning Specialization by Andrew Ng (Coursera)](https://www.coursera.org/specializations/machine-learning-introduction) — **Free to Audit**
-- [Kaggle Learn: Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) — **Free Interactive Tutorials**
+- [ ] **Requirement 1 (+50 XP)**: Audit Stanford Machine Learning Course by Andrew Ng (Coursera)
+- [ ] **Requirement 2 (+50 XP)**: Complete Kaggle Learn Intro to Machine Learning Tutorials
+- [ ] **Requirement 3 (+50 XP)**: Practice Linear Regression, Logistic Regression, Decision Trees & Random Forests
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Train and evaluate a Housing Price Prediction model
+
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Back to Dashboard](../../index.html) | [Next Task: Unsupervised Learning →](./02_unsupervised_learning.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Supervised Learning (Regression & Classification).
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

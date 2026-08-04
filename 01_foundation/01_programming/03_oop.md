@@ -1,23 +1,27 @@
-# 🧩 Object-Oriented Programming (OOP) in Python
+# 🎯 Object-Oriented Programming (Classes & Inheritance)
 
-> Dedicated Study Guide for Task 3 of Module 01: Programming for AI
+> Dedicated Focus Study Guide — Module: 01. Programming for AI
 
-## 🎯 Learning Objectives
-- Design modular AI components using Classes, Objects, and Inheritance.
-- Understand Encapsulation, Polymorphism, Abstraction, and Python Dunder Methods (`__init__`, `__str__`, `__call__`).
-- Prepare to structure PyTorch `nn.Module` classes and custom AI Agent wrappers.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 📚 Free Recommended Courses & Resources
-- [Object-Oriented Programming in Python – Real Python](https://realpython.com/python3-object-oriented-programming/) — **Free Guide**
-- [Python OOP Tutorial Series (Corey Schafer YouTube)](https://www.youtube.com/watch?v=JeznW_7DlB0) — **Free Video Series**
+- [ ] **Requirement 1 (+50 XP)**: Read Real Python Object-Oriented Programming in Python 3 Guide
+- [ ] **Requirement 2 (+50 XP)**: Watch Corey Schafer Python OOP Tutorial Series on YouTube
+- [ ] **Requirement 3 (+50 XP)**: Master Dunder methods (__init__, __repr__, __len__, __getitem__)
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build an Object-Oriented Model & Metric Evaluator Class
 
-## 🔑 Key Concepts to Master
-1. **Classes & Instances**: `self`, class variables vs instance attributes.
-2. **Special Dunder Methods**: `__repr__`, `__len__`, `__getitem__` (crucial for custom AI datasets).
-3. **Inheritance**: Extending base classes for reusable model/pipeline architectures.
-
-## 💻 Recommended Practice
-- Build a `ModelEvaluator` class that accepts predictions and true labels, computing precision, recall, and accuracy metrics.
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
 
 ---
-← [Previous Task: Data Structures](./02_dsa.md) | [Next Task: Git & GitHub →](./04_git_github.md)
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Object-Oriented Programming (Classes & Inheritance).
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
+- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
+- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+
+---
+← [Back to Interactive Dashboard](../../index.html)

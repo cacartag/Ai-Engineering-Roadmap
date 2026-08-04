@@ -1,23 +1,27 @@
 # 🎯 Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)
 
-> Dedicated Focus & Study Guide for 08. Large Language Models
+> Dedicated Focus Study Guide — Module: 08. Large Language Models (LLMs)
 
-## 📖 Overview
-Master Low-Rank Adaptation (LoRA), QLoRA, SFT (Supervised Fine-Tuning), and HuggingFace TRL library.
+## 📌 Mandatory Requirements to Complete (+200 XP Total)
+To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
 
-## 🎯 Learning Objectives
-- Gain deep conceptual mastery of Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT).
-- Implement practical code patterns and workflows.
-- Apply industry best practices and evaluation standards.
+- [ ] **Requirement 1 (+50 XP)**: Study LoRA (Low-Rank Adaptation) and QLoRA research papers
+- [ ] **Requirement 2 (+50 XP)**: Complete Hugging Face TRL library documentation
+- [ ] **Requirement 3 (+50 XP)**: Master Supervised Fine-Tuning (SFT) & Alpaca dataset formatting
+- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Fine-tune Llama 3 or Mistral 7B using QLoRA & Unsloth on GPU
 
-## 📚 Free Recommended Courses & Resources
-- [Hugging Face Deep Learning & AI Course](https://huggingface.co/learn) — **Free**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+
+---
+
+## 🎯 Detailed Learning Objectives
+- Master all theoretical principles and practical code patterns for Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT).
+- Build hands-on projects and verify outputs against standard metrics.
+
+## 📚 Recommended Courses & Learning Resources
+- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
 - [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
 - [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
-
-## 💻 Practice & Verification
-1. Review core concepts and implement a code prototype.
-2. Verify output metrics and benchmark performance.
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)
