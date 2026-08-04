@@ -131,11 +131,6 @@
       box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
     }
 
-    .btn-sm {
-      padding: 6px 12px;
-      font-size: 0.8rem;
-    }
-
     /* Grid Layout */
     .dashboard-grid {
       display: grid;
@@ -404,28 +399,6 @@
       gap: 12px;
     }
 
-    .module-guide-link {
-      background: rgba(6, 182, 212, 0.15);
-      color: var(--accent-cyan);
-      border: 1px solid rgba(6, 182, 212, 0.3);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: var(--transition);
-    }
-
-    .module-guide-link:hover {
-      background: var(--accent-cyan);
-      color: #000;
-      transform: translateY(-1px);
-      box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
-    }
-
     .module-badge {
       font-size: 0.85rem;
       font-weight: 600;
@@ -503,24 +476,26 @@
     }
 
     .task-link {
-      color: var(--accent-violet);
-      font-size: 0.8rem;
+      color: var(--accent-cyan);
+      font-size: 0.82rem;
       font-weight: 600;
       text-decoration: none;
-      opacity: 0.8;
+      opacity: 0.9;
       transition: var(--transition);
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      padding: 4px 8px;
-      border-radius: 6px;
-      background: rgba(139, 92, 246, 0.1);
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.25);
     }
 
     .task-link:hover {
       opacity: 1;
-      background: rgba(139, 92, 246, 0.25);
-      color: #fff;
+      background: var(--accent-cyan);
+      color: #000;
+      box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
     }
 
     .task-xp {
@@ -625,9 +600,9 @@
       <img src="hero.jpg" alt="AI Dashboard Banner" class="hero-img">
       <div class="hero-overlay">
         <h1 class="hero-title">AI Engineering Quest & Tracker</h1>
-        <p class="hero-subtitle">Master AI from First Principles to Autonomous Agents</p>
+        <p class="hero-subtitle">Master AI from First Principles to Autonomous Agents — Each Task with Dedicated Focus Pages!</p>
         <div class="action-bar">
-          <button class="btn btn-primary" onclick="openHostGuide()">🌐 GitHub Pages Deployment Guide</button>
+          <button class="btn btn-primary" onclick="openHostGuide()">🌐 GitHub Pages Status</button>
           <button class="btn" onclick="exportData()">💾 Export Backup (JSON)</button>
           <button class="btn" onclick="importData()">📥 Import Backup</button>
           <button class="btn" onclick="copyMarkdownSummary()">📋 Copy Markdown Status</button>
@@ -687,7 +662,7 @@
       <!-- Main Curriculum Section -->
       <div class="main-content">
         <h2 style="font-family: 'Space Grotesk'; font-size: 1.4rem; margin-bottom: 16px; color: var(--text-main);">
-          Curriculum Modules & Resource Guides
+          Curriculum Modules & Dedicated Sub-Topic Guides
         </h2>
         <div id="curriculum-list"></div>
       </div>
@@ -698,27 +673,11 @@
   <div class="modal-overlay" id="host-modal">
     <div class="modal-box">
       <button class="modal-close" onclick="closeHostGuide()">&times;</button>
-      <h3 class="modal-title">🌐 Why https://cacartag.github.io/Ai-Engineering-Roadmap Needs Setup</h3>
+      <h3 class="modal-title">🌐 Dedicated Topic Pages & Deployment</h3>
       <div class="modal-body">
-        <p>To make <code>https://cacartag.github.io/Ai-Engineering-Roadmap</code> live on GitHub Pages, run these steps:</p>
+        <p>Every single task now links to its own <strong>dedicated focus page</strong>!</p>
         <br>
-        <ol style="margin-left: 20px; line-height: 1.8;">
-          <li><strong>Commit and push your files to GitHub</strong>:
-            <br>Run in your terminal:
-            <br><code>git add .</code>
-            <br><code>git commit -m "Add progress dashboard with course links"</code>
-            <br><code>git push origin main</code>
-          </li>
-          <br>
-          <li><strong>Turn on GitHub Pages in Repository Settings</strong>:
-            <br>Go to: <strong>github.com/cacartag/Ai-Engineering-Roadmap &rarr; Settings &rarr; Pages</strong>
-            <br>Under <strong>Source</strong>: Select <code>Deploy from a branch</code>.
-            <br>Branch: Choose <code>main</code> and <code>/ (root)</code> folder.
-            <br>Click <strong>Save</strong>.
-          </li>
-        </ol>
-        <br>
-        <p>⏱️ <em>GitHub Pages takes ~1-2 minutes to deploy after pushing. Afterwards, your live site will work everywhere!</em></p>
+        <p>When deployed on GitHub Pages at <code>https://cacartag.github.io/Ai-Engineering-Roadmap</code>, clicking <strong>📖 Dedicated Focus Page &rarr;</strong> on any task opens its individual markdown guide directly.</p>
       </div>
     </div>
   </div>
@@ -727,23 +686,21 @@
   <div class="toast" id="toast">🏆 Level Up! You are now Level 2</div>
 
   <script>
-    // GitHub Repo base URL for fallback markdown viewing
     const GITHUB_REPO_URL = "https://github.com/cacartag/Ai-Engineering-Roadmap/blob/main/";
 
-    // Curriculum Data Structure with Direct Links to Course Files
+    // Curriculum Data Structure with Individual Task Markdown Paths
     const CURRICULUM = [
       {
         id: 'mod1',
         title: '01. Programming for AI',
         icon: '🛠️',
         duration: '4-6 weeks',
-        mdPath: './01_foundation/01_programming.md',
         tasks: [
-          'Python Basics: Variables, Control Flow & Data Types',
-          'Data Structures & Algorithms in Python',
-          'Object-Oriented Programming (Classes & Inheritance)',
-          'Git & GitHub Version Control Mastery',
-          'Linux Command Line Fundamentals'
+          { name: 'Python Basics: Variables, Control Flow & Data Types', path: './01_foundation/01_programming/01_python_basics.md' },
+          { name: 'Data Structures & Algorithms in Python', path: './01_foundation/01_programming/02_dsa.md' },
+          { name: 'Object-Oriented Programming (Classes & Inheritance)', path: './01_foundation/01_programming/03_oop.md' },
+          { name: 'Git & GitHub Version Control Mastery', path: './01_foundation/01_programming/04_git_github.md' },
+          { name: 'Linux Command Line Fundamentals', path: './01_foundation/01_programming/05_linux_cli.md' }
         ]
       },
       {
@@ -751,12 +708,11 @@
         title: '02. Math for AI Engineering',
         icon: '📐',
         duration: '6-8 weeks',
-        mdPath: './01_foundation/02_math.md',
         tasks: [
-          'Linear Algebra: Vectors, Matrices, Tensors & Multiplication',
-          'Calculus: Derivatives, Integrals & Chain Rule',
-          'Gradient Descent & Loss Optimization',
-          'Probability & Statistics: Distributions, Bayes Theorem & Inference'
+          { name: 'Linear Algebra: Vectors, Matrices, Tensors & Multiplication', path: './01_foundation/02_math/01_linear_algebra.md' },
+          { name: 'Calculus: Derivatives, Integrals & Chain Rule', path: './01_foundation/02_math/02_calculus.md' },
+          { name: 'Gradient Descent & Loss Optimization', path: './01_foundation/02_math/03_gradient_descent.md' },
+          { name: 'Probability & Statistics: Distributions, Bayes Theorem & Inference', path: './01_foundation/02_math/04_probability_stats.md' }
         ]
       },
       {
@@ -764,12 +720,11 @@
         title: '03. Machine Learning Core',
         icon: '🤖',
         duration: '6-8 weeks',
-        mdPath: './01_foundation/03_machine-learning.md',
         tasks: [
-          'Supervised Learning (Regression & Classification)',
-          'Unsupervised Learning (Clustering & Dimensionality Reduction)',
-          'Model Evaluation, Overfitting & Cross-Validation',
-          'Scikit-Learn & ML Pipeline Construction'
+          { name: 'Supervised Learning (Regression & Classification)', path: './01_foundation/03_machine_learning/01_supervised_learning.md' },
+          { name: 'Unsupervised Learning (Clustering & Dimensionality Reduction)', path: './01_foundation/03_machine_learning/02_unsupervised_learning.md' },
+          { name: 'Model Evaluation, Overfitting & Cross-Validation', path: './01_foundation/03_machine_learning/03_model_evaluation.md' },
+          { name: 'Scikit-Learn & ML Pipeline Construction', path: './01_foundation/03_machine_learning/04_scikit_learn.md' }
         ]
       },
       {
@@ -777,12 +732,11 @@
         title: '04. Deep Learning & Neural Networks',
         icon: '🧠',
         duration: '4-6 weeks',
-        mdPath: './01_foundation/04_deep-learning.md',
         tasks: [
-          'Neural Network Foundations & Backpropagation',
-          'PyTorch Framework Fundamentals',
-          'Convolutional Neural Networks (CNNs)',
-          'Recurrent Neural Networks (RNNs) & Attention Intro'
+          { name: 'Neural Network Foundations & Backpropagation', path: './01_foundation/04_deep_learning/01_neural_networks.md' },
+          { name: 'PyTorch Framework Fundamentals', path: './01_foundation/04_deep_learning/02_pytorch_fundamentals.md' },
+          { name: 'Convolutional Neural Networks (CNNs)', path: './01_foundation/04_deep_learning/03_cnns.md' },
+          { name: 'Recurrent Neural Networks (RNNs) & Attention Intro', path: './01_foundation/04_deep_learning/04_rnns_attention.md' }
         ]
       },
       {
@@ -790,12 +744,11 @@
         title: '05. Natural Language Processing',
         icon: '🗣️',
         duration: '3-4 weeks',
-        mdPath: './02_specializations/nlp.md',
         tasks: [
-          'Text Preprocessing, Tokenization & Regex',
-          'Word Embeddings (Word2Vec, GloVe)',
-          'Seq2Seq Models & Attention Mechanisms',
-          'Transformers Architecture & HuggingFace Transformers'
+          { name: 'Text Preprocessing, Tokenization & Regex', path: './02_specializations/nlp/01_text_preprocessing.md' },
+          { name: 'Word Embeddings (Word2Vec, GloVe)', path: './02_specializations/nlp/02_word_embeddings.md' },
+          { name: 'Seq2Seq Models & Attention Mechanisms', path: './02_specializations/nlp/03_seq2seq_attention.md' },
+          { name: 'Transformers Architecture & HuggingFace Transformers', path: './02_specializations/nlp/04_transformers_huggingface.md' }
         ]
       },
       {
@@ -803,12 +756,11 @@
         title: '06. Computer Vision',
         icon: '👁️',
         duration: '3-4 weeks',
-        mdPath: './02_specializations/computer-vision.md',
         tasks: [
-          'Image Processing with OpenCV & PIL',
-          'Deep Learning Vision Models (ResNet, EfficientNet)',
-          'Object Detection (YOLO, Faster R-CNN)',
-          'Image Segmentation & Generative Vision'
+          { name: 'Image Processing with OpenCV & PIL', path: './02_specializations/computer_vision/01_opencv_image_processing.md' },
+          { name: 'Deep Learning Vision Models (ResNet, EfficientNet)', path: './02_specializations/computer_vision/02_deep_vision_models.md' },
+          { name: 'Object Detection (YOLO, Faster R-CNN)', path: './02_specializations/computer_vision/03_object_detection_yolo.md' },
+          { name: 'Image Segmentation & Generative Vision', path: './02_specializations/computer_vision/04_image_segmentation.md' }
         ]
       },
       {
@@ -816,12 +768,11 @@
         title: '07. Reinforcement Learning',
         icon: '🧭',
         duration: '3-5 weeks',
-        mdPath: './02_specializations/reinforcement-learning.md',
         tasks: [
-          'Markov Decision Processes (MDPs)',
-          'Q-Learning & Value Iteration',
-          'Deep Q-Networks (DQN)',
-          'Policy Gradient Methods & PPO'
+          { name: 'Markov Decision Processes (MDPs)', path: './02_specializations/reinforcement_learning/01_mdps.md' },
+          { name: 'Q-Learning & Value Iteration', path: './02_specializations/reinforcement_learning/02_q_learning.md' },
+          { name: 'Deep Q-Networks (DQN)', path: './02_specializations/reinforcement_learning/03_deep_q_networks.md' },
+          { name: 'Policy Gradient Methods & PPO', path: './02_specializations/reinforcement_learning/04_policy_gradients.md' }
         ]
       },
       {
@@ -829,12 +780,11 @@
         title: '08. Large Language Models (LLMs)',
         icon: '🚀',
         duration: '2-3 weeks',
-        mdPath: './03_modern-Ai/01_llms.md',
         tasks: [
-          'LLM Architectures & Decoder-Only Transformers',
-          'Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)',
-          'Quantization, GGUF & Running Local Models with Ollama',
-          'LLM Evaluation & Benchmarking'
+          { name: 'LLM Architectures & Decoder-Only Transformers', path: './03_modern-Ai/llms/01_architectures_transformers.md' },
+          { name: 'Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)', path: './03_modern-Ai/llms/02_finetuning_lora_peft.md' },
+          { name: 'Quantization, GGUF & Running Local Models with Ollama', path: './03_modern-Ai/llms/03_quantization_ollama.md' },
+          { name: 'LLM Evaluation & Benchmarking', path: './03_modern-Ai/llms/04_evaluation_benchmarks.md' }
         ]
       },
       {
@@ -842,12 +792,11 @@
         title: '09. Agentic AI & Autonomous Systems',
         icon: '⚙️',
         duration: '2-3 weeks',
-        mdPath: './03_modern-Ai/02_agentic-ai.md',
         tasks: [
-          'ReAct Pattern & Tool-Use Execution',
-          'Stateful Multi-Agent Frameworks (LangGraph, CrewAI, AutoGen)',
-          'Memory Systems & Long-Term Planning',
-          'Autonomous Agentic Workflow Implementation'
+          { name: 'ReAct Pattern & Tool-Use Execution', path: './03_modern-Ai/agentic_ai/01_react_tool_use.md' },
+          { name: 'Stateful Multi-Agent Frameworks (LangGraph, CrewAI, AutoGen)', path: './03_modern-Ai/agentic_ai/02_multi_agent_frameworks.md' },
+          { name: 'Memory Systems & Long-Term Planning', path: './03_modern-Ai/agentic_ai/03_memory_planning.md' },
+          { name: 'Autonomous Agentic Workflow Implementation', path: './03_modern-Ai/agentic_ai/04_autonomous_workflows.md' }
         ]
       },
       {
@@ -855,12 +804,11 @@
         title: '10. Retrieval-Augmented Generation (RAG)',
         icon: '🔄',
         duration: '1-2 weeks',
-        mdPath: './03_modern-Ai/03_rag.md',
         tasks: [
-          'Vector Databases (Chroma, Pinecone, Qdrant)',
-          'Document Chunking Strategies & Embedding Models',
-          'Hybrid Search (Sparse + Dense Retrieval)',
-          'Advanced RAG: Re-ranking, Query Transformation & GraphRAG'
+          { name: 'Vector Databases (Chroma, Pinecone, Qdrant)', path: './03_modern-Ai/rag/01_vector_databases.md' },
+          { name: 'Document Chunking Strategies & Embedding Models', path: './03_modern-Ai/rag/02_chunking_embeddings.md' },
+          { name: 'Hybrid Search (Sparse + Dense Retrieval)', path: './03_modern-Ai/rag/03_hybrid_search.md' },
+          { name: 'Advanced RAG: Re-ranking, Query Transformation & GraphRAG', path: './03_modern-Ai/rag/04_advanced_rag_reranking.md' }
         ]
       },
       {
@@ -868,12 +816,11 @@
         title: '11. Prompt Engineering Mastery',
         icon: '⚡',
         duration: '1-2 weeks',
-        mdPath: './03_modern-Ai/04_prompt-engineering.md',
         tasks: [
-          'Zero-Shot & Few-Shot Prompting Techniques',
-          'Chain-of-Thought & Tree-of-Thought Reasoning',
-          'System Prompt Optimization & Guardrails',
-          'Structured Output Generation (JSON/JSON Schema)'
+          { name: 'Zero-Shot & Few-Shot Prompting Techniques', path: './03_modern-Ai/prompt_engineering/01_zero_few_shot.md' },
+          { name: 'Chain-of-Thought & Tree-of-Thought Reasoning', path: './03_modern-Ai/prompt_engineering/02_chain_tree_of_thought.md' },
+          { name: 'System Prompt Optimization & Guardrails', path: './03_modern-Ai/prompt_engineering/03_system_prompts_guardrails.md' },
+          { name: 'Structured Output Generation (JSON/JSON Schema)', path: './03_modern-Ai/prompt_engineering/04_structured_json_output.md' }
         ]
       },
       {
@@ -881,12 +828,11 @@
         title: '12. AI Tooling & MLOps Infrastructure',
         icon: '🧰',
         duration: '1-2 weeks',
-        mdPath: './03_modern-Ai/05_ai-tooling.md',
         tasks: [
-          'LangChain & LlamaIndex Framework Integration',
-          'Model Deployment & API Serving (FastAPI, Modal, vLLM)',
-          'Tracing, Observability & Evaluation (LangSmith, Phoenix)',
-          'CI/CD Pipelines for AI Applications'
+          { name: 'LangChain & LlamaIndex Framework Integration', path: './03_modern-Ai/ai_tooling/01_langchain_llamaindex.md' },
+          { name: 'Model Deployment & API Serving (FastAPI, Modal, vLLM)', path: './03_modern-Ai/ai_tooling/02_model_deployment_apis.md' },
+          { name: 'Tracing, Observability & Evaluation (LangSmith, Phoenix)', path: './03_modern-Ai/ai_tooling/03_tracing_observability.md' },
+          { name: 'CI/CD Pipelines for AI Applications', path: './03_modern-Ai/ai_tooling/04_cicd_ai_pipelines.md' }
         ]
       },
       {
@@ -894,17 +840,15 @@
         title: '13. Capstone Projects',
         icon: '🧪',
         duration: 'Ongoing',
-        mdPath: './04_capstone-project/capstone-projects.md',
         tasks: [
-          'Design & Architecture Specification of AI Application',
-          'Full-Stack Implementation (RAG/Agents + Backend + UI)',
-          'Evaluation & Testing Suite Execution',
-          'Public GitHub Release & Live Demo Deployment'
+          { name: 'Design & Architecture Specification of AI Application', path: './04_capstone-project/01_architecture_spec.md' },
+          { name: 'Full-Stack Implementation (RAG/Agents + Backend + UI)', path: './04_capstone-project/02_fullstack_implementation.md' },
+          { name: 'Evaluation & Testing Suite Execution', path: './04_capstone-project/03_evaluation_testing.md' },
+          { name: 'Public GitHub Release & Live Demo Deployment', path: './04_capstone-project/04_public_demo_deployment.md' }
         ]
       }
     ];
 
-    // Levels & Ranks Definition
     const RANKS = [
       { level: 1, xpRequired: 0, title: "Novice Prompt Crafter" },
       { level: 2, xpRequired: 400, title: "Python Apprentice" },
@@ -918,7 +862,6 @@
       { level: 10, xpRequired: 7200, title: "Autonomous AI Sovereign" }
     ];
 
-    // Badges Definition
     const BADGES = [
       { id: 'b_code', title: 'Code Initiated', icon: '💻', modId: 'mod1' },
       { id: 'b_math', title: 'Math Alchemist', icon: '📐', modId: 'mod2' },
@@ -934,7 +877,6 @@
       { id: 'b_hero', title: 'AI Sovereign', icon: '👑', modId: 'mod13' }
     ];
 
-    // Default Milestone Rewards
     const DEFAULT_REWARDS = {
       2: "Treat myself to a specialty espresso or boba",
       4: "Order favorite takeaway / pizza night",
@@ -943,14 +885,12 @@
       10: "Grand Celebration! Weekend getaway / tech gift"
     };
 
-    // Application State
     let state = {
       completedTasks: {},
       rewards: { ...DEFAULT_REWARDS },
       claimedRewards: {}
     };
 
-    // Audio Chime
     function playChime() {
       try {
         const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -991,7 +931,7 @@
 
       CURRICULUM.forEach(mod => {
         let modDone = 0;
-        mod.tasks.forEach((task, idx) => {
+        mod.tasks.forEach((taskObj, idx) => {
           totalTasks++;
           const key = `${mod.id}_${idx}`;
           if (state.completedTasks[key]) {
@@ -1035,7 +975,6 @@
     }
 
     function getFullGuideLink(relativeMdPath) {
-      // If hosted on GitHub Pages or locally, generate clickable link to GitHub file or relative path
       const cleanPath = relativeMdPath.replace('./', '');
       return GITHUB_REPO_URL + cleanPath;
     }
@@ -1116,20 +1055,21 @@
         });
 
         const isFullyDone = modDoneCount === mod.tasks.length;
-        const fullGuideUrl = getFullGuideLink(mod.mdPath);
 
         const card = document.createElement('div');
         card.className = 'module-card';
 
-        const tasksHtml = mod.tasks.map((taskTitle, idx) => {
+        const tasksHtml = mod.tasks.map((taskObj, idx) => {
           const key = `${mod.id}_${idx}`;
           const isDone = !!state.completedTasks[key];
+          const taskGuideUrl = getFullGuideLink(taskObj.path);
+
           return `
             <div class="task-item ${isDone ? 'done' : ''}">
               <div class="checkbox" onclick="toggleTask('${mod.id}', ${idx})"></div>
-              <div class="task-title" onclick="toggleTask('${mod.id}', ${idx})">${taskTitle}</div>
-              <a href="${fullGuideUrl}" target="_blank" class="task-link" title="View resources required for this topic">
-                📖 Study Guide &rarr;
+              <div class="task-title" onclick="toggleTask('${mod.id}', ${idx})">${taskObj.name}</div>
+              <a href="${taskGuideUrl}" target="_blank" class="task-link" title="Open dedicated focus study guide for this topic">
+                📖 Dedicated Focus Page &rarr;
               </a>
               <div class="task-xp">+100 XP</div>
             </div>
@@ -1137,8 +1077,8 @@
         }).join('');
 
         card.innerHTML = `
-          <div class="module-header">
-            <div class="module-title-group" onclick="this.parentElement.nextElementSibling.style.display = this.parentElement.nextElementSibling.style.display === 'none' ? 'grid' : 'none'">
+          <div class="module-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'grid' : 'none'">
+            <div class="module-title-group">
               <div class="module-icon">${mod.icon}</div>
               <div>
                 <div class="module-title">${mod.title}</div>
@@ -1146,9 +1086,6 @@
               </div>
             </div>
             <div class="module-actions">
-              <a href="${fullGuideUrl}" target="_blank" class="module-guide-link" title="Open full course guide with all links, books, and courses">
-                📚 Module Guide & Resources
-              </a>
               <span class="module-badge ${isFullyDone ? 'complete' : ''}">
                 ${modDoneCount}/${mod.tasks.length} Done
               </span>
