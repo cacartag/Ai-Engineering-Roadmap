@@ -2,26 +2,20 @@
 
 > Dedicated Focus Study Guide — Module: 03. Machine Learning Core
 
-## 📌 Mandatory Requirements to Complete (+200 XP Total)
-To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
+## 📌 Mandatory Requirements to Complete (+140 XP Base + 75 XP Mastery Bonus)
+To mark this topic as **Complete**, finish all 4 mandatory requirements below.
+XP is weighted by difficulty — harder tasks earn more!
 
-- [ ] **Requirement 1 (+50 XP)**: Audit Coursera Unsupervised Learning Course (Andrew Ng)
-- [ ] **Requirement 2 (+50 XP)**: Study StatQuest PCA & K-Means clustering tutorials
-- [ ] **Requirement 3 (+50 XP)**: Practice K-Means, Hierarchical Clustering, and DBSCAN algorithms
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Reduce dimensionality of dataset using PCA & t-SNE
+- [ ] **Requirement 1 (+40 XP)**: Audit Coursera Unsupervised Learning Course (Andrew Ng)
+  > *Difficulty Rationale: Course audit, ~3-4 weeks*
+- [ ] **Requirement 2 (+20 XP)**: Study StatQuest PCA & K-Means clustering tutorials
+  > *Difficulty Rationale: Focused video tutorials*
+- [ ] **Requirement 3 (+35 XP)**: Practice K-Means, Hierarchical Clustering, and DBSCAN algorithms
+  > *Difficulty Rationale: Implementing 3 clustering algorithms*
+- [ ] **Requirement 4 (+45 XP)**: Mini-Project: Reduce dimensionality of dataset using PCA & t-SNE
+  > *Difficulty Rationale: Combining math + visualization + interpretation*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
-
----
-
-## 🎯 Detailed Learning Objectives
-- Master all theoretical principles and practical code patterns for Unsupervised Learning (Clustering & Dimensionality Reduction).
-- Build hands-on projects and verify outputs against standard metrics.
-
-## 📚 Recommended Courses & Learning Resources
-- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
-- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
-- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+75 XP Bonus**!
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)

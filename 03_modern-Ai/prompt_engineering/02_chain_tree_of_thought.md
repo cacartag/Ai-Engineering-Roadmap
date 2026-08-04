@@ -2,26 +2,20 @@
 
 > Dedicated Focus Study Guide — Module: 11. Prompt Engineering Mastery
 
-## 📌 Mandatory Requirements to Complete (+200 XP Total)
-To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
+## 📌 Mandatory Requirements to Complete (+190 XP Base + 80 XP Mastery Bonus)
+To mark this topic as **Complete**, finish all 4 mandatory requirements below.
+XP is weighted by difficulty — harder tasks earn more!
 
-- [ ] **Requirement 1 (+50 XP)**: Read Wei et al. 'Chain-of-Thought' and Yao et al. 'Tree of Thoughts' papers
-- [ ] **Requirement 2 (+50 XP)**: Implement Self-Consistency decoding (sampling multiple CoT paths & voting)
+- [ ] **Requirement 1 (+45 XP)**: Read Wei et al. 'Chain-of-Thought' and Yao et al. 'Tree of Thoughts' papers
+  > *Difficulty Rationale: Two important research papers*
+- [ ] **Requirement 2 (+40 XP)**: Implement Self-Consistency decoding (sampling multiple CoT paths & voting)
+  > *Difficulty Rationale: Statistical decoding strategy implementation*
 - [ ] **Requirement 3 (+50 XP)**: Implement Tree-of-Thought (ToT) search over candidate reasoning steps
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build a CoT / ToT solver script for complex math word problems
+  > *Difficulty Rationale: Search algorithm implementation, harder than CoT*
+- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Build a CoT / ToT solver script for complex math word problems
+  > *Difficulty Rationale: Applied reasoning system with verification*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
-
----
-
-## 🎯 Detailed Learning Objectives
-- Master all theoretical principles and practical code patterns for Chain-of-Thought & Tree-of-Thought Reasoning.
-- Build hands-on projects and verify outputs against standard metrics.
-
-## 📚 Recommended Courses & Learning Resources
-- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
-- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
-- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+80 XP Bonus**!
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)

@@ -708,9 +708,10 @@
         <p>Every topic now breaks down into <strong>4 Mandatory Action Items</strong>:</p>
         <br>
         <ul style="margin-left: 20px; line-height: 1.8;">
-          <li><strong>+50 XP</strong> for completing each mandatory sub-requirement.</li>
-          <li><strong>+100 XP Bonus</strong> when all 4 items for a topic are complete ("Topic Mastered").</li>
-          <li><strong>+200 XP Bonus</strong> when an entire module is complete ("Module Mastered").</li>
+          <li><strong>+15 to +85 XP</strong> per sub-task, weighted by difficulty (e.g. reading a guide = 15-30 XP, building from scratch = 55-85 XP).</li>
+          <li><strong>+50 to +150 XP Topic Mastery Bonus</strong> when all 4 items for a topic are complete — scales with module difficulty.</li>
+          <li><strong>+200 to +500 XP Module Mastery Bonus</strong> when an entire module is complete — later modules earn bigger bonuses.</li>
+          <li><strong>Total: 18,545 XP</strong> possible across all 208 action items + mastery bonuses.</li>
         </ul>
       </div>
     </div>
@@ -729,16 +730,18 @@
         title: '01. Programming for AI',
         icon: '🛠️',
         duration: '4-6 weeks',
+        topicBonus: 50,
+        moduleBonus: 200,
         topics: [
           {
             id: 'm1_t1',
             name: 'Python Basics: Variables, Control Flow & Data Types',
             path: './01_foundation/01_programming/01_python_basics.md',
             requirements: [
-              { id: 'm1_t1_r1', title: 'Complete Harvard CS50’s Intro to Programming with Python', xp: 50 },
-              { id: 'm1_t1_r2', title: 'Audit Python for Everybody (Univ of Michigan on Coursera)', xp: 50 },
-              { id: 'm1_t1_r3', title: 'Read & practice Automate the Boring Stuff with Python (Ch. 1-6)', xp: 50 },
-              { id: 'm1_t1_r4', title: 'Mini-Project: Build & test a Python Command-Line Calculator app', xp: 50 }
+              { id: 'm1_t1_r1', title: 'Complete Harvard CS50’s Intro to Programming with Python', xp: 40 },
+              { id: 'm1_t1_r2', title: 'Audit Python for Everybody (Univ of Michigan on Coursera)', xp: 30 },
+              { id: 'm1_t1_r3', title: 'Read & practice Automate the Boring Stuff with Python (Ch. 1-6)', xp: 20 },
+              { id: 'm1_t1_r4', title: 'Mini-Project: Build & test a Python Command-Line Calculator app', xp: 25 }
             ]
           },
           {
@@ -746,10 +749,10 @@
             name: 'Data Structures & Algorithms in Python',
             path: './01_foundation/01_programming/02_dsa.md',
             requirements: [
-              { id: 'm1_t2_r1', title: 'Study Problem Solving with Algorithms & Data Structures (Runestone)', xp: 50 },
-              { id: 'm1_t2_r2', title: 'Watch freeCodeCamp Data Structures in Python Video Course', xp: 50 },
-              { id: 'm1_t2_r3', title: 'Solve 10 LeetCode Easy DSA problems (Arrays, HashMaps, Strings)', xp: 50 },
-              { id: 'm1_t2_r4', title: 'Mini-Project: Implement a custom Stack and Queue class in Python', xp: 50 }
+              { id: 'm1_t2_r1', title: 'Study Problem Solving with Algorithms & Data Structures (Runestone)', xp: 35 },
+              { id: 'm1_t2_r2', title: 'Watch freeCodeCamp Data Structures in Python Video Course', xp: 20 },
+              { id: 'm1_t2_r3', title: 'Solve 10 LeetCode Easy DSA problems (Arrays, HashMaps, Strings)', xp: 40 },
+              { id: 'm1_t2_r4', title: 'Mini-Project: Implement a custom Stack and Queue class in Python', xp: 30 }
             ]
           },
           {
@@ -757,10 +760,10 @@
             name: 'Object-Oriented Programming (Classes & Inheritance)',
             path: './01_foundation/01_programming/03_oop.md',
             requirements: [
-              { id: 'm1_t3_r1', title: 'Read Real Python Object-Oriented Programming in Python 3 Guide', xp: 50 },
-              { id: 'm1_t3_r2', title: 'Watch Corey Schafer Python OOP Tutorial Series on YouTube', xp: 50 },
-              { id: 'm1_t3_r3', title: 'Master Dunder methods (__init__, __repr__, __len__, __getitem__)', xp: 50 },
-              { id: 'm1_t3_r4', title: 'Mini-Project: Build an Object-Oriented Model & Metric Evaluator Class', xp: 50 }
+              { id: 'm1_t3_r1', title: 'Read Real Python Object-Oriented Programming in Python 3 Guide', xp: 20 },
+              { id: 'm1_t3_r2', title: 'Watch Corey Schafer Python OOP Tutorial Series on YouTube', xp: 15 },
+              { id: 'm1_t3_r3', title: 'Master Dunder methods (__init__, __repr__, __len__, __getitem__)', xp: 30 },
+              { id: 'm1_t3_r4', title: 'Mini-Project: Build an Object-Oriented Model & Metric Evaluator Class', xp: 35 }
             ]
           },
           {
@@ -768,10 +771,10 @@
             name: 'Git & GitHub Version Control Mastery',
             path: './01_foundation/01_programming/04_git_github.md',
             requirements: [
-              { id: 'm1_t4_r1', title: 'Read GitHub Guides Official Git Handbook', xp: 50 },
-              { id: 'm1_t4_r2', title: 'Watch freeCodeCamp Git and GitHub Crash Course', xp: 50 },
-              { id: 'm1_t4_r3', title: 'Complete The Odin Project Git Basics Interactive Lesson', xp: 50 },
-              { id: 'm1_t4_r4', title: 'Practical Task: Create GitHub repo, manage branches, & submit a PR', xp: 50 }
+              { id: 'm1_t4_r1', title: 'Read GitHub Guides Official Git Handbook', xp: 15 },
+              { id: 'm1_t4_r2', title: 'Watch freeCodeCamp Git and GitHub Crash Course', xp: 15 },
+              { id: 'm1_t4_r3', title: 'Complete The Odin Project Git Basics Interactive Lesson', xp: 25 },
+              { id: 'm1_t4_r4', title: 'Practical Task: Create GitHub repo, manage branches, & submit a PR', xp: 30 }
             ]
           },
           {
@@ -779,10 +782,10 @@
             name: 'Linux Command Line Fundamentals',
             path: './01_foundation/01_programming/05_linux_cli.md',
             requirements: [
-              { id: 'm1_t5_r1', title: 'Audit Linux Command Line Basics (Coursera - UC Davis)', xp: 50 },
-              { id: 'm1_t5_r2', title: 'Read The Linux Command Line Book by William Shotts (Ch 1-10)', xp: 50 },
-              { id: 'm1_t5_r3', title: 'Practice shell navigation, permissions, grep, awk, & environment variables', xp: 50 },
-              { id: 'm1_t5_r4', title: 'Mini-Project: Write a shell script to automate Python virtualenv setup', xp: 50 }
+              { id: 'm1_t5_r1', title: 'Audit Linux Command Line Basics (Coursera - UC Davis)', xp: 25 },
+              { id: 'm1_t5_r2', title: 'Read The Linux Command Line Book by William Shotts (Ch 1-10)', xp: 30 },
+              { id: 'm1_t5_r3', title: 'Practice shell navigation, permissions, grep, awk, & environment variables', xp: 20 },
+              { id: 'm1_t5_r4', title: 'Mini-Project: Write a shell script to automate Python virtualenv setup', xp: 25 }
             ]
           }
         ]
@@ -792,16 +795,18 @@
         title: '02. Math for AI Engineering',
         icon: '📐',
         duration: '6-8 weeks',
+        topicBonus: 60,
+        moduleBonus: 250,
         topics: [
           {
             id: 'm2_t1',
             name: 'Linear Algebra: Vectors, Matrices, Tensors & Multiplication',
             path: './01_foundation/02_math/01_linear_algebra.md',
             requirements: [
-              { id: 'm2_t1_r1', title: 'Watch 3Blue1Brown Essence of Linear Algebra (All Episodes)', xp: 50 },
-              { id: 'm2_t1_r2', title: 'Audit Coursera Linear Algebra for Machine Learning (Imperial College)', xp: 50 },
-              { id: 'm2_t1_r3', title: 'Complete Khan Academy Linear Algebra practice drills', xp: 50 },
-              { id: 'm2_t1_r4', title: 'Mini-Project: Code vector dot products & matrix multiplication in NumPy/PyTorch', xp: 50 }
+              { id: 'm2_t1_r1', title: 'Watch 3Blue1Brown Essence of Linear Algebra (All Episodes)', xp: 25 },
+              { id: 'm2_t1_r2', title: 'Audit Coursera Linear Algebra for Machine Learning (Imperial College)', xp: 45 },
+              { id: 'm2_t1_r3', title: 'Complete Khan Academy Linear Algebra practice drills', xp: 30 },
+              { id: 'm2_t1_r4', title: 'Mini-Project: Code vector dot products & matrix multiplication in NumPy/PyTorch', xp: 35 }
             ]
           },
           {
@@ -809,10 +814,10 @@
             name: 'Calculus: Derivatives, Integrals & Chain Rule',
             path: './01_foundation/02_math/02_calculus.md',
             requirements: [
-              { id: 'm2_t2_r1', title: 'Watch 3Blue1Brown Essence of Calculus Series', xp: 50 },
-              { id: 'm2_t2_r2', title: 'Audit Coursera Calculus for Machine Learning', xp: 50 },
-              { id: 'm2_t2_r3', title: 'Complete Khan Academy Multivariable Calculus derivative exercises', xp: 50 },
-              { id: 'm2_t2_r4', title: 'Mini-Project: Compute partial derivatives & gradients of loss functions analytically', xp: 50 }
+              { id: 'm2_t2_r1', title: 'Watch 3Blue1Brown Essence of Calculus Series', xp: 25 },
+              { id: 'm2_t2_r2', title: 'Audit Coursera Calculus for Machine Learning (Imperial College)', xp: 45 },
+              { id: 'm2_t2_r3', title: 'Complete Khan Academy Multivariable Calculus derivative exercises', xp: 35 },
+              { id: 'm2_t2_r4', title: 'Mini-Project: Compute partial derivatives & gradients of loss functions analytically', xp: 40 }
             ]
           },
           {
@@ -820,9 +825,9 @@
             name: 'Gradient Descent & Loss Optimization',
             path: './01_foundation/02_math/03_gradient_descent.md',
             requirements: [
-              { id: 'm2_t3_r1', title: 'Watch StatQuest Gradient Descent & SGD Videos', xp: 50 },
-              { id: 'm2_t3_r2', title: 'Read d2l.ai Optimization Algorithms Chapter', xp: 50 },
-              { id: 'm2_t3_r3', title: 'Formulate Mean Squared Error (MSE) and Cross-Entropy Loss equations', xp: 50 },
+              { id: 'm2_t3_r1', title: 'Watch StatQuest Gradient Descent & SGD Videos', xp: 20 },
+              { id: 'm2_t3_r2', title: 'Read d2l.ai Optimization Algorithms Chapter', xp: 35 },
+              { id: 'm2_t3_r3', title: 'Formulate Mean Squared Error (MSE) and Cross-Entropy Loss equations', xp: 30 },
               { id: 'm2_t3_r4', title: 'Mini-Project: Code Batch SGD and Mini-Batch SGD from scratch in Python', xp: 50 }
             ]
           },
@@ -832,9 +837,9 @@
             path: './01_foundation/02_math/04_probability_stats.md',
             requirements: [
               { id: 'm2_t4_r1', title: 'Study MIT OpenCourseWare Introduction to Probability and Statistics', xp: 50 },
-              { id: 'm2_t4_r2', title: 'Complete Khan Academy Probability & Statistics exercises', xp: 50 },
-              { id: 'm2_t4_r3', title: 'Master Gaussian distribution, Bayes Theorem, & Naive Bayes math', xp: 50 },
-              { id: 'm2_t4_r4', title: 'Mini-Project: Build a Naive Bayes Spam Classifier in Python from scratch', xp: 50 }
+              { id: 'm2_t4_r2', title: 'Complete Khan Academy Probability & Statistics exercises', xp: 25 },
+              { id: 'm2_t4_r3', title: 'Master Gaussian distribution, Bayes Theorem, & Naive Bayes math', xp: 35 },
+              { id: 'm2_t4_r4', title: 'Mini-Project: Build a Naive Bayes Spam Classifier in Python from scratch', xp: 55 }
             ]
           }
         ]
@@ -844,16 +849,18 @@
         title: '03. Machine Learning Core',
         icon: '🤖',
         duration: '6-8 weeks',
+        topicBonus: 75,
+        moduleBonus: 300,
         topics: [
           {
             id: 'm3_t1',
             name: 'Supervised Learning (Regression & Classification)',
             path: './01_foundation/03_machine_learning/01_supervised_learning.md',
             requirements: [
-              { id: 'm3_t1_r1', title: 'Audit Stanford Machine Learning Course by Andrew Ng (Coursera)', xp: 50 },
-              { id: 'm3_t1_r2', title: 'Complete Kaggle Learn Intro to Machine Learning Tutorials', xp: 50 },
-              { id: 'm3_t1_r3', title: 'Practice Linear Regression, Logistic Regression, Decision Trees & Random Forests', xp: 50 },
-              { id: 'm3_t1_r4', title: 'Mini-Project: Train and evaluate a Housing Price Prediction model', xp: 50 }
+              { id: 'm3_t1_r1', title: 'Audit Stanford Machine Learning Course by Andrew Ng (Coursera)', xp: 60 },
+              { id: 'm3_t1_r2', title: 'Complete Kaggle Learn Intro to Machine Learning Tutorials', xp: 25 },
+              { id: 'm3_t1_r3', title: 'Practice Linear Regression, Logistic Regression, Decision Trees & Random Forests', xp: 40 },
+              { id: 'm3_t1_r4', title: 'Mini-Project: Train and evaluate a Housing Price Prediction model', xp: 45 }
             ]
           },
           {
@@ -861,10 +868,10 @@
             name: 'Unsupervised Learning (Clustering & Dimensionality Reduction)',
             path: './01_foundation/03_machine_learning/02_unsupervised_learning.md',
             requirements: [
-              { id: 'm3_t2_r1', title: 'Audit Coursera Unsupervised Learning Course (Andrew Ng)', xp: 50 },
-              { id: 'm3_t2_r2', title: 'Study StatQuest PCA & K-Means clustering tutorials', xp: 50 },
-              { id: 'm3_t2_r3', title: 'Practice K-Means, Hierarchical Clustering, and DBSCAN algorithms', xp: 50 },
-              { id: 'm3_t2_r4', title: 'Mini-Project: Reduce dimensionality of dataset using PCA & t-SNE', xp: 50 }
+              { id: 'm3_t2_r1', title: 'Audit Coursera Unsupervised Learning Course (Andrew Ng)', xp: 40 },
+              { id: 'm3_t2_r2', title: 'Study StatQuest PCA & K-Means clustering tutorials', xp: 20 },
+              { id: 'm3_t2_r3', title: 'Practice K-Means, Hierarchical Clustering, and DBSCAN algorithms', xp: 35 },
+              { id: 'm3_t2_r4', title: 'Mini-Project: Reduce dimensionality of dataset using PCA & t-SNE', xp: 45 }
             ]
           },
           {
@@ -872,10 +879,10 @@
             name: 'Model Evaluation, Overfitting & Cross-Validation',
             path: './01_foundation/03_machine_learning/03_model_evaluation.md',
             requirements: [
-              { id: 'm3_t3_r1', title: 'Study Fast.ai Model Evaluation Unit', xp: 50 },
-              { id: 'm3_t3_r2', title: 'Master Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE', xp: 50 },
-              { id: 'm3_t3_r3', title: 'Practice K-Fold Cross Validation & GridSearchCV hyperparameter tuning', xp: 50 },
-              { id: 'm3_t3_r4', title: 'Mini-Project: Evaluate model overfitting vs underfitting with validation curves', xp: 50 }
+              { id: 'm3_t3_r1', title: 'Study Fast.ai Model Evaluation Unit', xp: 35 },
+              { id: 'm3_t3_r2', title: 'Master Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE', xp: 40 },
+              { id: 'm3_t3_r3', title: 'Practice K-Fold Cross Validation & GridSearchCV hyperparameter tuning', xp: 35 },
+              { id: 'm3_t3_r4', title: 'Mini-Project: Evaluate model overfitting vs underfitting with validation curves', xp: 45 }
             ]
           },
           {
@@ -883,10 +890,10 @@
             name: 'Scikit-Learn & ML Pipeline Construction',
             path: './01_foundation/03_machine_learning/04_scikit_learn.md',
             requirements: [
-              { id: 'm3_t4_r1', title: 'Read Scikit-Learn User Guide on Pipelines & Preprocessing', xp: 50 },
-              { id: 'm3_t4_r2', title: 'Complete Kaggle Intermediate Machine Learning Course', xp: 50 },
-              { id: 'm3_t4_r3', title: 'Build automated data imputation, scaling (StandardScaler), & encoding pipelines', xp: 50 },
-              { id: 'm3_t4_r4', title: 'Mini-Project: Save trained Scikit-Learn pipeline to disk with joblib & serve API', xp: 50 }
+              { id: 'm3_t4_r1', title: 'Read Scikit-Learn User Guide on Pipelines & Preprocessing', xp: 30 },
+              { id: 'm3_t4_r2', title: 'Complete Kaggle Intermediate Machine Learning Course', xp: 30 },
+              { id: 'm3_t4_r3', title: 'Build automated data imputation, scaling (StandardScaler), & encoding pipelines', xp: 40 },
+              { id: 'm3_t4_r4', title: 'Mini-Project: Save trained Scikit-Learn pipeline to disk with joblib & serve API', xp: 55 }
             ]
           }
         ]
@@ -896,16 +903,18 @@
         title: '04. Deep Learning & Neural Networks',
         icon: '🧠',
         duration: '4-6 weeks',
+        topicBonus: 90,
+        moduleBonus: 350,
         topics: [
           {
             id: 'm4_t1',
             name: 'Neural Network Foundations & Backpropagation',
             path: './01_foundation/04_deep_learning/01_neural_networks.md',
             requirements: [
-              { id: 'm4_t1_r1', title: "Watch Andrej Karpathy's Micrograd & Neural Networks Zero to Hero", xp: 50 },
-              { id: 'm4_t1_r2', title: 'Audit Deep Learning Specialization (Andrew Ng) Course 1', xp: 50 },
-              { id: 'm4_t1_r3', title: 'Master Perceptrons, ReLU/Sigmoid/Softmax activation functions & Backprop math', xp: 50 },
-              { id: 'm4_t1_r4', title: 'Mini-Project: Build a 2-layer Neural Network from scratch in raw NumPy', xp: 50 }
+              { id: 'm4_t1_r1', title: 'Watch Andrej Karpathy’s Micrograd & Neural Networks Zero to Hero', xp: 60 },
+              { id: 'm4_t1_r2', title: 'Audit Deep Learning Specialization (Andrew Ng) Course 1', xp: 55 },
+              { id: 'm4_t1_r3', title: 'Master Perceptrons, ReLU/Sigmoid/Softmax activation functions & Backprop math', xp: 45 },
+              { id: 'm4_t1_r4', title: 'Mini-Project: Build a 2-layer Neural Network from scratch in raw NumPy', xp: 75 }
             ]
           },
           {
@@ -913,10 +922,10 @@
             name: 'PyTorch Framework Fundamentals',
             path: './01_foundation/04_deep_learning/02_pytorch_fundamentals.md',
             requirements: [
-              { id: 'm4_t2_r1', title: 'Complete PyTorch Official 60-Minute Blitz Tutorial', xp: 50 },
-              { id: 'm4_t2_r2', title: 'Watch freeCodeCamp PyTorch for Deep Learning Bootcamp', xp: 50 },
-              { id: 'm4_t2_r3', title: 'Master Tensors, GPU acceleration (cuda/mps), and autograd', xp: 50 },
-              { id: 'm4_t2_r4', title: 'Mini-Project: Write a complete PyTorch nn.Module training & validation loop', xp: 50 }
+              { id: 'm4_t2_r1', title: 'Complete PyTorch Official 60-Minute Blitz Tutorial', xp: 25 },
+              { id: 'm4_t2_r2', title: 'Watch freeCodeCamp PyTorch for Deep Learning Bootcamp', xp: 35 },
+              { id: 'm4_t2_r3', title: 'Master Tensors, GPU acceleration (cuda/mps), and autograd', xp: 40 },
+              { id: 'm4_t2_r4', title: 'Mini-Project: Write a complete PyTorch nn.Module training & validation loop', xp: 55 }
             ]
           },
           {
@@ -925,9 +934,9 @@
             path: './01_foundation/04_deep_learning/03_cnns.md',
             requirements: [
               { id: 'm4_t3_r1', title: 'Study Stanford CS231n Convolutional Networks lecture notes', xp: 50 },
-              { id: 'm4_t3_r2', title: 'Watch Fast.ai Practical Deep Learning for Coders CNN module', xp: 50 },
-              { id: 'm4_t3_r3', title: 'Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures', xp: 50 },
-              { id: 'm4_t3_r4', title: 'Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch', xp: 50 }
+              { id: 'm4_t3_r2', title: 'Watch Fast.ai Practical Deep Learning for Coders CNN module', xp: 35 },
+              { id: 'm4_t3_r3', title: 'Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures', xp: 45 },
+              { id: 'm4_t3_r4', title: 'Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch', xp: 55 }
             ]
           },
           {
@@ -935,10 +944,10 @@
             name: 'Recurrent Neural Networks (RNNs) & Attention Intro',
             path: './01_foundation/04_deep_learning/04_rnns_attention.md',
             requirements: [
-              { id: 'm4_t4_r1', title: "Read Andrej Karpathy's Unreasonable Effectiveness of RNNs", xp: 50 },
-              { id: 'm4_t4_r2', title: 'Watch Illustrated Guide to LSTMs and GRUs Video', xp: 50 },
-              { id: 'm4_t4_r3', title: 'Master Sequential modeling, LSTMs, GRUs, and Self-Attention math', xp: 50 },
-              { id: 'm4_t4_r4', title: 'Mini-Project: Build a PyTorch Character-level Language Model using RNNs/LSTMs', xp: 50 }
+              { id: 'm4_t4_r1', title: 'Read Andrej Karpathy’s Unreasonable Effectiveness of RNNs', xp: 30 },
+              { id: 'm4_t4_r2', title: 'Watch Illustrated Guide to LSTMs and GRUs Video', xp: 20 },
+              { id: 'm4_t4_r3', title: 'Master Sequential modeling, LSTMs, GRUs, and Self-Attention math', xp: 55 },
+              { id: 'm4_t4_r4', title: 'Mini-Project: Build a PyTorch Character-level Language Model using RNNs/LSTMs', xp: 65 }
             ]
           }
         ]
@@ -948,16 +957,18 @@
         title: '05. Natural Language Processing',
         icon: '🗣️',
         duration: '3-4 weeks',
+        topicBonus: 100,
+        moduleBonus: 300,
         topics: [
           {
             id: 'm5_t1',
             name: 'Text Preprocessing, Tokenization & Regex',
             path: './02_specializations/nlp/01_text_preprocessing.md',
             requirements: [
-              { id: 'm5_t1_r1', title: 'Complete spaCy 101 Course & NLTK Text Processing guides', xp: 50 },
-              { id: 'm5_t1_r2', title: 'Master Regex text cleaning, tokenization, lemmatization, & stop-words', xp: 50 },
-              { id: 'm5_t1_r3', title: 'Understand Byte-Pair Encoding (BPE) & WordPiece tokenizers', xp: 50 },
-              { id: 'm5_t1_r4', title: 'Mini-Project: Build a custom NLP text preprocessing pipeline in Python', xp: 50 }
+              { id: 'm5_t1_r1', title: 'Complete spaCy 101 Course & NLTK Text Processing guides', xp: 30 },
+              { id: 'm5_t1_r2', title: 'Master Regex text cleaning, tokenization, lemmatization, & stop-words', xp: 35 },
+              { id: 'm5_t1_r3', title: 'Understand Byte-Pair Encoding (BPE) & WordPiece tokenizers', xp: 40 },
+              { id: 'm5_t1_r4', title: 'Mini-Project: Build a custom NLP text preprocessing pipeline in Python', xp: 40 }
             ]
           },
           {
@@ -965,10 +976,10 @@
             name: 'Word Embeddings (Word2Vec, GloVe)',
             path: './02_specializations/nlp/02_word_embeddings.md',
             requirements: [
-              { id: 'm5_t2_r1', title: "Study Mikolov's Word2Vec paper & Stanford CS224n Embeddings lecture", xp: 50 },
-              { id: 'm5_t2_r2', title: 'Practice Word2Vec Skip-Gram, CBOW, and GloVe embeddings', xp: 50 },
-              { id: 'm5_t2_r3', title: 'Compute Cosine Similarity, Word Analogies, & Vector Space Math', xp: 50 },
-              { id: 'm5_t2_r4', title: 'Mini-Project: Train custom Word2Vec embeddings using Gensim on text corpus', xp: 50 }
+              { id: 'm5_t2_r1', title: 'Study Mikolov’s Word2Vec paper & Stanford CS224n Embeddings lecture', xp: 50 },
+              { id: 'm5_t2_r2', title: 'Practice Word2Vec Skip-Gram, CBOW, and GloVe embeddings', xp: 35 },
+              { id: 'm5_t2_r3', title: 'Compute Cosine Similarity, Word Analogies, & Vector Space Math', xp: 30 },
+              { id: 'm5_t2_r4', title: 'Mini-Project: Train custom Word2Vec embeddings using Gensim on text corpus', xp: 45 }
             ]
           },
           {
@@ -976,10 +987,10 @@
             name: 'Seq2Seq Models & Attention Mechanisms',
             path: './02_specializations/nlp/03_seq2seq_attention.md',
             requirements: [
-              { id: 'm5_t3_r1', title: 'Read Bahdanau Attention Paper & Stanford CS224n Seq2Seq lectures', xp: 50 },
-              { id: 'm5_t3_r2', title: 'Master Encoder-Decoder architecture for Machine Translation', xp: 50 },
+              { id: 'm5_t3_r1', title: 'Read Bahdanau Attention Paper & Stanford CS224n Seq2Seq lectures', xp: 55 },
+              { id: 'm5_t3_r2', title: 'Master Encoder-Decoder architecture for Machine Translation', xp: 40 },
               { id: 'm5_t3_r3', title: 'Implement Luong & Bahdanau Attention mechanisms', xp: 50 },
-              { id: 'm5_t3_r4', title: 'Mini-Project: Build an English-to-Spanish Seq2Seq translator in PyTorch', xp: 50 }
+              { id: 'm5_t3_r4', title: 'Mini-Project: Build an English-to-Spanish Seq2Seq translator in PyTorch', xp: 65 }
             ]
           },
           {
@@ -987,10 +998,10 @@
             name: 'Transformers Architecture & HuggingFace Transformers',
             path: './02_specializations/nlp/04_transformers_huggingface.md',
             requirements: [
-              { id: 'm5_t4_r1', title: "Read Jay Alammar's The Illustrated Transformer Guide", xp: 50 },
+              { id: 'm5_t4_r1', title: 'Read Jay Alammar’s The Illustrated Transformer Guide', xp: 35 },
               { id: 'm5_t4_r2', title: 'Complete Hugging Face NLP Course (Modules 1-4)', xp: 50 },
-              { id: 'm5_t4_r3', title: 'Master BERT, RoBERTa, Hugging Face AutoModel & AutoTokenizer', xp: 50 },
-              { id: 'm5_t4_r4', title: 'Mini-Project: Fine-tune a BERT model on custom text classification dataset', xp: 50 }
+              { id: 'm5_t4_r3', title: 'Master BERT, RoBERTa, Hugging Face AutoModel & AutoTokenizer', xp: 40 },
+              { id: 'm5_t4_r4', title: 'Mini-Project: Fine-tune a BERT model on custom text classification dataset', xp: 60 }
             ]
           }
         ]
@@ -1000,16 +1011,18 @@
         title: '06. Computer Vision',
         icon: '👁️',
         duration: '3-4 weeks',
+        topicBonus: 100,
+        moduleBonus: 300,
         topics: [
           {
             id: 'm6_t1',
             name: 'Image Processing with OpenCV & PIL',
             path: './02_specializations/computer_vision/01_opencv_image_processing.md',
             requirements: [
-              { id: 'm6_t1_r1', title: 'Complete OpenCV Python Tutorials & PIL Image Processing guide', xp: 50 },
-              { id: 'm6_t1_r2', title: 'Master Color spaces (RGB, HSV, Grayscale), Thresholding, & Edge Detection', xp: 50 },
-              { id: 'm6_t1_r3', title: 'Practice Image warping, resizing, and Data Augmentation', xp: 50 },
-              { id: 'm6_t1_r4', title: 'Mini-Project: Build an Automated Object Counter using OpenCV contours', xp: 50 }
+              { id: 'm6_t1_r1', title: 'Complete OpenCV Python Tutorials & PIL Image Processing guide', xp: 30 },
+              { id: 'm6_t1_r2', title: 'Master Color spaces (RGB, HSV, Grayscale), Thresholding, & Edge Detection', xp: 35 },
+              { id: 'm6_t1_r3', title: 'Practice Image warping, resizing, and Data Augmentation', xp: 30 },
+              { id: 'm6_t1_r4', title: 'Mini-Project: Build an Automated Object Counter using OpenCV contours', xp: 40 }
             ]
           },
           {
@@ -1017,9 +1030,9 @@
             name: 'Deep Learning Vision Models (ResNet, EfficientNet)',
             path: './02_specializations/computer_vision/02_deep_vision_models.md',
             requirements: [
-              { id: 'm6_t2_r1', title: 'Study ResNet, EfficientNet, and MobileNet research papers', xp: 50 },
-              { id: 'm6_t2_r2', title: 'Master Feature extraction, pre-trained weights, & fine-tuning strategies', xp: 50 },
-              { id: 'm6_t2_r3', title: 'Practice Torchvision pre-trained models', xp: 50 },
+              { id: 'm6_t2_r1', title: 'Study ResNet, EfficientNet, and MobileNet research papers', xp: 55 },
+              { id: 'm6_t2_r2', title: 'Master Feature extraction, pre-trained weights, & fine-tuning strategies', xp: 40 },
+              { id: 'm6_t2_r3', title: 'Practice Torchvision pre-trained models', xp: 30 },
               { id: 'm6_t2_r4', title: 'Mini-Project: Train a Multi-Class Image Classifier with EfficientNet', xp: 50 }
             ]
           },
@@ -1028,10 +1041,10 @@
             name: 'Object Detection (YOLO, Faster R-CNN)',
             path: './02_specializations/computer_vision/03_object_detection_yolo.md',
             requirements: [
-              { id: 'm6_t3_r1', title: 'Study YOLO architecture & Faster R-CNN papers', xp: 50 },
-              { id: 'm6_t3_r2', title: 'Understand Bounding Box Regression, IoU, and Non-Maximum Suppression', xp: 50 },
-              { id: 'm6_t3_r3', title: 'Practice Ultralytics YOLOv8 Python API', xp: 50 },
-              { id: 'm6_t3_r4', title: 'Mini-Project: Train a custom YOLOv8 object detector on custom dataset', xp: 50 }
+              { id: 'm6_t3_r1', title: 'Study YOLO architecture & Faster R-CNN papers', xp: 55 },
+              { id: 'm6_t3_r2', title: 'Understand Bounding Box Regression, IoU, and Non-Maximum Suppression', xp: 45 },
+              { id: 'm6_t3_r3', title: 'Practice Ultralytics YOLOv8 Python API', xp: 30 },
+              { id: 'm6_t3_r4', title: 'Mini-Project: Train a custom YOLOv8 object detector on custom dataset', xp: 60 }
             ]
           },
           {
@@ -1039,10 +1052,10 @@
             name: 'Image Segmentation & Generative Vision',
             path: './02_specializations/computer_vision/04_image_segmentation.md',
             requirements: [
-              { id: 'm6_t4_r1', title: 'Study U-Net architecture paper for Biomedical Image Segmentation', xp: 50 },
-              { id: 'm6_t4_r2', title: 'Understand Semantic vs Instance Segmentation vs Panoptic Segmentation', xp: 50 },
-              { id: 'm6_t4_r3', title: 'Practice Mask R-CNN & Segment Anything Model (SAM) APIs', xp: 50 },
-              { id: 'm6_t4_r4', title: 'Mini-Project: Build a U-Net model in PyTorch for background removal', xp: 50 }
+              { id: 'm6_t4_r1', title: 'Study U-Net architecture paper for Biomedical Image Segmentation', xp: 45 },
+              { id: 'm6_t4_r2', title: 'Understand Semantic vs Instance Segmentation vs Panoptic Segmentation', xp: 35 },
+              { id: 'm6_t4_r3', title: 'Practice Mask R-CNN & Segment Anything Model (SAM) APIs', xp: 35 },
+              { id: 'm6_t4_r4', title: 'Mini-Project: Build a U-Net model in PyTorch for background removal', xp: 65 }
             ]
           }
         ]
@@ -1052,16 +1065,18 @@
         title: '07. Reinforcement Learning',
         icon: '🧭',
         duration: '3-5 weeks',
+        topicBonus: 100,
+        moduleBonus: 350,
         topics: [
           {
             id: 'm7_t1',
             name: 'Markov Decision Processes (MDPs)',
             path: './02_specializations/reinforcement_learning/01_mdps.md',
             requirements: [
-              { id: 'm7_t1_r1', title: 'Read Sutton & Barto Reinforcement Learning Book (Chapters 1-3)', xp: 50 },
-              { id: 'm7_t1_r2', title: 'Master States, Actions, Rewards, Discount Factor, & Transition Dynamics', xp: 50 },
+              { id: 'm7_t1_r1', title: 'Read Sutton & Barto Reinforcement Learning Book (Chapters 1-3)', xp: 45 },
+              { id: 'm7_t1_r2', title: 'Master States, Actions, Rewards, Discount Factor, & Transition Dynamics', xp: 35 },
               { id: 'm7_t1_r3', title: 'Master Bellman Expectation & Optimality Equations', xp: 50 },
-              { id: 'm7_t1_r4', title: 'Mini-Project: Formulate a custom GridWorld environment as an MDP', xp: 50 }
+              { id: 'm7_t1_r4', title: 'Mini-Project: Formulate a custom GridWorld environment as an MDP', xp: 40 }
             ]
           },
           {
@@ -1069,9 +1084,9 @@
             name: 'Q-Learning & Value Iteration',
             path: './02_specializations/reinforcement_learning/02_q_learning.md',
             requirements: [
-              { id: 'm7_t2_r1', title: 'Read Sutton & Barto Book (Chapter 6: Temporal-Difference Learning)', xp: 50 },
-              { id: 'm7_t2_r2', title: 'Master Tabular Q-Learning update rule and Epsilon-Greedy exploration', xp: 50 },
-              { id: 'm7_t2_r3', title: 'Complete Value Iteration and Policy Iteration algorithm implementations', xp: 50 },
+              { id: 'm7_t2_r1', title: 'Read Sutton & Barto Book (Chapter 6: Temporal-Difference Learning)', xp: 40 },
+              { id: 'm7_t2_r2', title: 'Master Tabular Q-Learning update rule and Epsilon-Greedy exploration', xp: 40 },
+              { id: 'm7_t2_r3', title: 'Complete Value Iteration and Policy Iteration algorithm implementations', xp: 45 },
               { id: 'm7_t2_r4', title: 'Mini-Project: Implement Q-Learning agent to solve OpenAI Gym FrozenLake', xp: 50 }
             ]
           },
@@ -1080,10 +1095,10 @@
             name: 'Deep Q-Networks (DQN)',
             path: './02_specializations/reinforcement_learning/03_deep_q_networks.md',
             requirements: [
-              { id: 'm7_t3_r1', title: "Read DeepMind's Playing Atari with Deep RL paper", xp: 50 },
+              { id: 'm7_t3_r1', title: 'Read DeepMind’s Playing Atari with Deep RL paper', xp: 55 },
               { id: 'm7_t3_r2', title: 'Master Deep Q-Networks (DQN), Replay Buffers, & Target Networks', xp: 50 },
-              { id: 'm7_t3_r3', title: 'Study Double DQN & Dueling DQN improvements', xp: 50 },
-              { id: 'm7_t3_r4', title: 'Mini-Project: Build a PyTorch DQN agent to solve Gym CartPole-v1', xp: 50 }
+              { id: 'm7_t3_r3', title: 'Study Double DQN & Dueling DQN improvements', xp: 40 },
+              { id: 'm7_t3_r4', title: 'Mini-Project: Build a PyTorch DQN agent to solve Gym CartPole-v1', xp: 60 }
             ]
           },
           {
@@ -1091,10 +1106,10 @@
             name: 'Policy Gradient Methods & PPO',
             path: './02_specializations/reinforcement_learning/04_policy_gradients.md',
             requirements: [
-              { id: 'm7_t4_r1', title: 'Study David Silver RL Course & OpenAI Spinning Up', xp: 50 },
-              { id: 'm7_t4_r2', title: 'Master REINFORCE algorithm, Advantage Actor-Critic (A2C), & PPO', xp: 50 },
-              { id: 'm7_t4_r3', title: 'Understand Reinforcement Learning from Human Feedback (RLHF)', xp: 50 },
-              { id: 'm7_t4_r4', title: 'Mini-Project: Implement a PPO agent in PyTorch for continuous control', xp: 50 }
+              { id: 'm7_t4_r1', title: 'Study David Silver RL Course & OpenAI Spinning Up', xp: 55 },
+              { id: 'm7_t4_r2', title: 'Master REINFORCE algorithm, Advantage Actor-Critic (A2C), & PPO', xp: 60 },
+              { id: 'm7_t4_r3', title: 'Understand Reinforcement Learning from Human Feedback (RLHF)', xp: 45 },
+              { id: 'm7_t4_r4', title: 'Mini-Project: Implement a PPO agent in PyTorch for continuous control', xp: 75 }
             ]
           }
         ]
@@ -1104,16 +1119,18 @@
         title: '08. Large Language Models (LLMs)',
         icon: '🚀',
         duration: '2-3 weeks',
+        topicBonus: 120,
+        moduleBonus: 400,
         topics: [
           {
             id: 'm8_t1',
             name: 'LLM Architectures & Decoder-Only Transformers',
             path: './03_modern-Ai/llms/01_architectures_transformers.md',
             requirements: [
-              { id: 'm8_t1_r1', title: "Read Vaswani et al. 'Attention Is All You Need' paper", xp: 50 },
-              { id: 'm8_t1_r2', title: 'Study GPT Causal Decoder architecture, RoPE embeddings, & SwiGLU', xp: 50 },
+              { id: 'm8_t1_r1', title: 'Read Vaswani et al. ’Attention Is All You Need’ paper', xp: 60 },
+              { id: 'm8_t1_r2', title: 'Study GPT Causal Decoder architecture, RoPE embeddings, & SwiGLU', xp: 55 },
               { id: 'm8_t1_r3', title: 'Understand Multi-Head Attention, Grouped-Query Attention (GQA), & KV Cache', xp: 50 },
-              { id: 'm8_t1_r4', title: 'Mini-Project: Build a Mini-GPT model from scratch in PyTorch (nanoGPT style)', xp: 50 }
+              { id: 'm8_t1_r4', title: 'Mini-Project: Build a Mini-GPT model from scratch in PyTorch (nanoGPT style)', xp: 85 }
             ]
           },
           {
@@ -1122,9 +1139,9 @@
             path: './03_modern-Ai/llms/02_finetuning_lora_peft.md',
             requirements: [
               { id: 'm8_t2_r1', title: 'Study LoRA (Low-Rank Adaptation) and QLoRA research papers', xp: 50 },
-              { id: 'm8_t2_r2', title: 'Complete Hugging Face TRL library documentation', xp: 50 },
-              { id: 'm8_t2_r3', title: 'Master Supervised Fine-Tuning (SFT) & Alpaca dataset formatting', xp: 50 },
-              { id: 'm8_t2_r4', title: 'Mini-Project: Fine-tune Llama 3 or Mistral 7B using QLoRA & Unsloth on GPU', xp: 50 }
+              { id: 'm8_t2_r2', title: 'Complete Hugging Face TRL library documentation', xp: 35 },
+              { id: 'm8_t2_r3', title: 'Master Supervised Fine-Tuning (SFT) & Alpaca dataset formatting', xp: 40 },
+              { id: 'm8_t2_r4', title: 'Mini-Project: Fine-tune Llama 3 or Mistral 7B using QLoRA & Unsloth on GPU', xp: 75 }
             ]
           },
           {
@@ -1132,10 +1149,10 @@
             name: 'Quantization, GGUF & Running Local Models with Ollama',
             path: './03_modern-Ai/llms/03_quantization_ollama.md',
             requirements: [
-              { id: 'm8_t3_r1', title: 'Study GGUF format, AWQ, and GPTQ quantization papers', xp: 50 },
-              { id: 'm8_t3_r2', title: 'Master Ollama CLI, Modelfiles, and local vLLM API server execution', xp: 50 },
-              { id: 'm8_t3_r3', title: 'Benchmark latency, throughput (tokens/sec), & memory footprint', xp: 50 },
-              { id: 'm8_t3_r4', title: 'Mini-Project: Deploy a local quantized Llama 3 model with Ollama & API backend', xp: 50 }
+              { id: 'm8_t3_r1', title: 'Study GGUF format, AWQ, and GPTQ quantization papers', xp: 45 },
+              { id: 'm8_t3_r2', title: 'Master Ollama CLI, Modelfiles, and local vLLM API server execution', xp: 35 },
+              { id: 'm8_t3_r3', title: 'Benchmark latency, throughput (tokens/sec), & memory footprint', xp: 40 },
+              { id: 'm8_t3_r4', title: 'Mini-Project: Deploy a local quantized Llama 3 model with Ollama & API backend', xp: 55 }
             ]
           },
           {
@@ -1143,10 +1160,10 @@
             name: 'LLM Evaluation & Benchmarking',
             path: './03_modern-Ai/llms/04_evaluation_benchmarks.md',
             requirements: [
-              { id: 'm8_t4_r1', title: 'Study MMLU, GSM8K, HumanEval, & LMSYS Chatbot Arena methodology', xp: 50 },
-              { id: 'm8_t4_r2', title: 'Master LLM-as-a-Judge evaluation techniques (GPT-4 / Claude scoring)', xp: 50 },
-              { id: 'm8_t4_r3', title: 'Practice Ragas / DeepEval framework for automated LLM scoring', xp: 50 },
-              { id: 'm8_t4_r4', title: 'Mini-Project: Build an automated evaluation benchmark suite for custom LLM outputs', xp: 50 }
+              { id: 'm8_t4_r1', title: 'Study MMLU, GSM8K, HumanEval, & LMSYS Chatbot Arena methodology', xp: 40 },
+              { id: 'm8_t4_r2', title: 'Master LLM-as-a-Judge evaluation techniques (GPT-4 / Claude scoring)', xp: 45 },
+              { id: 'm8_t4_r3', title: 'Practice Ragas / DeepEval framework for automated LLM scoring', xp: 35 },
+              { id: 'm8_t4_r4', title: 'Mini-Project: Build an automated evaluation benchmark suite for custom LLM outputs', xp: 60 }
             ]
           }
         ]
@@ -1156,16 +1173,18 @@
         title: '09. Agentic AI & Autonomous Systems',
         icon: '⚙️',
         duration: '2-3 weeks',
+        topicBonus: 120,
+        moduleBonus: 450,
         topics: [
           {
             id: 'm9_t1',
             name: 'ReAct Pattern & Tool-Use Execution',
             path: './03_modern-Ai/agentic_ai/01_react_tool_use.md',
             requirements: [
-              { id: 'm9_t1_r1', title: "Read Yao et al. 'ReAct: Synergizing Reasoning and Acting in LLMs'", xp: 50 },
-              { id: 'm9_t1_r2', title: 'Master OpenAI Function Calling & JSON Schema tool definition', xp: 50 },
-              { id: 'm9_t1_r3', title: 'Implement Thought-Action-Observation loop execution parser', xp: 50 },
-              { id: 'm9_t1_r4', title: 'Mini-Project: Build a Python ReAct Agent with Web Search & Calculator tools', xp: 50 }
+              { id: 'm9_t1_r1', title: 'Read Yao et al. ’ReAct: Synergizing Reasoning and Acting in LLMs’', xp: 50 },
+              { id: 'm9_t1_r2', title: 'Master OpenAI Function Calling & JSON Schema tool definition', xp: 40 },
+              { id: 'm9_t1_r3', title: 'Implement Thought-Action-Observation loop execution parser', xp: 55 },
+              { id: 'm9_t1_r4', title: 'Mini-Project: Build a Python ReAct Agent with Web Search & Calculator tools', xp: 65 }
             ]
           },
           {
@@ -1174,9 +1193,9 @@
             path: './03_modern-Ai/agentic_ai/02_multi_agent_frameworks.md',
             requirements: [
               { id: 'm9_t2_r1', title: 'Study LangGraph documentation, CrewAI framework, & AutoGen concepts', xp: 50 },
-              { id: 'm9_t2_r2', title: 'Master Stateful agent graphs, cyclic execution loops, & state transitions', xp: 50 },
-              { id: 'm9_t2_r3', title: 'Implement Human-in-the-Loop approval nodes & sub-agent delegation', xp: 50 },
-              { id: 'm9_t2_r4', title: 'Mini-Project: Build a Multi-Agent Research & Writer team in LangGraph', xp: 50 }
+              { id: 'm9_t2_r2', title: 'Master Stateful agent graphs, cyclic execution loops, & state transitions', xp: 55 },
+              { id: 'm9_t2_r3', title: 'Implement Human-in-the-Loop approval nodes & sub-agent delegation', xp: 45 },
+              { id: 'm9_t2_r4', title: 'Mini-Project: Build a Multi-Agent Research & Writer team in LangGraph', xp: 70 }
             ]
           },
           {
@@ -1184,10 +1203,10 @@
             name: 'Memory Systems & Long-Term Planning',
             path: './03_modern-Ai/agentic_ai/03_memory_planning.md',
             requirements: [
-              { id: 'm9_t3_r1', title: "Read MemGPT paper & Lilian Weng's Autonomous Agents blog", xp: 50 },
-              { id: 'm9_t3_r2', title: 'Implement Short-term working memory & Long-term vector memory stores', xp: 50 },
+              { id: 'm9_t3_r1', title: 'Read MemGPT paper & Lilian Weng’s Autonomous Agents blog', xp: 50 },
+              { id: 'm9_t3_r2', title: 'Implement Short-term working memory & Long-term vector memory stores', xp: 55 },
               { id: 'm9_t3_r3', title: 'Master Reflexion, Self-Correction, & Plan-and-Solve decomposition', xp: 50 },
-              { id: 'm9_t3_r4', title: 'Mini-Project: Build an AI Agent with persistent episodic vector memory', xp: 50 }
+              { id: 'm9_t3_r4', title: 'Mini-Project: Build an AI Agent with persistent episodic vector memory', xp: 70 }
             ]
           },
           {
@@ -1195,10 +1214,10 @@
             name: 'Autonomous Agentic Workflow Implementation',
             path: './03_modern-Ai/agentic_ai/04_autonomous_workflows.md',
             requirements: [
-              { id: 'm9_t4_r1', title: 'Study OpenDevin, AutoGPT, and SWE-bench agent architecture patterns', xp: 50 },
+              { id: 'm9_t4_r1', title: 'Study OpenDevin, AutoGPT, and SWE-bench agent architecture patterns', xp: 45 },
               { id: 'm9_t4_r2', title: 'Master Sandboxed code execution (Docker / E2B sandbox environment)', xp: 50 },
-              { id: 'm9_t4_r3', title: 'Implement automated error handling, re-trying, & multi-step verification', xp: 50 },
-              { id: 'm9_t4_r4', title: 'Mini-Project: Build an Autonomous Coding Agent that writes & debugs Python scripts', xp: 50 }
+              { id: 'm9_t4_r3', title: 'Implement automated error handling, re-trying, & multi-step verification', xp: 45 },
+              { id: 'm9_t4_r4', title: 'Mini-Project: Build an Autonomous Coding Agent that writes & debugs Python scripts', xp: 80 }
             ]
           }
         ]
@@ -1208,15 +1227,17 @@
         title: '10. Retrieval-Augmented Generation (RAG)',
         icon: '🔄',
         duration: '1-2 weeks',
+        topicBonus: 100,
+        moduleBonus: 350,
         topics: [
           {
             id: 'm10_t1',
             name: 'Vector Databases (Chroma, Pinecone, Qdrant)',
             path: './03_modern-Ai/rag/01_vector_databases.md',
             requirements: [
-              { id: 'm10_t1_r1', title: 'Study Chroma, Pinecone, Qdrant, and Weaviate documentation', xp: 50 },
-              { id: 'm10_t1_r2', title: 'Master Vector Similarity Metrics (Cosine, Euclidean, Dot Product) & HNSW', xp: 50 },
-              { id: 'm10_t1_r3', title: 'Implement Metadata Filtering & Payload Indexing', xp: 50 },
+              { id: 'm10_t1_r1', title: 'Study Chroma, Pinecone, Qdrant, and Weaviate documentation', xp: 40 },
+              { id: 'm10_t1_r2', title: 'Master Vector Similarity Metrics (Cosine, Euclidean, Dot Product) & HNSW', xp: 45 },
+              { id: 'm10_t1_r3', title: 'Implement Metadata Filtering & Payload Indexing', xp: 30 },
               { id: 'm10_t1_r4', title: 'Mini-Project: Set up Chroma DB / Qdrant instance & ingest 100+ documents', xp: 50 }
             ]
           },
@@ -1225,10 +1246,10 @@
             name: 'Document Chunking Strategies & Embedding Models',
             path: './03_modern-Ai/rag/02_chunking_embeddings.md',
             requirements: [
-              { id: 'm10_t2_r1', title: 'Study Document Chunking strategies (Fixed-size, Recursive, Semantic)', xp: 50 },
-              { id: 'm10_t2_r2', title: 'Benchmark Sentence-Transformers (BGE, E5, OpenAI text-embedding-3)', xp: 50 },
-              { id: 'm10_t2_r3', title: 'Measure retrieval recall and precision across chunk sizes', xp: 50 },
-              { id: 'm10_t2_r4', title: 'Mini-Project: Build an automated Chunking & Embedding Pipeline for PDFs', xp: 50 }
+              { id: 'm10_t2_r1', title: 'Study Document Chunking strategies (Fixed-size, Recursive, Semantic)', xp: 35 },
+              { id: 'm10_t2_r2', title: 'Benchmark Sentence-Transformers (BGE, E5, OpenAI text-embedding-3)', xp: 45 },
+              { id: 'm10_t2_r3', title: 'Measure retrieval recall and precision across chunk sizes', xp: 40 },
+              { id: 'm10_t2_r4', title: 'Mini-Project: Build an automated Chunking & Embedding Pipeline for PDFs', xp: 55 }
             ]
           },
           {
@@ -1236,10 +1257,10 @@
             name: 'Hybrid Search (Sparse + Dense Retrieval)',
             path: './03_modern-Ai/rag/03_hybrid_search.md',
             requirements: [
-              { id: 'm10_t3_r1', title: 'Study BM25 Lexical Keyword Search algorithm & Sparse Vectors', xp: 50 },
-              { id: 'm10_t3_r2', title: 'Master Reciprocal Rank Fusion (RRF) for merging Sparse + Dense results', xp: 50 },
-              { id: 'm10_t3_r3', title: 'Practice Qdrant / Pinecone Hybrid Search APIs', xp: 50 },
-              { id: 'm10_t3_r4', title: 'Mini-Project: Implement a Hybrid RAG Search Engine with BM25 + Vector Retrieval', xp: 50 }
+              { id: 'm10_t3_r1', title: 'Study BM25 Lexical Keyword Search algorithm & Sparse Vectors', xp: 40 },
+              { id: 'm10_t3_r2', title: 'Master Reciprocal Rank Fusion (RRF) for merging Sparse + Dense results', xp: 35 },
+              { id: 'm10_t3_r3', title: 'Practice Qdrant / Pinecone Hybrid Search APIs', xp: 30 },
+              { id: 'm10_t3_r4', title: 'Mini-Project: Implement a Hybrid RAG Search Engine with BM25 + Vector Retrieval', xp: 60 }
             ]
           },
           {
@@ -1248,9 +1269,9 @@
             path: './03_modern-Ai/rag/04_advanced_rag_reranking.md',
             requirements: [
               { id: 'm10_t4_r1', title: 'Study Cohere Rerank / BGE Cross-Encoders and HyDE (Hypothetical Embeddings)', xp: 50 },
-              { id: 'm10_t4_r2', title: 'Read GraphRAG paper & Query Transformation techniques (Multi-Query, Step-Back)', xp: 50 },
+              { id: 'm10_t4_r2', title: 'Read GraphRAG paper & Query Transformation techniques (Multi-Query, Step-Back)', xp: 55 },
               { id: 'm10_t4_r3', title: 'Implement Context Compression and Self-RAG verification loops', xp: 50 },
-              { id: 'm10_t4_r4', title: 'Mini-Project: Build an Advanced RAG Pipeline with Query Rewriting + Re-ranking', xp: 50 }
+              { id: 'm10_t4_r4', title: 'Mini-Project: Build an Advanced RAG Pipeline with Query Rewriting + Re-ranking', xp: 70 }
             ]
           }
         ]
@@ -1260,16 +1281,18 @@
         title: '11. Prompt Engineering Mastery',
         icon: '⚡',
         duration: '1-2 weeks',
+        topicBonus: 80,
+        moduleBonus: 250,
         topics: [
           {
             id: 'm11_t1',
             name: 'Zero-Shot & Few-Shot Prompting Techniques',
             path: './03_modern-Ai/prompt_engineering/01_zero_few_shot.md',
             requirements: [
-              { id: 'm11_t1_r1', title: 'Read OpenAI Prompt Engineering Guide & Anthropic Prompt Library', xp: 50 },
-              { id: 'm11_t1_r2', title: 'Master Zero-Shot, Few-Shot In-Context Exemplars, & Prompt Formatting', xp: 50 },
-              { id: 'm11_t1_r3', title: 'Optimize prompt instruction clarity, tone, role, and output formatting', xp: 50 },
-              { id: 'm11_t1_r4', title: 'Mini-Project: Build a Few-Shot Prompt Template library for 5 distinct tasks', xp: 50 }
+              { id: 'm11_t1_r1', title: 'Read OpenAI Prompt Engineering Guide & Anthropic Prompt Library', xp: 25 },
+              { id: 'm11_t1_r2', title: 'Master Zero-Shot, Few-Shot In-Context Exemplars, & Prompt Formatting', xp: 30 },
+              { id: 'm11_t1_r3', title: 'Optimize prompt instruction clarity, tone, role, and output formatting', xp: 25 },
+              { id: 'm11_t1_r4', title: 'Mini-Project: Build a Few-Shot Prompt Template library for 5 distinct tasks', xp: 35 }
             ]
           },
           {
@@ -1277,10 +1300,10 @@
             name: 'Chain-of-Thought & Tree-of-Thought Reasoning',
             path: './03_modern-Ai/prompt_engineering/02_chain_tree_of_thought.md',
             requirements: [
-              { id: 'm11_t2_r1', title: "Read Wei et al. 'Chain-of-Thought' and Yao et al. 'Tree of Thoughts' papers", xp: 50 },
-              { id: 'm11_t2_r2', title: 'Implement Self-Consistency decoding (sampling multiple CoT paths & voting)', xp: 50 },
+              { id: 'm11_t2_r1', title: 'Read Wei et al. ’Chain-of-Thought’ and Yao et al. ’Tree of Thoughts’ papers', xp: 45 },
+              { id: 'm11_t2_r2', title: 'Implement Self-Consistency decoding (sampling multiple CoT paths & voting)', xp: 40 },
               { id: 'm11_t2_r3', title: 'Implement Tree-of-Thought (ToT) search over candidate reasoning steps', xp: 50 },
-              { id: 'm11_t2_r4', title: 'Mini-Project: Build a CoT / ToT solver script for complex math word problems', xp: 50 }
+              { id: 'm11_t2_r4', title: 'Mini-Project: Build a CoT / ToT solver script for complex math word problems', xp: 55 }
             ]
           },
           {
@@ -1288,9 +1311,9 @@
             name: 'System Prompt Optimization & Guardrails',
             path: './03_modern-Ai/prompt_engineering/03_system_prompts_guardrails.md',
             requirements: [
-              { id: 'm11_t3_r1', title: 'Study Prompt Injection, Jailbreaking techniques, & Safety Mitigation', xp: 50 },
-              { id: 'm11_t3_r2', title: 'Master System Prompt optimization & XML tag structuring (<context>, <instructions>)', xp: 50 },
-              { id: 'm11_t3_r3', title: 'Implement Safety Guardrails using NeMo Guardrails or Llama Guard', xp: 50 },
+              { id: 'm11_t3_r1', title: 'Study Prompt Injection, Jailbreaking techniques, & Safety Mitigation', xp: 35 },
+              { id: 'm11_t3_r2', title: 'Master System Prompt optimization & XML tag structuring', xp: 30 },
+              { id: 'm11_t3_r3', title: 'Implement Safety Guardrails using NeMo Guardrails or Llama Guard', xp: 45 },
               { id: 'm11_t3_r4', title: 'Mini-Project: Build a Secure System Prompt & Guardrail filter against malicious input', xp: 50 }
             ]
           },
@@ -1299,10 +1322,10 @@
             name: 'Structured Output Generation (JSON Schema)',
             path: './03_modern-Ai/prompt_engineering/04_structured_json_output.md',
             requirements: [
-              { id: 'm11_t4_r1', title: 'Study JSON Schema specification & Pydantic data validation in Python', xp: 50 },
-              { id: 'm11_t4_r2', title: 'Master Instructor library & Outlines constrained sampling engine', xp: 50 },
-              { id: 'm11_t4_r3', title: 'Enforce strict JSON output parsing with automatic retries on validation failure', xp: 50 },
-              { id: 'm11_t4_r4', title: 'Mini-Project: Build a Structured Extractor returning verified Pydantic objects', xp: 50 }
+              { id: 'm11_t4_r1', title: 'Study JSON Schema specification & Pydantic data validation in Python', xp: 30 },
+              { id: 'm11_t4_r2', title: 'Master Instructor library & Outlines constrained sampling engine', xp: 35 },
+              { id: 'm11_t4_r3', title: 'Enforce strict JSON output parsing with automatic retries on validation failure', xp: 35 },
+              { id: 'm11_t4_r4', title: 'Mini-Project: Build a Structured Extractor returning verified Pydantic objects', xp: 45 }
             ]
           }
         ]
@@ -1312,16 +1335,18 @@
         title: '12. AI Tooling & MLOps Infrastructure',
         icon: '🧰',
         duration: '1-2 weeks',
+        topicBonus: 90,
+        moduleBonus: 300,
         topics: [
           {
             id: 'm12_t1',
             name: 'LangChain & LlamaIndex Framework Integration',
             path: './03_modern-Ai/ai_tooling/01_langchain_llamaindex.md',
             requirements: [
-              { id: 'm12_t1_r1', title: 'Complete LangChain Academy & LlamaIndex Official Tutorials', xp: 50 },
-              { id: 'm12_t1_r2', title: 'Master LCEL (LangChain Expression Language), Runnables, & Chains', xp: 50 },
-              { id: 'm12_t1_r3', title: 'Implement LlamaIndex Data Connectors, Indexing, and Query Engines', xp: 50 },
-              { id: 'm12_t1_r4', title: 'Mini-Project: Build an end-to-end RAG QA Application using LangChain & LlamaIndex', xp: 50 }
+              { id: 'm12_t1_r1', title: 'Complete LangChain Academy & LlamaIndex Official Tutorials', xp: 45 },
+              { id: 'm12_t1_r2', title: 'Master LCEL (LangChain Expression Language), Runnables, & Chains', xp: 40 },
+              { id: 'm12_t1_r3', title: 'Implement LlamaIndex Data Connectors, Indexing, and Query Engines', xp: 40 },
+              { id: 'm12_t1_r4', title: 'Mini-Project: Build an end-to-end RAG QA Application using LangChain & LlamaIndex', xp: 55 }
             ]
           },
           {
@@ -1329,10 +1354,10 @@
             name: 'Model Deployment & API Serving (FastAPI, Modal, vLLM)',
             path: './03_modern-Ai/ai_tooling/02_model_deployment_apis.md',
             requirements: [
-              { id: 'm12_t2_r1', title: 'Study FastAPI framework, Pydantic schemas, and async endpoints', xp: 50 },
-              { id: 'm12_t2_r2', title: 'Master Docker containerization for AI services & Modal serverless GPUs', xp: 50 },
-              { id: 'm12_t2_r3', title: 'Serve LLM endpoints with high concurrency using vLLM / TGI', xp: 50 },
-              { id: 'm12_t2_r4', title: 'Mini-Project: Build & deploy a Dockerized FastAPI service serving RAG/Agent backend', xp: 50 }
+              { id: 'm12_t2_r1', title: 'Study FastAPI framework, Pydantic schemas, and async endpoints', xp: 35 },
+              { id: 'm12_t2_r2', title: 'Master Docker containerization for AI services & Modal serverless GPUs', xp: 45 },
+              { id: 'm12_t2_r3', title: 'Serve LLM endpoints with high concurrency using vLLM / TGI', xp: 40 },
+              { id: 'm12_t2_r4', title: 'Mini-Project: Build & deploy a Dockerized FastAPI service serving RAG/Agent backend', xp: 60 }
             ]
           },
           {
@@ -1340,10 +1365,10 @@
             name: 'Tracing, Observability & Evaluation (LangSmith, Phoenix)',
             path: './03_modern-Ai/ai_tooling/03_tracing_observability.md',
             requirements: [
-              { id: 'm12_t3_r1', title: 'Study LangSmith, Arize Phoenix, and LangFuse observability platforms', xp: 50 },
-              { id: 'm12_t3_r2', title: 'Instrument AI applications with full execution traces, latency, & token usage', xp: 50 },
-              { id: 'm12_t3_r3', title: 'Implement feedback logging and automated online evaluation rules', xp: 50 },
-              { id: 'm12_t3_r4', title: 'Mini-Project: Connect LangSmith / Phoenix tracing to your AI Agent application', xp: 50 }
+              { id: 'm12_t3_r1', title: 'Study LangSmith, Arize Phoenix, and LangFuse observability platforms', xp: 35 },
+              { id: 'm12_t3_r2', title: 'Instrument AI applications with full execution traces, latency, & token usage', xp: 40 },
+              { id: 'm12_t3_r3', title: 'Implement feedback logging and automated online evaluation rules', xp: 35 },
+              { id: 'm12_t3_r4', title: 'Mini-Project: Connect LangSmith / Phoenix tracing to your AI Agent application', xp: 45 }
             ]
           },
           {
@@ -1351,10 +1376,10 @@
             name: 'CI/CD Pipelines for AI Applications',
             path: './03_modern-Ai/ai_tooling/04_cicd_ai_pipelines.md',
             requirements: [
-              { id: 'm12_t4_r1', title: 'Study GitHub Actions CI/CD workflows for AI repositories', xp: 50 },
-              { id: 'm12_t4_r2', title: 'Implement automated prompt evaluation regression tests in CI', xp: 50 },
-              { id: 'm12_t4_r3', title: 'Automate model testing, linting (ruff), and deployment triggers', xp: 50 },
-              { id: 'm12_t4_r4', title: 'Mini-Project: Build a GitHub Action workflow that runs RAG evaluation tests on PRs', xp: 50 }
+              { id: 'm12_t4_r1', title: 'Study GitHub Actions CI/CD workflows for AI repositories', xp: 30 },
+              { id: 'm12_t4_r2', title: 'Implement automated prompt evaluation regression tests in CI', xp: 45 },
+              { id: 'm12_t4_r3', title: 'Automate model testing, linting (ruff), and deployment triggers', xp: 40 },
+              { id: 'm12_t4_r4', title: 'Mini-Project: Build a GitHub Action workflow that runs RAG evaluation tests on PRs', xp: 55 }
             ]
           }
         ]
@@ -1364,16 +1389,18 @@
         title: '13. Capstone Projects',
         icon: '🧪',
         duration: 'Ongoing',
+        topicBonus: 150,
+        moduleBonus: 500,
         topics: [
           {
             id: 'm13_t1',
             name: 'Design & Architecture Specification of AI Application',
             path: './04_capstone-project/01_architecture_spec.md',
             requirements: [
-              { id: 'm13_t1_r1', title: 'Write a comprehensive Technical Architecture Spec Doc for your Capstone', xp: 50 },
-              { id: 'm13_t1_r2', title: 'Draw complete System Architecture Diagrams (Agents, RAG, DB, API, UI)', xp: 50 },
+              { id: 'm13_t1_r1', title: 'Write a comprehensive Technical Architecture Spec Doc for your Capstone', xp: 70 },
+              { id: 'm13_t1_r2', title: 'Draw complete System Architecture Diagrams (Agents, RAG, DB, API, UI)', xp: 55 },
               { id: 'm13_t1_r3', title: 'Define dataset requirements, evaluation metrics, & acceptance criteria', xp: 50 },
-              { id: 'm13_t1_r4', title: 'Publish Architecture Spec markdown in your project repository', xp: 50 }
+              { id: 'm13_t1_r4', title: 'Publish Architecture Spec markdown in your project repository', xp: 25 }
             ]
           },
           {
@@ -1381,10 +1408,10 @@
             name: 'Full-Stack Implementation (RAG/Agents + Backend + UI)',
             path: './04_capstone-project/02_fullstack_implementation.md',
             requirements: [
-              { id: 'm13_t2_r1', title: 'Develop backend API serving your AI Agent / RAG reasoning engine', xp: 50 },
-              { id: 'm13_t2_r2', title: 'Integrate Vector Database, Tooling, and LLM provider APIs', xp: 50 },
-              { id: 'm13_t2_r3', title: 'Build a clean, responsive Web User Interface (React / Next.js / Streamlit / HTML5)', xp: 50 },
-              { id: 'm13_t2_r4', title: 'Deliver a working full-stack AI application connecting UI -> API -> Agent', xp: 50 }
+              { id: 'm13_t2_r1', title: 'Develop backend API serving your AI Agent / RAG reasoning engine', xp: 80 },
+              { id: 'm13_t2_r2', title: 'Integrate Vector Database, Tooling, and LLM provider APIs', xp: 70 },
+              { id: 'm13_t2_r3', title: 'Build a clean, responsive Web User Interface (React / Next.js / Streamlit / HTML5)', xp: 65 },
+              { id: 'm13_t2_r4', title: 'Deliver a working full-stack AI application connecting UI -> API -> Agent', xp: 85 }
             ]
           },
           {
@@ -1392,10 +1419,10 @@
             name: 'Evaluation & Testing Suite Execution',
             path: './04_capstone-project/03_evaluation_testing.md',
             requirements: [
-              { id: 'm13_t3_r1', title: 'Build a test dataset of 30+ representative test queries & ground truth answers', xp: 50 },
-              { id: 'm13_t3_r2', title: 'Execute automated evaluation metrics (Faithfulness, Answer Relevance, Latency)', xp: 50 },
+              { id: 'm13_t3_r1', title: 'Build a test dataset of 30+ representative test queries & ground truth answers', xp: 55 },
+              { id: 'm13_t3_r2', title: 'Execute automated evaluation metrics (Faithfulness, Answer Relevance, Latency)', xp: 60 },
               { id: 'm13_t3_r3', title: 'Generate an Evaluation Report documenting accuracy & benchmark performance', xp: 50 },
-              { id: 'm13_t3_r4', title: 'Fix edge-case failures & optimize prompt/RAG parameters based on eval results', xp: 50 }
+              { id: 'm13_t3_r4', title: 'Fix edge-case failures & optimize prompt/RAG parameters based on eval results', xp: 65 }
             ]
           },
           {
@@ -1403,10 +1430,10 @@
             name: 'Public GitHub Release & Live Demo Deployment',
             path: './04_capstone-project/04_public_demo_deployment.md',
             requirements: [
-              { id: 'm13_t4_r1', title: 'Deploy application to a live public URL (HuggingFace / Vercel / Modal)', xp: 50 },
+              { id: 'm13_t4_r1', title: 'Deploy application to a live public URL (HuggingFace / Vercel / Modal)', xp: 60 },
               { id: 'm13_t4_r2', title: 'Write a professional GitHub README with demo GIF, architecture diagram, & setup guide', xp: 50 },
-              { id: 'm13_t4_r3', title: 'Record a 2-minute video walkthrough showcasing your AI Capstone project', xp: 50 },
-              { id: 'm13_t4_r4', title: 'Publish open-source repository & share with the AI Engineering community', xp: 50 }
+              { id: 'm13_t4_r3', title: 'Record a 2-minute video walkthrough showcasing your AI Capstone project', xp: 40 },
+              { id: 'm13_t4_r4', title: 'Publish open-source repository & share with the AI Engineering community', xp: 35 }
             ]
           }
         ]
@@ -1415,15 +1442,15 @@
 
     const RANKS = [
       { level: 1, xpRequired: 0, title: "Novice Prompt Crafter" },
-      { level: 2, xpRequired: 400, title: "Python Apprentice" },
+      { level: 2, xpRequired: 350, title: "Python Apprentice" },
       { level: 3, xpRequired: 1000, title: "Math & Logic Explorer" },
-      { level: 4, xpRequired: 2000, title: "ML Practitioner" },
-      { level: 5, xpRequired: 3500, title: "Neural Net Constructor" },
-      { level: 6, xpRequired: 5000, title: "Specialization Scholar" },
-      { level: 7, xpRequired: 6800, title: "Transformer Strategist" },
-      { level: 8, xpRequired: 8800, title: "RAG & Agentic Architect" },
-      { level: 9, xpRequired: 11000, title: "AI Systems Engineer" },
-      { level: 10, xpRequired: 14000, title: "Autonomous AI Sovereign" }
+      { level: 4, xpRequired: 2500, title: "ML Practitioner" },
+      { level: 5, xpRequired: 4500, title: "Neural Net Constructor" },
+      { level: 6, xpRequired: 7000, title: "Specialization Scholar" },
+      { level: 7, xpRequired: 9500, title: "Transformer Strategist" },
+      { level: 8, xpRequired: 12000, title: "RAG & Agentic Architect" },
+      { level: 9, xpRequired: 15000, title: "AI Systems Engineer" },
+      { level: 10, xpRequired: 17500, title: "Autonomous AI Sovereign" }
     ];
 
     const BADGES = [
@@ -1442,11 +1469,11 @@
     ];
 
     const DEFAULT_REWARDS = {
-      2: "Treat myself to a specialty espresso or boba",
-      4: "Order favorite takeaway / pizza night",
-      6: "Buy a cool tech gadget or keycaps set",
-      8: "Take a full guilt-free day off gaming / relaxing",
-      10: "Grand Celebration! Weekend getaway / tech gift"
+      2: "Treat myself to a specialty espresso or boba ☕ (350 XP)",
+      4: "Order favorite takeaway / pizza night 🍕 (2,500 XP)",
+      6: "Buy a cool tech gadget or keycaps set ⌨️ (7,000 XP)",
+      8: "Take a full guilt-free day off gaming / relaxing 🎮 (12,000 XP)",
+      10: "Grand Celebration! Weekend getaway / tech gift ✈️ (17,500 XP)"
     };
 
     let state = {
@@ -1500,18 +1527,18 @@
             totalReqs++;
             if (state.completedReqs[req.id]) {
               completedReqsCount++;
-              totalXP += req.xp; // +50 XP per sub-task
+              totalXP += req.xp; // Difficulty-weighted XP per sub-task
             } else {
               topicFullyDone = false;
               modFullyDone = false;
             }
           });
           if (topicFullyDone && topic.requirements.length > 0) {
-            totalXP += 100; // +100 XP Topic Completion Bonus
+            totalXP += (mod.topicBonus || 100); // Difficulty-scaled Topic Mastery Bonus
           }
         });
         if (modFullyDone && mod.topics.length > 0) {
-          totalXP += 200; // +200 XP Module Mastery Bonus
+          totalXP += (mod.moduleBonus || 200); // Difficulty-scaled Module Mastery Bonus
         }
       });
 
@@ -1656,7 +1683,7 @@
                     📖 Focus Page &rarr;
                   </a>
                   <span style="font-size: 0.8rem; color: var(--text-muted);">
-                    ${topicDoneReqs}/${topic.requirements.length} Done ${isTopicFullyDone ? '(+100 Bonus!)' : ''}
+                    ${topicDoneReqs}/${topic.requirements.length} Done ${isTopicFullyDone ? `(+${mod.topicBonus || 100} Bonus!)` : ''}
                   </span>
                 </div>
               </div>

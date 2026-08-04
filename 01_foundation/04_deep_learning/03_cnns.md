@@ -2,26 +2,20 @@
 
 > Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
 
-## 📌 Mandatory Requirements to Complete (+200 XP Total)
-To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
+## 📌 Mandatory Requirements to Complete (+185 XP Base + 90 XP Mastery Bonus)
+To mark this topic as **Complete**, finish all 4 mandatory requirements below.
+XP is weighted by difficulty — harder tasks earn more!
 
 - [ ] **Requirement 1 (+50 XP)**: Study Stanford CS231n Convolutional Networks lecture notes
-- [ ] **Requirement 2 (+50 XP)**: Watch Fast.ai Practical Deep Learning for Coders CNN module
-- [ ] **Requirement 3 (+50 XP)**: Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch
+  > *Difficulty Rationale: Stanford-level material, dense lecture notes + assignments*
+- [ ] **Requirement 2 (+35 XP)**: Watch Fast.ai Practical Deep Learning for Coders CNN module
+  > *Difficulty Rationale: Practical course module*
+- [ ] **Requirement 3 (+45 XP)**: Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures
+  > *Difficulty Rationale: Multiple architectural concepts to deeply understand*
+- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch
+  > *Difficulty Rationale: Applied DL project with real image data*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
-
----
-
-## 🎯 Detailed Learning Objectives
-- Master all theoretical principles and practical code patterns for Convolutional Neural Networks (CNNs).
-- Build hands-on projects and verify outputs against standard metrics.
-
-## 📚 Recommended Courses & Learning Resources
-- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
-- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
-- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+90 XP Bonus**!
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)

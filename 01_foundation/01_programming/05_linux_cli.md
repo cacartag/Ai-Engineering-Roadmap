@@ -2,26 +2,20 @@
 
 > Dedicated Focus Study Guide — Module: 01. Programming for AI
 
-## 📌 Mandatory Requirements to Complete (+200 XP Total)
-To mark this topic as **Complete** in your dashboard, you must finish all 4 mandatory requirements below:
+## 📌 Mandatory Requirements to Complete (+100 XP Base + 50 XP Mastery Bonus)
+To mark this topic as **Complete**, finish all 4 mandatory requirements below.
+XP is weighted by difficulty — harder tasks earn more!
 
-- [ ] **Requirement 1 (+50 XP)**: Audit Linux Command Line Basics (Coursera - UC Davis)
-- [ ] **Requirement 2 (+50 XP)**: Read The Linux Command Line Book by William Shotts (Ch 1-10)
-- [ ] **Requirement 3 (+50 XP)**: Practice shell navigation, permissions, grep, awk, & environment variables
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Write a shell script to automate Python virtualenv setup
+- [ ] **Requirement 1 (+25 XP)**: Audit Linux Command Line Basics (Coursera - UC Davis)
+  > *Difficulty Rationale: Short course audit, ~1 week*
+- [ ] **Requirement 2 (+30 XP)**: Read The Linux Command Line Book by William Shotts (Ch 1-10)
+  > *Difficulty Rationale: Substantial technical book reading*
+- [ ] **Requirement 3 (+20 XP)**: Practice shell navigation, permissions, grep, awk, & environment variables
+  > *Difficulty Rationale: Repetitive drill practice*
+- [ ] **Requirement 4 (+25 XP)**: Mini-Project: Write a shell script to automate Python virtualenv setup
+  > *Difficulty Rationale: Moderate scripting project*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
-
----
-
-## 🎯 Detailed Learning Objectives
-- Master all theoretical principles and practical code patterns for Linux Command Line Fundamentals.
-- Build hands-on projects and verify outputs against standard metrics.
-
-## 📚 Recommended Courses & Learning Resources
-- [Hugging Face Learn & AI Courses](https://huggingface.co/learn) — **Free**
-- [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — **Free to Audit**
-- [Awesome AI Engineering Resources](https://github.com/dair-ai/Awesome-LLM-Self-Pruning) — **Free Community Resources**
+> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+50 XP Bonus**!
 
 ---
 ← [Back to Interactive Dashboard](../../index.html)
