@@ -1,21 +1,59 @@
-# 🎯 System Prompt Optimization & Guardrails
+# System Prompt Optimization & Guardrails
 
-> Dedicated Focus Study Guide — Module: 11. Prompt Engineering Mastery
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+160 XP Base + 80 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+35 XP)**: Study Prompt Injection, Jailbreaking techniques, & Safety Mitigation
-  > *Difficulty Rationale: Security research study*
-- [ ] **Requirement 2 (+30 XP)**: Master System Prompt optimization & XML tag structuring
-  > *Difficulty Rationale: Prompt architecture optimization*
-- [ ] **Requirement 3 (+45 XP)**: Implement Safety Guardrails using NeMo Guardrails or Llama Guard
-  > *Difficulty Rationale: Framework integration for safety*
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Build a Secure System Prompt & Guardrail filter against malicious input
-  > *Difficulty Rationale: Applied security project*
+### Study Prompt Injection, Jailbreaking techniques, & Safety Mitigation
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+80 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Study common prompt injection techniques
+- [ ] Test jailbreaking attempts on a model
+- [ ] Understand direct vs indirect injection
+- [ ] Document 5+ attack vectors and defenses
+
+**Deliverable:** Security analysis document
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master System Prompt optimization & XML tag structuring
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Write an optimized system prompt with clear boundaries
+- [ ] Use XML/markdown tag structuring for sections
+- [ ] Test system prompt robustness against basic attacks
+- [ ] Iterate and improve based on failure cases
+
+**Deliverable:** Optimized system prompt with test results
+
+---
+
+### Implement Safety Guardrails using NeMo Guardrails or Llama Guard
+**Resource:** [https://github.com/NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
+
+**Acceptance Criteria:**
+- [ ] Install and configure NeMo Guardrails or Llama Guard
+- [ ] Define input rails (block harmful queries)
+- [ ] Define output rails (filter harmful responses)
+- [ ] Test with adversarial inputs
+
+**Deliverable:** Guardrails configuration + test results
+
+---
+
+### Mini-Project: Build a Secure System Prompt & Guardrail filter against malicious input
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] System prompt defends against injection attempts
+- [ ] Input guardrail catches malicious/harmful requests
+- [ ] Output guardrail filters sensitive information
+- [ ] Test with 20+ adversarial inputs
+- [ ] Document bypass rate and fix remaining issues
+
+**Deliverable:** Secure system with adversarial test suite
+
+---
+

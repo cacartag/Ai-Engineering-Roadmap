@@ -1,21 +1,60 @@
-# 🎯 Chain-of-Thought & Tree-of-Thought Reasoning
+# Chain-of-Thought & Tree-of-Thought Reasoning
 
-> Dedicated Focus Study Guide — Module: 11. Prompt Engineering Mastery
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+190 XP Base + 80 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+45 XP)**: Read Wei et al. 'Chain-of-Thought' and Yao et al. 'Tree of Thoughts' papers
-  > *Difficulty Rationale: Two important research papers*
-- [ ] **Requirement 2 (+40 XP)**: Implement Self-Consistency decoding (sampling multiple CoT paths & voting)
-  > *Difficulty Rationale: Statistical decoding strategy implementation*
-- [ ] **Requirement 3 (+50 XP)**: Implement Tree-of-Thought (ToT) search over candidate reasoning steps
-  > *Difficulty Rationale: Search algorithm implementation, harder than CoT*
-- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Build a CoT / ToT solver script for complex math word problems
-  > *Difficulty Rationale: Applied reasoning system with verification*
+### Read Wei et al. ’Chain-of-Thought’ and Yao et al. ’Tree of Thoughts’ papers
+**Resource:** [https://arxiv.org/abs/2201.11903](https://arxiv.org/abs/2201.11903)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+80 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read Chain-of-Thought paper
+- [ ] Read Tree of Thoughts paper (arXiv:2305.10601)
+- [ ] Understand when CoT improves performance
+- [ ] Understand ToT's search over reasoning paths
+
+**Deliverable:** Both paper summaries
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Implement Self-Consistency decoding (sampling multiple CoT paths & voting)
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement Self-Consistency: sample N CoT paths
+- [ ] Extract final answers from each path
+- [ ] Take majority vote as final answer
+- [ ] Show improvement over single CoT on math problems
+
+**Deliverable:** Self-Consistency implementation with evaluation
+
+---
+
+### Implement Tree-of-Thought (ToT) search over candidate reasoning steps
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement ToT with BFS or DFS search strategy
+- [ ] Generate candidate next steps at each node
+- [ ] Evaluate candidates with LLM scoring
+- [ ] Prune low-quality branches
+- [ ] Track and return best reasoning path
+
+**Deliverable:** ToT search implementation
+
+---
+
+### Mini-Project: Build a CoT / ToT solver script for complex math word problems
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Solver handles math word problems (GSM8K-style)
+- [ ] Uses CoT prompting with step-by-step reasoning
+- [ ] Implements Self-Consistency for improved accuracy
+- [ ] Optionally uses ToT for harder problems
+- [ ] Evaluates accuracy on 20+ test problems
+
+**Deliverable:** Math reasoning solver with CoT/ToT + evaluation
+
+---
+

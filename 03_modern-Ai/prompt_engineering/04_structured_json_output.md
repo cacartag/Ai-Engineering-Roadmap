@@ -1,21 +1,58 @@
-# 🎯 Structured Output Generation (JSON Schema)
+# Structured Output Generation (JSON Schema)
 
-> Dedicated Focus Study Guide — Module: 11. Prompt Engineering Mastery
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+145 XP Base + 80 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+30 XP)**: Study JSON Schema specification & Pydantic data validation in Python
-  > *Difficulty Rationale: Spec study + validation library*
-- [ ] **Requirement 2 (+35 XP)**: Master Instructor library & Outlines constrained sampling engine
-  > *Difficulty Rationale: Two specialized tools to learn*
-- [ ] **Requirement 3 (+35 XP)**: Enforce strict JSON output parsing with automatic retries on validation failure
-  > *Difficulty Rationale: Error handling + retry logic implementation*
-- [ ] **Requirement 4 (+45 XP)**: Mini-Project: Build a Structured Extractor returning verified Pydantic objects
-  > *Difficulty Rationale: Typed extraction pipeline project*
+### Study JSON Schema specification & Pydantic data validation in Python
+**Resource:** [https://json-schema.org/learn/getting-started-step-by-step](https://json-schema.org/learn/getting-started-step-by-step)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+80 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read JSON Schema specification basics
+- [ ] Study Pydantic model validation in Python
+- [ ] Create nested Pydantic models with validation
+- [ ] Understand required vs optional fields
+
+**Deliverable:** Pydantic model examples notebook
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Instructor library & Outlines constrained sampling engine
+**Resource:** [https://python.useinstructor.com/](https://python.useinstructor.com/)
+
+**Acceptance Criteria:**
+- [ ] Install and use Instructor library with OpenAI
+- [ ] Study Outlines constrained generation approach
+- [ ] Compare both approaches on same extraction task
+
+**Deliverable:** Comparison notebook
+
+---
+
+### Enforce strict JSON output parsing with automatic retries on validation failure
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement JSON output parsing with validation
+- [ ] Handle validation failures with automatic retry
+- [ ] Implement exponential backoff on retries
+- [ ] Log all failures for debugging
+
+**Deliverable:** Retry-enabled JSON parser module
+
+---
+
+### Mini-Project: Build a Structured Extractor returning verified Pydantic objects
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Define Pydantic models for complex domain (e.g., invoice, resume, medical record)
+- [ ] Use Instructor or prompt engineering to extract structured data
+- [ ] Validate all outputs against Pydantic models
+- [ ] Handle edge cases and partial extractions
+- [ ] Achieve 90%+ extraction accuracy on test set
+
+**Deliverable:** Structured extraction pipeline with evaluation
+
+---
+

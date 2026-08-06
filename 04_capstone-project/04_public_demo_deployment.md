@@ -1,21 +1,59 @@
-# 🎯 Public GitHub Release & Live Demo Deployment
+# Public GitHub Release & Live Demo Deployment
 
-> Dedicated Focus Study Guide — Module: 13. Capstone Projects
+[&larr; Back to Dashboard](../index.html)
 
-## 📌 Mandatory Requirements to Complete (+185 XP Base + 150 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+60 XP)**: Deploy application to a live public URL (HuggingFace / Vercel / Modal)
-  > *Difficulty Rationale: Production deployment to public infrastructure*
-- [ ] **Requirement 2 (+50 XP)**: Write a professional GitHub README with demo GIF, architecture diagram, & setup guide
-  > *Difficulty Rationale: Professional documentation writing*
-- [ ] **Requirement 3 (+40 XP)**: Record a 2-minute video walkthrough showcasing your AI Capstone project
-  > *Difficulty Rationale: Presentation and communication skills*
-- [ ] **Requirement 4 (+35 XP)**: Publish open-source repository & share with the AI Engineering community
-  > *Difficulty Rationale: Publishing and community engagement*
+### Deploy application to a live public URL (HuggingFace / Vercel / Modal)
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+150 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Application deployed to public URL
+- [ ] Accessible without local setup
+- [ ] Reasonably fast response times
+- [ ] Handles multiple concurrent users
+
+**Deliverable:** Live URL that anyone can access
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Write a professional GitHub README with demo GIF, architecture diagram, & setup guide
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] README has project description and motivation
+- [ ] Includes demo GIF or screenshot
+- [ ] Has architecture diagram
+- [ ] Includes setup/installation instructions
+- [ ] Lists technologies used
+
+**Deliverable:** Professional GitHub README
+
+---
+
+### Record a 2-minute video walkthrough showcasing your AI Capstone project
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Video is 2-3 minutes long
+- [ ] Shows the application in action
+- [ ] Explains the architecture briefly
+- [ ] Demonstrates key features
+
+**Deliverable:** Screen recording video file or YouTube link
+
+---
+
+### Publish open-source repository & share with the AI Engineering community
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Repository is public on GitHub
+- [ ] Code is clean and well-documented
+- [ ] License file included
+- [ ] Shared on relevant community (Twitter/X, LinkedIn, Reddit, etc.)
+
+**Deliverable:** Public repo + community post link
+
+---
+

@@ -1,21 +1,57 @@
-# 🎯 Linux Command Line Fundamentals
+# Linux Command Line Fundamentals
 
-> Dedicated Focus Study Guide — Module: 01. Programming for AI
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+100 XP Base + 50 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+25 XP)**: Audit Linux Command Line Basics (Coursera - UC Davis)
-  > *Difficulty Rationale: Short course audit, ~1 week*
-- [ ] **Requirement 2 (+30 XP)**: Read The Linux Command Line Book by William Shotts (Ch 1-10)
-  > *Difficulty Rationale: Substantial technical book reading*
-- [ ] **Requirement 3 (+20 XP)**: Practice shell navigation, permissions, grep, awk, & environment variables
-  > *Difficulty Rationale: Repetitive drill practice*
-- [ ] **Requirement 4 (+25 XP)**: Mini-Project: Write a shell script to automate Python virtualenv setup
-  > *Difficulty Rationale: Moderate scripting project*
+### Audit Linux Command Line Basics (Coursera - UC Davis)
+**Resource:** [https://www.coursera.org/learn/linux-command-line-basics](https://www.coursera.org/learn/linux-command-line-basics)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+50 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete all course modules
+- [ ] Pass all quizzes
+- [ ] Complete all hands-on labs
+
+**Deliverable:** Course completion certificate or screenshot
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Read The Linux Command Line Book by William Shotts (Ch 1-10)
+**Resource:** [https://linuxcommand.org/tlcl.php](https://linuxcommand.org/tlcl.php)
+
+**Acceptance Criteria:**
+- [ ] Read Chapters 1-10 of the free online book
+- [ ] Practice each command introduced
+- [ ] Understand file permissions, redirection, piping
+
+**Deliverable:** Command reference notes document
+
+---
+
+### Practice shell navigation, permissions, grep, awk, & environment variables
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Navigate filesystem with cd, ls, find, locate
+- [ ] Manage permissions with chmod, chown
+- [ ] Use grep with regex patterns to search files
+- [ ] Use awk for text processing
+- [ ] Set and use environment variables
+
+**Deliverable:** Cheat sheet of practiced commands with examples
+
+---
+
+### Mini-Project: Write a shell script to automate Python virtualenv setup
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Script creates a new virtualenv with specified Python version
+- [ ] Installs packages from requirements.txt if present
+- [ ] Activates the environment
+- [ ] Includes error handling for missing Python versions
+
+**Deliverable:** Bash script file that works on macOS/Linux
+
+---
+

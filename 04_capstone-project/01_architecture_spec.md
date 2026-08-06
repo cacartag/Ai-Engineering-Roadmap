@@ -1,21 +1,58 @@
-# 🎯 Design & Architecture Specification of AI Application
+# Design & Architecture Specification of AI Application
 
-> Dedicated Focus Study Guide — Module: 13. Capstone Projects
+[&larr; Back to Dashboard](../index.html)
 
-## 📌 Mandatory Requirements to Complete (+200 XP Base + 150 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+70 XP)**: Write a comprehensive Technical Architecture Spec Doc for your Capstone
-  > *Difficulty Rationale: Full technical document requiring all accumulated knowledge*
-- [ ] **Requirement 2 (+55 XP)**: Draw complete System Architecture Diagrams (Agents, RAG, DB, API, UI)
-  > *Difficulty Rationale: Multi-component system design visualization*
-- [ ] **Requirement 3 (+50 XP)**: Define dataset requirements, evaluation metrics, & acceptance criteria
-  > *Difficulty Rationale: Rigorous planning with measurable outcomes*
-- [ ] **Requirement 4 (+25 XP)**: Publish Architecture Spec markdown in your project repository
-  > *Difficulty Rationale: Documentation publishing, lower effort*
+### Write a comprehensive Technical Architecture Spec Doc for your Capstone
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+150 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Document covers problem statement and goals
+- [ ] Describes technology stack choices with rationale
+- [ ] Details API design and data flow
+- [ ] Includes scalability and cost considerations
+
+**Deliverable:** Technical Architecture Spec markdown document
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Draw complete System Architecture Diagrams (Agents, RAG, DB, API, UI)
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] System architecture diagram showing all components
+- [ ] Data flow diagram showing how information moves
+- [ ] API interaction diagram
+- [ ] Use Mermaid, draw.io, or Excalidraw
+
+**Deliverable:** Architecture diagrams (at least 2)
+
+---
+
+### Define dataset requirements, evaluation metrics, & acceptance criteria
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Define what datasets will be used
+- [ ] Define quantitative evaluation metrics with targets
+- [ ] Define acceptance criteria (what constitutes 'done')
+- [ ] Create a test plan outline
+
+**Deliverable:** Evaluation plan document
+
+---
+
+### Publish Architecture Spec markdown in your project repository
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Architecture spec is published in project repo
+- [ ] Document is well-formatted and readable
+- [ ] Includes table of contents
+- [ ] Reviewed and finalized
+
+**Deliverable:** Published spec in GitHub repo
+
+---
+

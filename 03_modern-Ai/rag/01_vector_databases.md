@@ -1,21 +1,60 @@
-# 🎯 Vector Databases (Chroma, Pinecone, Qdrant)
+# Vector Databases (Chroma, Pinecone, Qdrant)
 
-> Dedicated Focus Study Guide — Module: 10. Retrieval-Augmented Generation (RAG)
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+165 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+40 XP)**: Study Chroma, Pinecone, Qdrant, and Weaviate documentation
-  > *Difficulty Rationale: Four vector DB platforms to compare*
-- [ ] **Requirement 2 (+45 XP)**: Master Vector Similarity Metrics (Cosine, Euclidean, Dot Product) & HNSW
-  > *Difficulty Rationale: Algorithmic understanding of ANN search*
-- [ ] **Requirement 3 (+30 XP)**: Implement Metadata Filtering & Payload Indexing
-  > *Difficulty Rationale: Practical filtering implementation*
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Set up Chroma DB / Qdrant instance & ingest 100+ documents
-  > *Difficulty Rationale: Full deployment + ingestion pipeline*
+### Study Chroma, Pinecone, Qdrant, and Weaviate documentation
+**Resource:** [https://docs.trychroma.com/](https://docs.trychroma.com/)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete Chroma quickstart
+- [ ] Review Pinecone documentation
+- [ ] Review Qdrant documentation
+- [ ] Compare hosted vs local deployment options
+
+**Deliverable:** Vector DB comparison notes
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Vector Similarity Metrics (Cosine, Euclidean, Dot Product) & HNSW
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement cosine similarity calculation from scratch
+- [ ] Implement euclidean distance calculation
+- [ ] Implement dot product similarity
+- [ ] Understand HNSW algorithm at a high level
+- [ ] Know when to use each metric
+
+**Deliverable:** Similarity metric implementations + comparison
+
+---
+
+### Implement Metadata Filtering & Payload Indexing
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Add metadata to vectors during ingestion
+- [ ] Filter queries by metadata fields
+- [ ] Implement payload indexing for faster filtering
+- [ ] Test filtered vs unfiltered query performance
+
+**Deliverable:** Notebook with metadata filtering examples
+
+---
+
+### Mini-Project: Set up Chroma DB / Qdrant instance & ingest 100+ documents
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Set up Chroma or Qdrant instance
+- [ ] Write ingestion script for 100+ documents
+- [ ] Implement batch ingestion with progress tracking
+- [ ] Verify documents are searchable via similarity queries
+- [ ] Measure ingestion throughput
+
+**Deliverable:** Vector DB setup + ingestion pipeline
+
+---
+

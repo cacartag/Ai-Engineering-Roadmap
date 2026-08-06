@@ -1,21 +1,55 @@
-# 🎯 Calculus: Derivatives, Integrals & Chain Rule
+# Calculus: Derivatives, Integrals & Chain Rule
 
-> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+145 XP Base + 60 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+25 XP)**: Watch 3Blue1Brown Essence of Calculus Series
-  > *Difficulty Rationale: Visual intuition series, ~3hrs viewing*
-- [ ] **Requirement 2 (+45 XP)**: Audit Coursera Calculus for Machine Learning (Imperial College)
-  > *Difficulty Rationale: Full course, rigorous multivariable calculus*
-- [ ] **Requirement 3 (+35 XP)**: Complete Khan Academy Multivariable Calculus derivative exercises
-  > *Difficulty Rationale: Harder exercises than single-variable, partial derivatives*
-- [ ] **Requirement 4 (+40 XP)**: Mini-Project: Compute partial derivatives & gradients of loss functions analytically
-  > *Difficulty Rationale: Requires hand-deriving gradients + coding verification*
+### Watch 3Blue1Brown Essence of Calculus Series
+**Resource:** [https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+60 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Watch all episodes in the series
+- [ ] Understand limits, derivatives, integrals visually
+- [ ] Can explain the chain rule intuitively
+
+**Deliverable:** Notes with visual intuitions
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Audit Coursera Calculus for Machine Learning (Imperial College)
+**Resource:** [https://www.coursera.org/learn/multivariate-calculus-machine-learning](https://www.coursera.org/learn/multivariate-calculus-machine-learning)
+
+**Acceptance Criteria:**
+- [ ] Complete all weeks
+- [ ] Pass all quizzes
+- [ ] Understand partial derivatives and Jacobians
+
+**Deliverable:** Course certificate
+
+---
+
+### Complete Khan Academy Multivariable Calculus derivative exercises
+**Resource:** [https://www.khanacademy.org/math/multivariable-calculus](https://www.khanacademy.org/math/multivariable-calculus)
+
+**Acceptance Criteria:**
+- [ ] Complete partial derivatives section
+- [ ] Complete gradient and directional derivatives
+- [ ] Score 80%+ on exercises
+
+**Deliverable:** Khan Academy progress screenshot
+
+---
+
+### Mini-Project: Compute partial derivatives & gradients of loss functions analytically
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Derive gradient of MSE loss by hand
+- [ ] Derive gradient of Cross-Entropy loss by hand
+- [ ] Verify hand-computed gradients with PyTorch autograd
+- [ ] Document derivation steps in LaTeX or markdown
+
+**Deliverable:** Document with hand derivations + verification code
+
+---
+

@@ -1,21 +1,58 @@
-# 🎯 Markov Decision Processes (MDPs)
+# Markov Decision Processes (MDPs)
 
-> Dedicated Focus Study Guide — Module: 07. Reinforcement Learning
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+170 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+45 XP)**: Read Sutton & Barto Reinforcement Learning Book (Chapters 1-3)
-  > *Difficulty Rationale: Dense textbook, mathematical notation-heavy*
-- [ ] **Requirement 2 (+35 XP)**: Master States, Actions, Rewards, Discount Factor, & Transition Dynamics
-  > *Difficulty Rationale: Core MDP formalism requires careful study*
-- [ ] **Requirement 3 (+50 XP)**: Master Bellman Expectation & Optimality Equations
-  > *Difficulty Rationale: Hard mathematical equations, the core of RL theory*
-- [ ] **Requirement 4 (+40 XP)**: Mini-Project: Formulate a custom GridWorld environment as an MDP
-  > *Difficulty Rationale: Applying MDP formalism to a concrete problem*
+### Read Sutton & Barto Reinforcement Learning Book (Chapters 1-3)
+**Resource:** [http://incompleteideas.net/book/the-book-2nd.html](http://incompleteideas.net/book/the-book-2nd.html)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read Chapters 1-3 completely
+- [ ] Understand agent-environment interface
+- [ ] Work through example problems in each chapter
+
+**Deliverable:** Chapter notes with worked examples
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master States, Actions, Rewards, Discount Factor, & Transition Dynamics
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Define states, actions, rewards for 3 example problems
+- [ ] Explain discount factor and its effect on agent behavior
+- [ ] Understand transition dynamics T(s'|s,a)
+- [ ] Can formulate a real-world problem as an MDP
+
+**Deliverable:** Document with 3 MDP formulations
+
+---
+
+### Master Bellman Expectation & Optimality Equations
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Write out Bellman Expectation Equation for V(s) and Q(s,a)
+- [ ] Write out Bellman Optimality Equation for V*(s) and Q*(s,a)
+- [ ] Solve a small MDP (3-4 states) by hand using Bellman equations
+- [ ] Verify hand solution with code
+
+**Deliverable:** Mathematical derivations + verification code
+
+---
+
+### Mini-Project: Formulate a custom GridWorld environment as an MDP
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Create a GridWorld environment class
+- [ ] Define states (grid positions), actions (up/down/left/right)
+- [ ] Define rewards (goal state, walls, step penalty)
+- [ ] Implement step() function with transition dynamics
+- [ ] Visualize the grid and agent position
+
+**Deliverable:** Python GridWorld environment class
+
+---
+

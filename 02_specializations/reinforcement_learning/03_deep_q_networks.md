@@ -1,21 +1,58 @@
-# 🎯 Deep Q-Networks (DQN)
+# Deep Q-Networks (DQN)
 
-> Dedicated Focus Study Guide — Module: 07. Reinforcement Learning
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+205 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+55 XP)**: Read DeepMind's Playing Atari with Deep RL paper
-  > *Difficulty Rationale: Landmark paper, complex system design*
-- [ ] **Requirement 2 (+50 XP)**: Master Deep Q-Networks (DQN), Replay Buffers, & Target Networks
-  > *Difficulty Rationale: 3 interacting components to understand deeply*
-- [ ] **Requirement 3 (+40 XP)**: Study Double DQN & Dueling DQN improvements
-  > *Difficulty Rationale: DQN extension papers*
-- [ ] **Requirement 4 (+60 XP)**: Mini-Project: Build a PyTorch DQN agent to solve Gym CartPole-v1
-  > *Difficulty Rationale: Deep RL project combining NNs with RL*
+### Read DeepMind’s Playing Atari with Deep RL paper
+**Resource:** [https://arxiv.org/abs/1312.5602](https://arxiv.org/abs/1312.5602)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read the complete paper
+- [ ] Understand why neural networks approximate Q-values
+- [ ] Understand experience replay and why it's needed
+- [ ] Understand target network and why it stabilizes training
+
+**Deliverable:** Paper summary with key innovations noted
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Deep Q-Networks (DQN), Replay Buffers, & Target Networks
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement neural network Q-function approximator
+- [ ] Implement Experience Replay Buffer with sampling
+- [ ] Implement Target Network with periodic copying
+- [ ] Understand how these 3 components work together
+
+**Deliverable:** DQN components implemented in PyTorch
+
+---
+
+### Study Double DQN & Dueling DQN improvements
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Explain Double DQN and how it reduces overestimation
+- [ ] Explain Dueling DQN architecture (V + A streams)
+- [ ] Implement at least one improvement on top of vanilla DQN
+
+**Deliverable:** Notes + improved DQN implementation
+
+---
+
+### Mini-Project: Build a PyTorch DQN agent to solve Gym CartPole-v1
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] DQN agent solves CartPole-v1 (500 reward)
+- [ ] Uses experience replay and target network
+- [ ] Plots reward per episode over training
+- [ ] Training converges within 500 episodes
+- [ ] Can render and watch the trained agent
+
+**Deliverable:** PyTorch DQN agent + training visualization
+
+---
+

@@ -1,21 +1,57 @@
-# 🎯 Image Segmentation & Generative Vision
+# Image Segmentation & Generative Vision
 
-> Dedicated Focus Study Guide — Module: 06. Computer Vision
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+180 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+45 XP)**: Study U-Net architecture paper for Biomedical Image Segmentation
-  > *Difficulty Rationale: Important architecture paper*
-- [ ] **Requirement 2 (+35 XP)**: Understand Semantic vs Instance Segmentation vs Panoptic Segmentation
-  > *Difficulty Rationale: Three paradigms to differentiate and understand*
-- [ ] **Requirement 3 (+35 XP)**: Practice Mask R-CNN & Segment Anything Model (SAM) APIs
-  > *Difficulty Rationale: Modern segmentation framework APIs*
-- [ ] **Requirement 4 (+65 XP)**: Mini-Project: Build a U-Net model in PyTorch for background removal
-  > *Difficulty Rationale: Implementing architecture from paper, pixel-level output*
+### Study U-Net architecture paper for Biomedical Image Segmentation
+**Resource:** [https://arxiv.org/abs/1505.04597](https://arxiv.org/abs/1505.04597)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read the U-Net paper completely
+- [ ] Understand encoder-decoder with skip connections
+- [ ] Understand why U-Net works well for biomedical images
+
+**Deliverable:** Paper summary with architecture diagram
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Understand Semantic vs Instance Segmentation vs Panoptic Segmentation
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Define semantic segmentation (pixel-level class labels)
+- [ ] Define instance segmentation (separate objects)
+- [ ] Define panoptic segmentation (combines both)
+- [ ] Give use-case examples for each type
+
+**Deliverable:** Comparison document with examples
+
+---
+
+### Practice Mask R-CNN & Segment Anything Model (SAM) APIs
+**Resource:** [https://segment-anything.com/](https://segment-anything.com/)
+
+**Acceptance Criteria:**
+- [ ] Run Mask R-CNN inference on sample images
+- [ ] Run SAM inference with point and box prompts
+- [ ] Compare output quality and speed
+
+**Deliverable:** Notebook with Mask R-CNN + SAM examples
+
+---
+
+### Mini-Project: Build a U-Net model in PyTorch for background removal
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement U-Net architecture in PyTorch (encoder + decoder + skip connections)
+- [ ] Train on image segmentation dataset
+- [ ] Implement dice loss or IoU loss
+- [ ] Evaluate with pixel accuracy and mean IoU
+- [ ] Visualize predicted masks vs ground truth
+
+**Deliverable:** PyTorch U-Net implementation with training script
+
+---
+

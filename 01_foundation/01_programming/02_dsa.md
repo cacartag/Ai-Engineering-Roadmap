@@ -1,21 +1,55 @@
-# 🎯 Data Structures & Algorithms in Python
+# Data Structures & Algorithms in Python
 
-> Dedicated Focus Study Guide — Module: 01. Programming for AI
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+125 XP Base + 50 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+35 XP)**: Study Problem Solving with Algorithms & Data Structures (Runestone)
-  > *Difficulty Rationale: Interactive textbook, deeper than intro material*
-- [ ] **Requirement 2 (+20 XP)**: Watch freeCodeCamp Data Structures in Python Video Course
-  > *Difficulty Rationale: Passive video consumption, supplementary*
-- [ ] **Requirement 3 (+40 XP)**: Solve 10 LeetCode Easy DSA problems (Arrays, HashMaps, Strings)
-  > *Difficulty Rationale: Active problem solving, requires original thinking per problem*
-- [ ] **Requirement 4 (+30 XP)**: Mini-Project: Implement a custom Stack and Queue class in Python
-  > *Difficulty Rationale: Moderate implementation, tests OOP + DSA together*
+### Study Problem Solving with Algorithms & Data Structures (Runestone)
+**Resource:** [https://runestone.academy/ns/books/published/pythonds3/index.html](https://runestone.academy/ns/books/published/pythonds3/index.html)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+50 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete all interactive exercises
+- [ ] Understand Big-O notation for each structure
+- [ ] Implement at least 3 data structures from scratch
+
+**Deliverable:** Notes and implementations in a GitHub repo
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Watch freeCodeCamp Data Structures in Python Video Course
+**Resource:** [https://www.youtube.com/watch?v=pkYVOmU3MgA](https://www.youtube.com/watch?v=pkYVOmU3MgA)
+
+**Acceptance Criteria:**
+- [ ] Watch the complete 12-hour video
+- [ ] Take notes on each data structure covered
+- [ ] Code along with examples
+
+**Deliverable:** Personal notes document
+
+---
+
+### Solve 10 LeetCode Easy DSA problems (Arrays, HashMaps, Strings)
+**Resource:** [https://leetcode.com/problemset/](https://leetcode.com/problemset/)
+
+**Acceptance Criteria:**
+- [ ] Solve 10 Easy problems across Arrays, HashMaps, Strings
+- [ ] Each solution must pass all test cases
+- [ ] Write time/space complexity analysis for each
+
+**Deliverable:** LeetCode profile showing 10+ Easy solved, or solutions in repo
+
+---
+
+### Mini-Project: Implement a custom Stack and Queue class in Python
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Stack supports push, pop, peek, is_empty, size
+- [ ] Queue supports enqueue, dequeue, front, is_empty, size
+- [ ] Both use Python classes with proper __repr__
+- [ ] Include unit tests for all methods
+
+**Deliverable:** Python module with Stack and Queue classes + tests
+
+---
+

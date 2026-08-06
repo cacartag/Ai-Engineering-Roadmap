@@ -1,21 +1,59 @@
-# 🎯 Neural Network Foundations & Backpropagation
+# Neural Network Foundations & Backpropagation
 
-> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+235 XP Base + 90 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+60 XP)**: Watch Andrej Karpathy's Micrograd & Neural Networks Zero to Hero
-  > *Difficulty Rationale: Gold standard deep course, requires coding along, ~20hrs*
-- [ ] **Requirement 2 (+55 XP)**: Audit Deep Learning Specialization (Andrew Ng) Course 1
-  > *Difficulty Rationale: Rigorous DL course, ~4 weeks*
-- [ ] **Requirement 3 (+45 XP)**: Master Perceptrons, ReLU/Sigmoid/Softmax activation functions & Backprop math
-  > *Difficulty Rationale: Hard mathematical concepts requiring deep internalization*
-- [ ] **Requirement 4 (+75 XP)**: Mini-Project: Build a 2-layer Neural Network from scratch in raw NumPy
-  > *Difficulty Rationale: No frameworks, raw matrix math, very challenging*
+### Watch Andrej Karpathy’s Micrograd & Neural Networks Zero to Hero
+**Resource:** [https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+90 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Watch all videos in the Neural Networks: Zero to Hero series
+- [ ] Code along with micrograd implementation
+- [ ] Build your own autograd engine
+- [ ] Understand backpropagation through computational graphs
+
+**Deliverable:** Your own micrograd implementation in a repo
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Audit Deep Learning Specialization (Andrew Ng) Course 1
+**Resource:** [https://www.coursera.org/learn/neural-networks-deep-learning](https://www.coursera.org/learn/neural-networks-deep-learning)
+
+**Acceptance Criteria:**
+- [ ] Complete all 4 weeks
+- [ ] Pass all quizzes and programming assignments
+- [ ] Understand forward prop, backprop, and vectorization
+
+**Deliverable:** Course certificate
+
+---
+
+### Master Perceptrons, ReLU/Sigmoid/Softmax activation functions & Backprop math
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement and plot ReLU, Sigmoid, Tanh, Softmax activation functions
+- [ ] Derive the gradient of each activation by hand
+- [ ] Implement forward and backward pass for a single neuron
+- [ ] Explain vanishing gradient problem with Sigmoid
+
+**Deliverable:** Notebook with activation implementations + gradient derivations
+
+---
+
+### Mini-Project: Build a 2-layer Neural Network from scratch in raw NumPy
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Network has at least 2 hidden layers with configurable sizes
+- [ ] Uses only NumPy — no PyTorch, TensorFlow, or sklearn
+- [ ] Implements forward pass with matrix multiplication
+- [ ] Implements backward pass computing all gradients
+- [ ] Trains on MNIST or similar dataset
+- [ ] Achieves 90%+ accuracy
+
+**Deliverable:** Pure NumPy neural network Python file + training script
+
+---
+

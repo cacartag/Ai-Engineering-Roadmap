@@ -1,21 +1,57 @@
-# 🎯 Convolutional Neural Networks (CNNs)
+# Convolutional Neural Networks (CNNs)
 
-> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+185 XP Base + 90 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+50 XP)**: Study Stanford CS231n Convolutional Networks lecture notes
-  > *Difficulty Rationale: Stanford-level material, dense lecture notes + assignments*
-- [ ] **Requirement 2 (+35 XP)**: Watch Fast.ai Practical Deep Learning for Coders CNN module
-  > *Difficulty Rationale: Practical course module*
-- [ ] **Requirement 3 (+45 XP)**: Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures
-  > *Difficulty Rationale: Multiple architectural concepts to deeply understand*
-- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch
-  > *Difficulty Rationale: Applied DL project with real image data*
+### Study Stanford CS231n Convolutional Networks lecture notes
+**Resource:** [https://cs231n.github.io/convolutional-networks/](https://cs231n.github.io/convolutional-networks/)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+90 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read the complete lecture notes
+- [ ] Understand convolution operation, stride, padding math
+- [ ] Study the architectures section (LeNet, AlexNet, VGG, ResNet)
+
+**Deliverable:** Notes summarizing key CNN concepts
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Watch Fast.ai Practical Deep Learning for Coders CNN module
+**Resource:** [https://course.fast.ai/](https://course.fast.ai/)
+
+**Acceptance Criteria:**
+- [ ] Complete the CNN/Computer Vision lessons
+- [ ] Train a model using Fast.ai library
+- [ ] Understand transfer learning workflow
+
+**Deliverable:** Fast.ai notebook with trained model
+
+---
+
+### Master Kernels, Stride, Padding, Max Pooling, and ResNet architectures
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Explain how convolution kernels detect features
+- [ ] Calculate output dimensions given input, kernel, stride, padding
+- [ ] Explain Max Pooling vs Average Pooling
+- [ ] Draw and explain a ResNet skip connection
+
+**Deliverable:** Reference document explaining each concept with diagrams
+
+---
+
+### Mini-Project: Build an Image Classifier using Transfer Learning (ResNet18) in PyTorch
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Use torchvision ResNet18 with pre-trained weights
+- [ ] Replace final FC layer for your number of classes
+- [ ] Implement data augmentation transforms
+- [ ] Train with frozen then unfrozen backbone
+- [ ] Achieve 90%+ accuracy on test set
+
+**Deliverable:** PyTorch transfer learning notebook with trained model
+
+---
+

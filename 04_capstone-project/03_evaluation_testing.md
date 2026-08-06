@@ -1,21 +1,58 @@
-# 🎯 Evaluation & Testing Suite Execution
+# Evaluation & Testing Suite Execution
 
-> Dedicated Focus Study Guide — Module: 13. Capstone Projects
+[&larr; Back to Dashboard](../index.html)
 
-## 📌 Mandatory Requirements to Complete (+230 XP Base + 150 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+55 XP)**: Build a test dataset of 30+ representative test queries & ground truth answers
-  > *Difficulty Rationale: Dataset creation and curation*
-- [ ] **Requirement 2 (+60 XP)**: Execute automated evaluation metrics (Faithfulness, Answer Relevance, Latency)
-  > *Difficulty Rationale: Multi-metric evaluation execution*
-- [ ] **Requirement 3 (+50 XP)**: Generate an Evaluation Report documenting accuracy & benchmark performance
-  > *Difficulty Rationale: Analysis and technical writing*
-- [ ] **Requirement 4 (+65 XP)**: Fix edge-case failures & optimize prompt/RAG parameters based on eval results
-  > *Difficulty Rationale: Iterative debugging and optimization*
+### Build a test dataset of 30+ representative test queries & ground truth answers
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+150 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Create 30+ diverse test queries
+- [ ] Include easy, medium, and hard questions
+- [ ] Provide ground truth answers for each
+- [ ] Include edge cases and adversarial inputs
+
+**Deliverable:** Test dataset JSON/CSV file
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Execute automated evaluation metrics (Faithfulness, Answer Relevance, Latency)
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Run automated metrics (Faithfulness, Relevance, Correctness)
+- [ ] Measure latency per request
+- [ ] Measure token usage and cost
+- [ ] Generate results in structured format
+
+**Deliverable:** Automated evaluation results
+
+---
+
+### Generate an Evaluation Report documenting accuracy & benchmark performance
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Document includes accuracy by category
+- [ ] Documents latency benchmarks
+- [ ] Compares to baseline/target metrics
+- [ ] Highlights strengths and weaknesses
+
+**Deliverable:** Formatted evaluation report markdown
+
+---
+
+### Fix edge-case failures & optimize prompt/RAG parameters based on eval results
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Identify and fix top 5 failure cases
+- [ ] Optimize prompts based on evaluation results
+- [ ] Tune RAG parameters (chunk size, top-k, etc.)
+- [ ] Show measurable improvement after optimization
+
+**Deliverable:** Before/after optimization comparison
+
+---
+

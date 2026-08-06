@@ -1,21 +1,58 @@
-# 🎯 Q-Learning & Value Iteration
+# Q-Learning & Value Iteration
 
-> Dedicated Focus Study Guide — Module: 07. Reinforcement Learning
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+175 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+40 XP)**: Read Sutton & Barto Book (Chapter 6: Temporal-Difference Learning)
-  > *Difficulty Rationale: Dense textbook chapter on TD methods*
-- [ ] **Requirement 2 (+40 XP)**: Master Tabular Q-Learning update rule and Epsilon-Greedy exploration
-  > *Difficulty Rationale: Core algorithm requiring mathematical understanding*
-- [ ] **Requirement 3 (+45 XP)**: Complete Value Iteration and Policy Iteration algorithm implementations
-  > *Difficulty Rationale: Two full dynamic programming algorithm implementations*
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Implement Q-Learning agent to solve OpenAI Gym FrozenLake
-  > *Difficulty Rationale: Full RL agent interacting with environment*
+### Read Sutton & Barto Book (Chapter 6: Temporal-Difference Learning)
+**Resource:** [http://incompleteideas.net/book/the-book-2nd.html](http://incompleteideas.net/book/the-book-2nd.html)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read Chapter 6 on TD Learning
+- [ ] Understand TD(0) prediction update rule
+- [ ] Compare MC vs TD learning
+
+**Deliverable:** Chapter 6 notes
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Tabular Q-Learning update rule and Epsilon-Greedy exploration
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Write the Q-Learning update rule from memory
+- [ ] Implement epsilon-greedy exploration in Python
+- [ ] Understand exploration vs exploitation tradeoff
+- [ ] Implement epsilon decay schedule
+
+**Deliverable:** Q-Learning algorithm implementation
+
+---
+
+### Complete Value Iteration and Policy Iteration algorithm implementations
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement Value Iteration algorithm converging to V*
+- [ ] Implement Policy Iteration with policy evaluation + improvement
+- [ ] Compare convergence speed on same MDP
+- [ ] Verify both converge to same optimal policy
+
+**Deliverable:** Both algorithms implemented + comparison
+
+---
+
+### Mini-Project: Implement Q-Learning agent to solve OpenAI Gym FrozenLake
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Train Q-Learning agent on FrozenLake-v1 (Gymnasium)
+- [ ] Use epsilon-greedy with decay
+- [ ] Plot reward per episode over training
+- [ ] Agent achieves 70%+ success rate
+- [ ] Visualize learned Q-table
+
+**Deliverable:** Training script + Q-table visualization
+
+---
+

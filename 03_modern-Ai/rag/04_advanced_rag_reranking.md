@@ -1,21 +1,59 @@
-# 🎯 Advanced RAG: Re-ranking, Query Transformation & GraphRAG
+# Advanced RAG: Re-ranking, Query Transformation & GraphRAG
 
-> Dedicated Focus Study Guide — Module: 10. Retrieval-Augmented Generation (RAG)
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+225 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+50 XP)**: Study Cohere Rerank / BGE Cross-Encoders and HyDE (Hypothetical Embeddings)
-  > *Difficulty Rationale: Advanced retrieval techniques requiring deep understanding*
-- [ ] **Requirement 2 (+55 XP)**: Read GraphRAG paper & Query Transformation techniques (Multi-Query, Step-Back)
-  > *Difficulty Rationale: Cutting-edge research + multiple transformation strategies*
-- [ ] **Requirement 3 (+50 XP)**: Implement Context Compression and Self-RAG verification loops
-  > *Difficulty Rationale: Complex multi-step retrieval verification*
-- [ ] **Requirement 4 (+70 XP)**: Mini-Project: Build an Advanced RAG Pipeline with Query Rewriting + Re-ranking
-  > *Difficulty Rationale: Sophisticated multi-stage pipeline project*
+### Study Cohere Rerank / BGE Cross-Encoders and HyDE (Hypothetical Embeddings)
+**Resource:** [https://docs.cohere.com/docs/reranking](https://docs.cohere.com/docs/reranking)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Use Cohere Rerank API on retrieved documents
+- [ ] Implement cross-encoder reranking with BGE
+- [ ] Understand HyDE (generate hypothetical document, then search)
+- [ ] Compare retrieval quality with and without reranking
+
+**Deliverable:** Reranking implementation + HyDE notebook
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Read GraphRAG paper & Query Transformation techniques (Multi-Query, Step-Back)
+**Resource:** [https://arxiv.org/abs/2404.16130](https://arxiv.org/abs/2404.16130)
+
+**Acceptance Criteria:**
+- [ ] Read GraphRAG paper
+- [ ] Understand query transformation techniques
+- [ ] Implement Multi-Query: generate multiple queries from one
+- [ ] Implement Step-Back prompting for complex queries
+
+**Deliverable:** Paper notes + query transformation implementations
+
+---
+
+### Implement Context Compression and Self-RAG verification loops
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement context compression (reduce retrieved docs to key info)
+- [ ] Implement Self-RAG verification loop
+- [ ] Agent decides whether retrieval is needed
+- [ ] Agent verifies answer against retrieved context
+
+**Deliverable:** Self-RAG + context compression implementation
+
+---
+
+### Mini-Project: Build an Advanced RAG Pipeline with Query Rewriting + Re-ranking
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Pipeline includes query rewriting step
+- [ ] Pipeline includes retrieval + reranking step
+- [ ] Pipeline includes answer generation with citations
+- [ ] Evaluate end-to-end pipeline quality
+- [ ] Compare to baseline RAG without advanced features
+
+**Deliverable:** Advanced RAG pipeline with evaluation
+
+---
+

@@ -1,21 +1,58 @@
-# 🎯 Zero-Shot & Few-Shot Prompting Techniques
+# Zero-Shot & Few-Shot Prompting Techniques
 
-> Dedicated Focus Study Guide — Module: 11. Prompt Engineering Mastery
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+115 XP Base + 80 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+25 XP)**: Read OpenAI Prompt Engineering Guide & Anthropic Prompt Library
-  > *Difficulty Rationale: Well-written guides, ~2hrs reading*
-- [ ] **Requirement 2 (+30 XP)**: Master Zero-Shot, Few-Shot In-Context Exemplars, & Prompt Formatting
-  > *Difficulty Rationale: Technique mastery through experimentation*
-- [ ] **Requirement 3 (+25 XP)**: Optimize prompt instruction clarity, tone, role, and output formatting
-  > *Difficulty Rationale: Iterative optimization practice*
-- [ ] **Requirement 4 (+35 XP)**: Mini-Project: Build a Few-Shot Prompt Template library for 5 distinct tasks
-  > *Difficulty Rationale: Template engineering across multiple use cases*
+### Read OpenAI Prompt Engineering Guide & Anthropic Prompt Library
+**Resource:** [https://platform.openai.com/docs/guides/prompt-engineering](https://platform.openai.com/docs/guides/prompt-engineering)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+80 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read OpenAI prompt engineering guide completely
+- [ ] Read Anthropic prompt library examples
+- [ ] Understand 6 strategies from OpenAI guide
+
+**Deliverable:** Notes with key strategies summarized
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Zero-Shot, Few-Shot In-Context Exemplars, & Prompt Formatting
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Write effective zero-shot prompts for 3 different tasks
+- [ ] Write few-shot prompts with 3-5 exemplars for 3 tasks
+- [ ] Test effect of exemplar quality on output
+- [ ] Compare zero-shot vs few-shot performance
+
+**Deliverable:** Prompt comparison notebook
+
+---
+
+### Optimize prompt instruction clarity, tone, role, and output formatting
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Optimize prompt instruction clarity for a complex task
+- [ ] Test different roles, tones, and formats
+- [ ] Measure output quality improvement across iterations
+- [ ] Document what changes improved results
+
+**Deliverable:** Prompt optimization log with before/after examples
+
+---
+
+### Mini-Project: Build a Few-Shot Prompt Template library for 5 distinct tasks
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Create prompt templates for: classification, extraction, summarization, Q&A, code generation
+- [ ] Each template includes system prompt + user prompt
+- [ ] Templates use variable placeholders
+- [ ] Include 3-5 exemplars per template
+- [ ] Test each template and document accuracy
+
+**Deliverable:** Prompt template library with test results
+
+---
+

@@ -1,21 +1,55 @@
-# 🎯 Linear Algebra: Vectors, Matrices, Tensors & Multiplication
+# Linear Algebra: Vectors, Matrices, Tensors & Multiplication
 
-> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+135 XP Base + 60 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+25 XP)**: Watch 3Blue1Brown Essence of Linear Algebra (All Episodes)
-  > *Difficulty Rationale: Brilliant visual intuition, but passive viewing ~4hrs*
-- [ ] **Requirement 2 (+45 XP)**: Audit Coursera Linear Algebra for Machine Learning (Imperial College)
-  > *Difficulty Rationale: Full university course audit, ~4-5 weeks, abstract math*
-- [ ] **Requirement 3 (+30 XP)**: Complete Khan Academy Linear Algebra practice drills
-  > *Difficulty Rationale: Active problem solving with immediate feedback*
-- [ ] **Requirement 4 (+35 XP)**: Mini-Project: Code vector dot products & matrix multiplication in NumPy/PyTorch
-  > *Difficulty Rationale: Bridges math theory to code implementation*
+### Watch 3Blue1Brown Essence of Linear Algebra (All Episodes)
+**Resource:** [https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+60 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Watch all 16 episodes
+- [ ] Understand geometric intuition of linear transformations
+- [ ] Can explain determinants, eigenvalues visually
+
+**Deliverable:** Personal notes with visual diagrams
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Audit Coursera Linear Algebra for Machine Learning (Imperial College)
+**Resource:** [https://www.coursera.org/learn/linear-algebra-machine-learning](https://www.coursera.org/learn/linear-algebra-machine-learning)
+
+**Acceptance Criteria:**
+- [ ] Complete all 5 weeks of content
+- [ ] Pass all quizzes with 80%+
+- [ ] Complete programming assignments
+
+**Deliverable:** Course certificate or completion screenshot
+
+---
+
+### Complete Khan Academy Linear Algebra practice drills
+**Resource:** [https://www.khanacademy.org/math/linear-algebra](https://www.khanacademy.org/math/linear-algebra)
+
+**Acceptance Criteria:**
+- [ ] Complete Vector and Spaces unit
+- [ ] Complete Matrix transformations unit
+- [ ] Score 80%+ on unit tests
+
+**Deliverable:** Khan Academy progress screenshot showing completion
+
+---
+
+### Mini-Project: Code vector dot products & matrix multiplication in NumPy/PyTorch
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement dot product from scratch in Python
+- [ ] Implement matrix multiplication using NumPy
+- [ ] Verify results match PyTorch tensor operations
+- [ ] Benchmark performance difference
+
+**Deliverable:** Jupyter notebook with implementations and benchmarks
+
+---
+

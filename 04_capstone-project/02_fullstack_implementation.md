@@ -1,21 +1,59 @@
-# 🎯 Full-Stack Implementation (RAG/Agents + Backend + UI)
+# Full-Stack Implementation (RAG/Agents + Backend + UI)
 
-> Dedicated Focus Study Guide — Module: 13. Capstone Projects
+[&larr; Back to Dashboard](../index.html)
 
-## 📌 Mandatory Requirements to Complete (+300 XP Base + 150 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+80 XP)**: Develop backend API serving your AI Agent / RAG reasoning engine
-  > *Difficulty Rationale: Major backend development effort*
-- [ ] **Requirement 2 (+70 XP)**: Integrate Vector Database, Tooling, and LLM provider APIs
-  > *Difficulty Rationale: Multi-system integration, complex wiring*
-- [ ] **Requirement 3 (+65 XP)**: Build a clean, responsive Web User Interface (React / Next.js / Streamlit / HTML5)
-  > *Difficulty Rationale: Frontend development for AI applications*
-- [ ] **Requirement 4 (+85 XP)**: Deliver a working full-stack AI application connecting UI -> API -> Agent
-  > *Difficulty Rationale: Complete synthesis of entire curriculum*
+### Develop backend API serving your AI Agent / RAG reasoning engine
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+150 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Backend API with at least 3 endpoints
+- [ ] Serves AI agent or RAG reasoning engine
+- [ ] Handles concurrent requests
+- [ ] Includes proper error handling and logging
+
+**Deliverable:** Working backend API
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Integrate Vector Database, Tooling, and LLM provider APIs
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Vector database stores and retrieves documents
+- [ ] LLM provider API is integrated and working
+- [ ] Tooling (search, calculator, etc.) is connected
+- [ ] All integrations have error handling
+
+**Deliverable:** Integrated backend with all services
+
+---
+
+### Build a clean, responsive Web User Interface (React / Next.js / Streamlit / HTML5)
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Clean, responsive UI that works on mobile and desktop
+- [ ] Chat or interaction interface for AI features
+- [ ] Loading states and error handling
+- [ ] Professional design with consistent styling
+
+**Deliverable:** Deployed frontend application
+
+---
+
+### Deliver a working full-stack AI application connecting UI -> API -> Agent
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] UI connects to backend API
+- [ ] Backend calls AI agent/RAG pipeline
+- [ ] End-to-end flow works: user query → API → AI → response
+- [ ] Application handles edge cases gracefully
+- [ ] Demo-ready state
+
+**Deliverable:** Working full-stack application
+
+---
+

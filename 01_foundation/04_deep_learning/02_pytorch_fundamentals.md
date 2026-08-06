@@ -1,21 +1,57 @@
-# 🎯 PyTorch Framework Fundamentals
+# PyTorch Framework Fundamentals
 
-> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+155 XP Base + 90 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+25 XP)**: Complete PyTorch Official 60-Minute Blitz Tutorial
-  > *Difficulty Rationale: Short official tutorial, ~1hr*
-- [ ] **Requirement 2 (+35 XP)**: Watch freeCodeCamp PyTorch for Deep Learning Bootcamp
-  > *Difficulty Rationale: Longer video bootcamp, ~12hrs*
-- [ ] **Requirement 3 (+40 XP)**: Master Tensors, GPU acceleration (cuda/mps), and autograd
-  > *Difficulty Rationale: Framework mastery requires hands-on experimentation*
-- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Write a complete PyTorch nn.Module training & validation loop
-  > *Difficulty Rationale: Full training pipeline from data loading to evaluation*
+### Complete PyTorch Official 60-Minute Blitz Tutorial
+**Resource:** [https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+90 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete all 4 tutorial sections
+- [ ] Run all code examples locally
+- [ ] Understand Tensors, Autograd, Neural Networks, Training
+
+**Deliverable:** Completed tutorial notebooks
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Watch freeCodeCamp PyTorch for Deep Learning Bootcamp
+**Resource:** [https://www.youtube.com/watch?v=V_xro1bcAuU](https://www.youtube.com/watch?v=V_xro1bcAuU)
+
+**Acceptance Criteria:**
+- [ ] Watch the complete bootcamp video
+- [ ] Code along with the instructor
+- [ ] Build at least 2 models from the bootcamp
+
+**Deliverable:** Code files from bootcamp
+
+---
+
+### Master Tensors, GPU acceleration (cuda/mps), and autograd
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Create tensors on CPU and GPU (cuda/mps)
+- [ ] Perform tensor operations (reshape, transpose, matmul)
+- [ ] Use autograd to compute gradients automatically
+- [ ] Move models and data between devices
+
+**Deliverable:** Notebook demonstrating tensor ops + GPU usage
+
+---
+
+### Mini-Project: Write a complete PyTorch nn.Module training & validation loop
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Define a model using nn.Module with __init__ and forward()
+- [ ] Implement DataLoader with batching and shuffling
+- [ ] Write training loop with loss.backward() and optimizer.step()
+- [ ] Implement validation loop computing metrics per epoch
+- [ ] Plot training and validation loss curves
+
+**Deliverable:** Complete PyTorch training pipeline script
+
+---
+

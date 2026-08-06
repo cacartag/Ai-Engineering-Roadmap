@@ -1,21 +1,58 @@
-# 🎯 Policy Gradient Methods & PPO
+# Policy Gradient Methods & PPO
 
-> Dedicated Focus Study Guide — Module: 07. Reinforcement Learning
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+235 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+55 XP)**: Study David Silver RL Course & OpenAI Spinning Up
-  > *Difficulty Rationale: Advanced RL courses, substantial content*
-- [ ] **Requirement 2 (+60 XP)**: Master REINFORCE algorithm, Advantage Actor-Critic (A2C), & PPO
-  > *Difficulty Rationale: 3 complex algorithms with gradient estimator math*
-- [ ] **Requirement 3 (+45 XP)**: Understand Reinforcement Learning from Human Feedback (RLHF)
-  > *Difficulty Rationale: Cutting-edge concept bridging RL to LLM alignment*
-- [ ] **Requirement 4 (+75 XP)**: Mini-Project: Implement a PPO agent in PyTorch for continuous control
-  > *Difficulty Rationale: Very challenging: clipped surrogate objective + advantage estimation*
+### Study David Silver RL Course & OpenAI Spinning Up
+**Resource:** [https://www.davidsilver.uk/teaching/](https://www.davidsilver.uk/teaching/)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Watch David Silver RL lectures on Policy Gradient methods
+- [ ] Read OpenAI Spinning Up Policy Gradient section
+- [ ] Understand the policy gradient theorem
+
+**Deliverable:** Lecture notes
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master REINFORCE algorithm, Advantage Actor-Critic (A2C), & PPO
+**Resource:** [https://spinningup.openai.com/](https://spinningup.openai.com/)
+
+**Acceptance Criteria:**
+- [ ] Implement REINFORCE algorithm from scratch
+- [ ] Understand Advantage estimation and baselines
+- [ ] Implement A2C (Advantage Actor-Critic)
+- [ ] Implement PPO with clipped surrogate objective
+
+**Deliverable:** 3 algorithm implementations
+
+---
+
+### Understand Reinforcement Learning from Human Feedback (RLHF)
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Explain how RLHF works at a high level
+- [ ] Understand reward model training from human preferences
+- [ ] Understand PPO fine-tuning of language models
+- [ ] Can describe the InstructGPT/ChatGPT training pipeline
+
+**Deliverable:** RLHF explainer document
+
+---
+
+### Mini-Project: Implement a PPO agent in PyTorch for continuous control
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] PPO agent trains on continuous control task (e.g., Pendulum, LunarLander)
+- [ ] Implements clipped surrogate objective
+- [ ] Implements GAE (Generalized Advantage Estimation)
+- [ ] Plots episode rewards showing convergence
+- [ ] Agent achieves target reward threshold
+
+**Deliverable:** PPO implementation with training logs
+
+---
+

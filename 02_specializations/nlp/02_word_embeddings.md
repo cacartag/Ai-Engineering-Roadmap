@@ -1,21 +1,57 @@
-# 🎯 Word Embeddings (Word2Vec, GloVe)
+# Word Embeddings (Word2Vec, GloVe)
 
-> Dedicated Focus Study Guide — Module: 05. Natural Language Processing
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+160 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+50 XP)**: Study Mikolov's Word2Vec paper & Stanford CS224n Embeddings lecture
-  > *Difficulty Rationale: Foundational NLP research paper + Stanford lecture*
-- [ ] **Requirement 2 (+35 XP)**: Practice Word2Vec Skip-Gram, CBOW, and GloVe embeddings
-  > *Difficulty Rationale: Implementation practice with 3 algorithms*
-- [ ] **Requirement 3 (+30 XP)**: Compute Cosine Similarity, Word Analogies, & Vector Space Math
-  > *Difficulty Rationale: Mathematical exercises with embeddings*
-- [ ] **Requirement 4 (+45 XP)**: Mini-Project: Train custom Word2Vec embeddings using Gensim on text corpus
-  > *Difficulty Rationale: Training embeddings on real data*
+### Study Mikolov’s Word2Vec paper & Stanford CS224n Embeddings lecture
+**Resource:** [https://www.youtube.com/watch?v=ERibwqs9p38](https://www.youtube.com/watch?v=ERibwqs9p38)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Study the original Word2Vec paper concepts
+- [ ] Watch CS224n Word Vectors lecture
+- [ ] Understand Skip-Gram vs CBOW architectures
+
+**Deliverable:** Notes on Word2Vec architectures
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Practice Word2Vec Skip-Gram, CBOW, and GloVe embeddings
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement Skip-Gram training loop conceptually
+- [ ] Explain CBOW prediction mechanism
+- [ ] Use pre-trained GloVe embeddings in Python
+- [ ] Compare dimensions and coverage of different embeddings
+
+**Deliverable:** Notebook exploring 3 embedding types
+
+---
+
+### Compute Cosine Similarity, Word Analogies, & Vector Space Math
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Compute cosine similarity between word pairs
+- [ ] Solve word analogies (king - man + woman = queen)
+- [ ] Visualize word vectors in 2D using PCA/t-SNE
+- [ ] Find nearest neighbors for given words
+
+**Deliverable:** Notebook with word vector math exercises
+
+---
+
+### Mini-Project: Train custom Word2Vec embeddings using Gensim on text corpus
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Train Word2Vec model using Gensim on a text corpus (1M+ words)
+- [ ] Evaluate trained embeddings with analogy tests
+- [ ] Compare to pre-trained embeddings on same tasks
+- [ ] Save and load trained model
+
+**Deliverable:** Training script + saved Gensim model
+
+---
+

@@ -1,21 +1,57 @@
-# 🎯 Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)
+# Fine-Tuning & Parameter-Efficient Fine-Tuning (LoRA/PEFT)
 
-> Dedicated Focus Study Guide — Module: 08. Large Language Models (LLMs)
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+200 XP Base + 120 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+50 XP)**: Study LoRA (Low-Rank Adaptation) and QLoRA research papers
-  > *Difficulty Rationale: Two research papers with linear algebra theory*
-- [ ] **Requirement 2 (+35 XP)**: Complete Hugging Face TRL library documentation
-  > *Difficulty Rationale: Framework documentation study*
-- [ ] **Requirement 3 (+40 XP)**: Master Supervised Fine-Tuning (SFT) & Alpaca dataset formatting
-  > *Difficulty Rationale: Data preparation + training methodology*
-- [ ] **Requirement 4 (+75 XP)**: Mini-Project: Fine-tune Llama 3 or Mistral 7B using QLoRA & Unsloth on GPU
-  > *Difficulty Rationale: Real GPU training of a billion-parameter model*
+### Study LoRA (Low-Rank Adaptation) and QLoRA research papers
+**Resource:** [https://arxiv.org/abs/2106.09685](https://arxiv.org/abs/2106.09685)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+120 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read LoRA paper and understand low-rank decomposition
+- [ ] Read QLoRA paper and understand 4-bit quantized training
+- [ ] Understand why PEFT is needed (full fine-tuning cost)
+
+**Deliverable:** Paper summaries with key insights
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Complete Hugging Face TRL library documentation
+**Resource:** [https://huggingface.co/docs/trl](https://huggingface.co/docs/trl)
+
+**Acceptance Criteria:**
+- [ ] Read TRL documentation for SFTTrainer
+- [ ] Understand the TRL training pipeline
+- [ ] Know how to configure LoRA adapters with PEFT
+
+**Deliverable:** TRL configuration reference notes
+
+---
+
+### Master Supervised Fine-Tuning (SFT) & Alpaca dataset formatting
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Format a dataset in Alpaca instruction format
+- [ ] Understand chat templates (ChatML, Llama format)
+- [ ] Create train/test split for SFT dataset
+- [ ] Know the difference between SFT, DPO, and RLHF
+
+**Deliverable:** Formatted SFT dataset + format comparison notes
+
+---
+
+### Mini-Project: Fine-tune Llama 3 or Mistral 7B using QLoRA & Unsloth on GPU
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Fine-tune a 7B+ model using QLoRA (4-bit quantization)
+- [ ] Use Unsloth or PEFT + BitsAndBytes for efficiency
+- [ ] Train for at least 1 epoch on custom instruction dataset
+- [ ] Evaluate before and after fine-tuning
+- [ ] Save and load LoRA adapter weights
+
+**Deliverable:** Fine-tuning notebook + saved adapter weights
+
+---
+

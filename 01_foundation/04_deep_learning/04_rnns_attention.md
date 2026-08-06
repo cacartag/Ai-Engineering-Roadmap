@@ -1,21 +1,57 @@
-# 🎯 Recurrent Neural Networks (RNNs) & Attention Intro
+# Recurrent Neural Networks (RNNs) & Attention Intro
 
-> Dedicated Focus Study Guide — Module: 04. Deep Learning & Neural Networks
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+170 XP Base + 90 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+30 XP)**: Read Andrej Karpathy's Unreasonable Effectiveness of RNNs
-  > *Difficulty Rationale: Classic blog post, ~1hr reading*
-- [ ] **Requirement 2 (+20 XP)**: Watch Illustrated Guide to LSTMs and GRUs Video
-  > *Difficulty Rationale: Single explanatory video*
-- [ ] **Requirement 3 (+55 XP)**: Master Sequential modeling, LSTMs, GRUs, and Self-Attention math
-  > *Difficulty Rationale: Complex recurrence math + attention mechanism derivation*
-- [ ] **Requirement 4 (+65 XP)**: Mini-Project: Build a PyTorch Character-level Language Model using RNNs/LSTMs
-  > *Difficulty Rationale: Challenging sequential model project*
+### Read Andrej Karpathy’s Unreasonable Effectiveness of RNNs
+**Resource:** [https://karpathy.github.io/2015/05/21/rnn-effectiveness/](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+90 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read the complete blog post
+- [ ] Understand sequence modeling with recurrent connections
+- [ ] Study the character-level generation examples
+
+**Deliverable:** Personal notes on RNN applications
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Watch Illustrated Guide to LSTMs and GRUs Video
+**Resource:** [https://www.youtube.com/watch?v=8HyCNIVRbSU](https://www.youtube.com/watch?v=8HyCNIVRbSU)
+
+**Acceptance Criteria:**
+- [ ] Watch the complete video
+- [ ] Understand LSTM cell architecture (forget, input, output gates)
+- [ ] Understand GRU as simplified LSTM
+
+**Deliverable:** Notes with gate diagrams
+
+---
+
+### Master Sequential modeling, LSTMs, GRUs, and Self-Attention math
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement vanilla RNN cell forward pass equations
+- [ ] Explain LSTM gate equations mathematically
+- [ ] Explain GRU gate equations and how they differ from LSTM
+- [ ] Derive self-attention: Q, K, V matrices, scaled dot-product
+
+**Deliverable:** Document with mathematical derivations
+
+---
+
+### Mini-Project: Build a PyTorch Character-level Language Model using RNNs/LSTMs
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Model takes one character and predicts the next
+- [ ] Uses LSTM or GRU cells (not vanilla RNN)
+- [ ] Trains on a text corpus (Shakespeare, code, etc.)
+- [ ] Can generate coherent text samples
+- [ ] Implements temperature-based sampling
+
+**Deliverable:** PyTorch char-level LM with generation script
+
+---
+

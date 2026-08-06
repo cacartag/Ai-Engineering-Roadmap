@@ -1,21 +1,56 @@
-# 🎯 Gradient Descent & Loss Optimization
+# Gradient Descent & Loss Optimization
 
-> Dedicated Focus Study Guide — Module: 02. Math for AI Engineering
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+135 XP Base + 60 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+20 XP)**: Watch StatQuest Gradient Descent & SGD Videos
-  > *Difficulty Rationale: Short, focused explainer videos*
-- [ ] **Requirement 2 (+35 XP)**: Read d2l.ai Optimization Algorithms Chapter
-  > *Difficulty Rationale: Dense interactive textbook chapter with math proofs*
-- [ ] **Requirement 3 (+30 XP)**: Formulate Mean Squared Error (MSE) and Cross-Entropy Loss equations
-  > *Difficulty Rationale: Math derivation requiring calculus understanding*
-- [ ] **Requirement 4 (+50 XP)**: Mini-Project: Code Batch SGD and Mini-Batch SGD from scratch in Python
-  > *Difficulty Rationale: From-scratch numerical implementation, no frameworks*
+### Watch StatQuest Gradient Descent & SGD Videos
+**Resource:** [https://www.youtube.com/watch?v=sDv4f4s2SB8](https://www.youtube.com/watch?v=sDv4f4s2SB8)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+60 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Watch StatQuest GD, SGD, and learning rate videos
+- [ ] Understand the difference between batch, mini-batch, stochastic
+- [ ] Can explain momentum intuitively
+
+**Deliverable:** Notes document
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Read d2l.ai Optimization Algorithms Chapter
+**Resource:** [https://d2l.ai/chapter_optimization/](https://d2l.ai/chapter_optimization/)
+
+**Acceptance Criteria:**
+- [ ] Read the complete optimization chapter
+- [ ] Run all interactive code examples
+- [ ] Understand Adam, RMSProp, learning rate scheduling
+
+**Deliverable:** Notes with key takeaways per optimizer
+
+---
+
+### Formulate Mean Squared Error (MSE) and Cross-Entropy Loss equations
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Write MSE loss formula and its gradient derivation
+- [ ] Write Binary Cross-Entropy formula and gradient
+- [ ] Write Categorical Cross-Entropy formula
+- [ ] Implement all three in Python without frameworks
+
+**Deliverable:** Python file with loss functions + gradient functions
+
+---
+
+### Mini-Project: Code Batch SGD and Mini-Batch SGD from scratch in Python
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement Batch GD that converges on simple linear regression
+- [ ] Implement Mini-Batch SGD with configurable batch size
+- [ ] Plot loss curves showing convergence
+- [ ] Compare convergence speed across batch sizes
+
+**Deliverable:** Python script with convergence plots
+
+---
+

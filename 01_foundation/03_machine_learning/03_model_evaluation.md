@@ -1,21 +1,59 @@
-# 🎯 Model Evaluation, Overfitting & Cross-Validation
+# Model Evaluation, Overfitting & Cross-Validation
 
-> Dedicated Focus Study Guide — Module: 03. Machine Learning Core
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+155 XP Base + 75 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+35 XP)**: Study Fast.ai Model Evaluation Unit
-  > *Difficulty Rationale: Practical course unit with depth*
-- [ ] **Requirement 2 (+40 XP)**: Master Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE
-  > *Difficulty Rationale: 6+ metrics to understand deeply, when to use each*
-- [ ] **Requirement 3 (+35 XP)**: Practice K-Fold Cross Validation & GridSearchCV hyperparameter tuning
-  > *Difficulty Rationale: Hands-on tuning with real experimentation*
-- [ ] **Requirement 4 (+45 XP)**: Mini-Project: Evaluate model overfitting vs underfitting with validation curves
-  > *Difficulty Rationale: Analytical project requiring diagnostic interpretation*
+### Study Fast.ai Model Evaluation Unit
+**Resource:** [https://course.fast.ai/](https://course.fast.ai/)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+75 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete the model evaluation and interpretation lessons
+- [ ] Understand training vs validation vs test sets
+- [ ] Learn Fast.ai's approach to practical model evaluation
+
+**Deliverable:** Notes on evaluation methodology
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Confusion Matrix, Precision, Recall, F1 Score, ROC-AUC, RMSE
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Compute and interpret a Confusion Matrix
+- [ ] Calculate Precision, Recall, F1 Score by hand and with sklearn
+- [ ] Plot and interpret ROC curve and compute AUC
+- [ ] Understand when to use RMSE vs MAE vs R²
+- [ ] Know when to prioritize Recall vs Precision
+
+**Deliverable:** Reference notebook computing all metrics on a sample model
+
+---
+
+### Practice K-Fold Cross Validation & GridSearchCV hyperparameter tuning
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement 5-Fold and 10-Fold Cross Validation
+- [ ] Use GridSearchCV to tune at least 3 hyperparameters
+- [ ] Compare CV scores across different model types
+- [ ] Document best hyperparameters found
+
+**Deliverable:** Notebook with CV + GridSearch experiments
+
+---
+
+### Mini-Project: Evaluate model overfitting vs underfitting with validation curves
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Train a model that intentionally overfits (high variance)
+- [ ] Train a model that intentionally underfits (high bias)
+- [ ] Plot training vs validation loss curves
+- [ ] Apply regularization and show improvement
+- [ ] Generate learning curves and validation curves
+
+**Deliverable:** Notebook with overfitting/underfitting analysis
+
+---
+

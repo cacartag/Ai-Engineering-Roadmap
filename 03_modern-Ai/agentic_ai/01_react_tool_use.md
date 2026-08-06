@@ -1,21 +1,58 @@
-# 🎯 ReAct Pattern & Tool-Use Execution
+# ReAct Pattern & Tool-Use Execution
 
-> Dedicated Focus Study Guide — Module: 09. Agentic AI & Autonomous Systems
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+210 XP Base + 120 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+50 XP)**: Read Yao et al. 'ReAct: Synergizing Reasoning and Acting in LLMs'
-  > *Difficulty Rationale: Important research paper with novel paradigm*
-- [ ] **Requirement 2 (+40 XP)**: Master OpenAI Function Calling & JSON Schema tool definition
-  > *Difficulty Rationale: API specification and structured tool design*
-- [ ] **Requirement 3 (+55 XP)**: Implement Thought-Action-Observation loop execution parser
-  > *Difficulty Rationale: Core agent loop architecture implementation*
-- [ ] **Requirement 4 (+65 XP)**: Mini-Project: Build a Python ReAct Agent with Web Search & Calculator tools
-  > *Difficulty Rationale: Full agent system with external tool integration*
+### Read Yao et al. ’ReAct: Synergizing Reasoning and Acting in LLMs’
+**Resource:** [https://arxiv.org/abs/2210.03629](https://arxiv.org/abs/2210.03629)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+120 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read the complete ReAct paper
+- [ ] Understand Thought-Action-Observation pattern
+- [ ] Compare to Chain-of-Thought and Act-only baselines
+
+**Deliverable:** Paper summary
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master OpenAI Function Calling & JSON Schema tool definition
+**Resource:** [https://platform.openai.com/docs/guides/function-calling](https://platform.openai.com/docs/guides/function-calling)
+
+**Acceptance Criteria:**
+- [ ] Read OpenAI Function Calling documentation
+- [ ] Define tool schemas in JSON format
+- [ ] Handle function call responses in code
+- [ ] Implement parallel function calling
+
+**Deliverable:** Working function calling examples
+
+---
+
+### Implement Thought-Action-Observation loop execution parser
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement the Thought-Action-Observation loop
+- [ ] Parse LLM output to extract action and action input
+- [ ] Execute the action and return observation to LLM
+- [ ] Handle errors and invalid actions gracefully
+
+**Deliverable:** ReAct loop implementation
+
+---
+
+### Mini-Project: Build a Python ReAct Agent with Web Search & Calculator tools
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Agent has at least 2 tools (web search + calculator minimum)
+- [ ] Uses ReAct pattern with explicit reasoning
+- [ ] Can answer multi-step questions requiring tool use
+- [ ] Handles tool errors gracefully
+- [ ] Logs full Thought-Action-Observation traces
+
+**Deliverable:** ReAct agent with tools + trace logs
+
+---
+

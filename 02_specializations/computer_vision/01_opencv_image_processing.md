@@ -1,21 +1,58 @@
-# 🎯 Image Processing with OpenCV & PIL
+# Image Processing with OpenCV & PIL
 
-> Dedicated Focus Study Guide — Module: 06. Computer Vision
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+135 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+30 XP)**: Complete OpenCV Python Tutorials & PIL Image Processing guide
-  > *Difficulty Rationale: Library tutorials, moderate effort*
-- [ ] **Requirement 2 (+35 XP)**: Master Color spaces (RGB, HSV, Grayscale), Thresholding, & Edge Detection
-  > *Difficulty Rationale: Multiple image processing concepts*
-- [ ] **Requirement 3 (+30 XP)**: Practice Image warping, resizing, and Data Augmentation
-  > *Difficulty Rationale: Hands-on transformation practice*
-- [ ] **Requirement 4 (+40 XP)**: Mini-Project: Build an Automated Object Counter using OpenCV contours
-  > *Difficulty Rationale: Applied CV project with real images*
+### Complete OpenCV Python Tutorials & PIL Image Processing guide
+**Resource:** [https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete Core Operations tutorials
+- [ ] Complete Image Processing tutorials
+- [ ] Practice PIL image operations
+
+**Deliverable:** Notebook with OpenCV + PIL examples
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Color spaces (RGB, HSV, Grayscale), Thresholding, & Edge Detection
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Convert images between RGB, HSV, Grayscale
+- [ ] Apply binary and adaptive thresholding
+- [ ] Implement Canny edge detection with parameter tuning
+- [ ] Explain when to use each color space
+
+**Deliverable:** Notebook demonstrating color spaces + edge detection
+
+---
+
+### Practice Image warping, resizing, and Data Augmentation
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement image resizing with different interpolation methods
+- [ ] Apply perspective warping/transformation
+- [ ] Create data augmentation pipeline (flip, rotate, crop, color jitter)
+- [ ] Compare augmented vs original image distributions
+
+**Deliverable:** Image augmentation utility module
+
+---
+
+### Mini-Project: Build an Automated Object Counter using OpenCV contours
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Reads an image and detects objects using contours
+- [ ] Filters contours by area to remove noise
+- [ ] Draws bounding boxes around detected objects
+- [ ] Outputs total count of detected objects
+- [ ] Works on at least 3 different test images
+
+**Deliverable:** OpenCV object counter script with sample outputs
+
+---
+

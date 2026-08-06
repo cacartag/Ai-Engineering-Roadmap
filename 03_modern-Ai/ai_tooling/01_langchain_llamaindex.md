@@ -1,21 +1,58 @@
-# 🎯 LangChain & LlamaIndex Framework Integration
+# LangChain & LlamaIndex Framework Integration
 
-> Dedicated Focus Study Guide — Module: 12. AI Tooling & MLOps Infrastructure
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+180 XP Base + 90 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+45 XP)**: Complete LangChain Academy & LlamaIndex Official Tutorials
-  > *Difficulty Rationale: Two extensive framework tutorials*
-- [ ] **Requirement 2 (+40 XP)**: Master LCEL (LangChain Expression Language), Runnables, & Chains
-  > *Difficulty Rationale: Framework-specific concepts requiring practice*
-- [ ] **Requirement 3 (+40 XP)**: Implement LlamaIndex Data Connectors, Indexing, and Query Engines
-  > *Difficulty Rationale: Complex data pipeline implementation*
-- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Build an end-to-end RAG QA Application using LangChain & LlamaIndex
-  > *Difficulty Rationale: Full application integrating both frameworks*
+### Complete LangChain Academy & LlamaIndex Official Tutorials
+**Resource:** [https://python.langchain.com/docs/get_started/introduction](https://python.langchain.com/docs/get_started/introduction)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+90 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Complete LangChain quickstart tutorials
+- [ ] Complete LlamaIndex starter tutorials
+- [ ] Build a simple chain with each framework
+
+**Deliverable:** Tutorial completion notebooks
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master LCEL (LangChain Expression Language), Runnables, & Chains
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Build a multi-step chain using LCEL pipe syntax
+- [ ] Use RunnablePassthrough and RunnableParallel
+- [ ] Implement streaming with LCEL
+- [ ] Debug chain execution with verbose logging
+
+**Deliverable:** LCEL chain examples notebook
+
+---
+
+### Implement LlamaIndex Data Connectors, Indexing, and Query Engines
+**Resource:** [https://docs.llamaindex.ai/](https://docs.llamaindex.ai/)
+
+**Acceptance Criteria:**
+- [ ] Connect to a data source using LlamaIndex data connector
+- [ ] Build an index over ingested documents
+- [ ] Create and test a query engine
+- [ ] Compare different index types
+
+**Deliverable:** LlamaIndex pipeline notebook
+
+---
+
+### Mini-Project: Build an end-to-end RAG QA Application using LangChain & LlamaIndex
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Ingest documents using LlamaIndex
+- [ ] Store embeddings in vector database
+- [ ] Build retrieval chain with LangChain
+- [ ] Implement QA with source citations
+- [ ] Evaluate answer quality on test questions
+
+**Deliverable:** End-to-end RAG QA application
+
+---
+

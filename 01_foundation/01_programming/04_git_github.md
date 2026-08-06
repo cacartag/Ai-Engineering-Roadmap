@@ -1,21 +1,55 @@
-# 🎯 Git & GitHub Version Control Mastery
+# Git & GitHub Version Control Mastery
 
-> Dedicated Focus Study Guide — Module: 01. Programming for AI
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+85 XP Base + 50 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+15 XP)**: Read GitHub Guides Official Git Handbook
-  > *Difficulty Rationale: Short official reference guide*
-- [ ] **Requirement 2 (+15 XP)**: Watch freeCodeCamp Git and GitHub Crash Course
-  > *Difficulty Rationale: Single crash course video*
-- [ ] **Requirement 3 (+25 XP)**: Complete The Odin Project Git Basics Interactive Lesson
-  > *Difficulty Rationale: Hands-on interactive lesson with exercises*
-- [ ] **Requirement 4 (+30 XP)**: Practical Task: Create GitHub repo, manage branches, & submit a PR
-  > *Difficulty Rationale: Real-world collaborative git workflow*
+### Read GitHub Guides Official Git Handbook
+**Resource:** [https://guides.github.com/introduction/git-handbook/](https://guides.github.com/introduction/git-handbook/)
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+50 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Read the complete handbook
+- [ ] Understand staging, committing, branching, merging
+- [ ] Know the difference between git and GitHub
+
+**Deliverable:** Personal notes summarizing key concepts
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Watch freeCodeCamp Git and GitHub Crash Course
+**Resource:** [https://www.youtube.com/watch?v=RGOj5yH7evk](https://www.youtube.com/watch?v=RGOj5yH7evk)
+
+**Acceptance Criteria:**
+- [ ] Watch the complete crash course
+- [ ] Follow along with terminal commands
+- [ ] Understand remote repositories and push/pull
+
+**Deliverable:** Practice repository created during video
+
+---
+
+### Complete The Odin Project Git Basics Interactive Lesson
+**Resource:** [https://www.theodinproject.com/lessons/foundations-git-basics](https://www.theodinproject.com/lessons/foundations-git-basics)
+
+**Acceptance Criteria:**
+- [ ] Complete all exercises in the lesson
+- [ ] Understand Git workflow in a project context
+- [ ] Practice resolving merge conflicts
+
+**Deliverable:** Completed Odin Project exercises
+
+---
+
+### Practical Task: Create GitHub repo, manage branches, & submit a PR
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Create a new GitHub repository from scratch
+- [ ] Create feature branch, make changes, commit
+- [ ] Push branch and create a Pull Request
+- [ ] Merge PR and handle any conflicts
+
+**Deliverable:** GitHub repo showing branch history and merged PR
+
+---
+

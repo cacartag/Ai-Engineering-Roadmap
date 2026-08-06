@@ -1,21 +1,60 @@
-# 🎯 Document Chunking Strategies & Embedding Models
+# Document Chunking Strategies & Embedding Models
 
-> Dedicated Focus Study Guide — Module: 10. Retrieval-Augmented Generation (RAG)
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+175 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+35 XP)**: Study Document Chunking strategies (Fixed-size, Recursive, Semantic)
-  > *Difficulty Rationale: 3 chunking paradigms to understand trade-offs*
-- [ ] **Requirement 2 (+45 XP)**: Benchmark Sentence-Transformers (BGE, E5, OpenAI text-embedding-3)
-  > *Difficulty Rationale: Comparative benchmarking across models*
-- [ ] **Requirement 3 (+40 XP)**: Measure retrieval recall and precision across chunk sizes
-  > *Difficulty Rationale: Systematic evaluation methodology*
-- [ ] **Requirement 4 (+55 XP)**: Mini-Project: Build an automated Chunking & Embedding Pipeline for PDFs
-  > *Difficulty Rationale: Full document processing pipeline*
+### Study Document Chunking strategies (Fixed-size, Recursive, Semantic)
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Implement fixed-size chunking with overlap
+- [ ] Implement recursive character-based chunking
+- [ ] Implement semantic chunking (by sentence similarity)
+- [ ] Compare chunk quality across strategies
+
+**Deliverable:** 3 chunking strategy implementations
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Benchmark Sentence-Transformers (BGE, E5, OpenAI text-embedding-3)
+**Resource:** [https://www.sbert.net/](https://www.sbert.net/)
+
+**Acceptance Criteria:**
+- [ ] Benchmark BGE, E5, and OpenAI embedding models
+- [ ] Compare embedding dimensions and speed
+- [ ] Evaluate retrieval quality on same test queries
+- [ ] Measure inference latency per document
+
+**Deliverable:** Embedding model benchmark notebook
+
+---
+
+### Measure retrieval recall and precision across chunk sizes
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Create a test dataset with known relevant documents
+- [ ] Measure retrieval recall at different k values
+- [ ] Measure retrieval precision at different k values
+- [ ] Test across different chunk sizes (256, 512, 1024 tokens)
+
+**Deliverable:** Retrieval evaluation notebook
+
+---
+
+### Mini-Project: Build an automated Chunking & Embedding Pipeline for PDFs
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Accept PDF files as input
+- [ ] Extract text with PyPDF2 or pdfplumber
+- [ ] Chunk extracted text using chosen strategy
+- [ ] Generate embeddings for all chunks
+- [ ] Store in vector database
+- [ ] Verify with test queries
+
+**Deliverable:** PDF → chunks → embeddings → vector DB pipeline
+
+---
+

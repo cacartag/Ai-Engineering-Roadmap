@@ -1,21 +1,59 @@
-# 🎯 Hybrid Search (Sparse + Dense Retrieval)
+# Hybrid Search (Sparse + Dense Retrieval)
 
-> Dedicated Focus Study Guide — Module: 10. Retrieval-Augmented Generation (RAG)
+[&larr; Back to Dashboard](../../index.html)
 
-## 📌 Mandatory Requirements to Complete (+165 XP Base + 100 XP Mastery Bonus)
-To mark this topic as **Complete**, finish all 4 mandatory requirements below.
-XP is weighted by difficulty — harder tasks earn more!
+## Requirements
 
-- [ ] **Requirement 1 (+40 XP)**: Study BM25 Lexical Keyword Search algorithm & Sparse Vectors
-  > *Difficulty Rationale: Classic IR algorithm with mathematical formulation*
-- [ ] **Requirement 2 (+35 XP)**: Master Reciprocal Rank Fusion (RRF) for merging Sparse + Dense results
-  > *Difficulty Rationale: Fusion algorithm understanding*
-- [ ] **Requirement 3 (+30 XP)**: Practice Qdrant / Pinecone Hybrid Search APIs
-  > *Difficulty Rationale: API usage practice*
-- [ ] **Requirement 4 (+60 XP)**: Mini-Project: Implement a Hybrid RAG Search Engine with BM25 + Vector Retrieval
-  > *Difficulty Rationale: Complex dual-retrieval pipeline*
+### Study BM25 Lexical Keyword Search algorithm & Sparse Vectors
+**Resource:** *(Internal / See study guide below)*
 
-> 🎁 **Topic Mastery Bonus**: Finishing all 4 items unlocks a **+100 XP Bonus**!
+**Acceptance Criteria:**
+- [ ] Implement BM25 scoring algorithm conceptually
+- [ ] Understand TF-IDF vs BM25 differences
+- [ ] Implement sparse vector representation
+- [ ] Compare lexical vs semantic search results on same queries
+
+**Deliverable:** BM25 implementation + comparison notebook
 
 ---
-← [Back to Interactive Dashboard](../../index.html)
+
+### Master Reciprocal Rank Fusion (RRF) for merging Sparse + Dense results
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Implement Reciprocal Rank Fusion algorithm
+- [ ] Merge ranked lists from sparse + dense retrievers
+- [ ] Tune the RRF k parameter
+- [ ] Compare fused results to individual retrievers
+
+**Deliverable:** RRF implementation with evaluation
+
+---
+
+### Practice Qdrant / Pinecone Hybrid Search APIs
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Use Qdrant or Pinecone hybrid search API
+- [ ] Configure sparse + dense vectors
+- [ ] Run hybrid queries with different alpha weights
+- [ ] Evaluate hybrid vs pure dense retrieval
+
+**Deliverable:** Hybrid search API usage notebook
+
+---
+
+### Mini-Project: Implement a Hybrid RAG Search Engine with BM25 + Vector Retrieval
+**Resource:** *(Internal / See study guide below)*
+
+**Acceptance Criteria:**
+- [ ] Combine BM25 + vector retrieval in a RAG pipeline
+- [ ] Implement RRF fusion of results
+- [ ] Connect to LLM for answer generation
+- [ ] Evaluate answer quality with and without hybrid search
+- [ ] Show improvement over dense-only retrieval
+
+**Deliverable:** Hybrid RAG pipeline with evaluation
+
+---
+
